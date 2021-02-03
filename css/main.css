@@ -1,0 +1,10 @@
+html,main,body,header,footer,section,div {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(80,80,80);
+}

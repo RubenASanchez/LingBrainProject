@@ -14,6 +14,8 @@ request.onload = function() {
   console.log(`loaded json ${brainRegiondata}`);
 }
 
+const header = document.querySelector('header');
+
 function populateHeader(obj) {
   const myH1 = document.createElement('h1');
   myH1.textContent = obj['name'];

@@ -16,7 +16,7 @@
 
 [x] css
 
-[ ] js
+[x] js
 
 # Modules
 
@@ -33,8 +33,9 @@
 
 # SW
 
-[ ] 1
+[x] 1
 [ ] 2
+[ ] manifest JSON
 
 # Assets
 

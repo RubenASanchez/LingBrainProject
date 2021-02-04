@@ -1,6 +1,6 @@
 // file to import all js files into
-let requestURL = 'https://researchscientist.github.io/LingBrainProject/data/dataset.json'
-let request = new XMLHttpRequest();
+//let requestURL = 'https://researchscientist.github.io/LingBrainProject/data/dataset.json'
+//let request = new XMLHttpRequest();
 
 /*
 request.open('GET',requestURL);

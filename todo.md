@@ -20,7 +20,7 @@
 
 # Modules
 
-[ ] 
+[ ] components
 
 # Logic
 
@@ -28,4 +28,15 @@
 
 # Database
 
-[ ]
+[ ] JSON
+[ ] indexedDB
+
+# SW
+
+[ ] 1
+[ ] 2
+
+# Assets
+
+[ ] images
+[ ] icons

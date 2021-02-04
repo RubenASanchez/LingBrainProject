@@ -10,7 +10,7 @@ request.send();
 request.onload = function() {
   const brainRegiondata = request.response;
   populateHeader(brainRegiondata);
-  showRegionData(brainRegiondata);
+  //showRegionData(brainRegiondata);
   console.log(`loaded json ${brainRegiondata}`);
 }
 

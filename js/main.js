@@ -2,11 +2,12 @@
 let requestURL = 'https://researchscientist.github.io/LingBrainProject/data/dataset.json'
 let request = new XMLHttpRequest();
 
+/*
 request.open('GET',requestURL);
 request.responseType = 'json';
 console.log('request sent');
 request.send();
-
+*/
 
 
 

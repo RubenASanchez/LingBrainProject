@@ -4,12 +4,13 @@ let request = new XMLHttpRequest();
 
 request.open('GET',requestURL);
 request.responseType = 'json';
+console.log('request sent');
 request.send();
 
 
 
 
-
+/*
 request.onload = function() {
   const brainRegiondata = request.response;
   populateHeader(brainRegiondata);
@@ -28,3 +29,4 @@ function populateHeader(obj) {
   myPara.textContent = 'Location ' + obj['location'] + ' // Function ' + obj['function'];
   header.appendChild(myPara);
 }
+*/

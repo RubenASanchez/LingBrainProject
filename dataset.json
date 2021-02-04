@@ -1,14 +1,12 @@
-{
-  [
-    {
-      "name": "articulus fascilus",
-      "location": "singular gyrus",
-      "function": "reading"
-    },
-    {
-      "name": "articulus fascilus",
-      "location": "singular gyrus",
-      "function": "reading"
-    }
-  ]
-}
+[
+  {
+    "name": "articulus fascilus",
+    "location": "singular gyrus",
+    "function": "reading"
+  },
+  {
+    "name": "articulus fascilus",
+    "location": "singular gyrus",
+    "function": "reading"
+  }
+]

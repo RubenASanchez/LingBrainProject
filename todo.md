@@ -36,7 +36,11 @@
 
 [x] 1
 [ ] 2
-[ ] manifest JSON
+
+# Manifest JSON
+
+[x] meta data
+[ ] icons
 
 # Assets
 

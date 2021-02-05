@@ -1,0 +1,8 @@
+{
+  "name": "LingBrain",
+  "short_name": "LingBrain",
+  "start_url": ".",
+  "theme_color": "#6495F0",
+  "background_color": "#6495F0",
+  "display": "standalone"
+}

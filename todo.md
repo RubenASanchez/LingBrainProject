@@ -42,6 +42,11 @@
 [x] meta data
 [ ] icons
 
+# HTML Metadata
+
+[x] themes
+[ ] icons
+
 # Assets
 
 [ ] images

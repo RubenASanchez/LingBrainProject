@@ -29,25 +29,31 @@
 # Database
 
 [x] js
+
 [ ] JSON
+
 [ ] indexedDB
 
 # SW
 
 [x] 1
+
 [ ] 2
 
 # Manifest JSON
 
 [x] meta data
+
 [ ] icons
 
 # HTML Metadata
 
 [x] themes
+
 [ ] icons
 
 # Assets
 
 [ ] images
+
 [ ] icons

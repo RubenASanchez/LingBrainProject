@@ -50,9 +50,11 @@
 
 [x] themes
 
-[ ] icons
+[x] icons
 
 # Assets
+
+[x] splash 512,192
 
 [ ] images
 

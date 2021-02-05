@@ -28,6 +28,7 @@
 
 # Database
 
+[x] js
 [ ] JSON
 [ ] indexedDB
 

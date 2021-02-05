@@ -1,4 +1,4 @@
-import { brainRegionsObject } from './data/dataset.js';
+import { brainRegionsObject } from '/data/dataset.js';
 
 if('serviceWorker' in navigator) {
   console.log('browser can use sw');

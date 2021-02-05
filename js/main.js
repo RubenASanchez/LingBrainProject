@@ -1,3 +1,5 @@
+import { brainRegionsObject } from './data/dataset.js';
+
 if('serviceWorker' in navigator) {
   console.log('browser can use sw');
   navigator.serviceWorker.register('sw.js').then(registration => {

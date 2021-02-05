@@ -15,3 +15,5 @@ const brainRegionsObject = {
     }
   ]
 }
+
+export { brainRegionsObject };

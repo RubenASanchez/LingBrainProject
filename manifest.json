@@ -1,8 +1,20 @@
 {
   "name": "LingBrain",
   "short_name": "LingBrain",
-  "start_url": ".",
+  "start_url": "https://researchscientist.github.io/LingBrainProject",
   "theme_color": "#6495F0",
   "background_color": "#6495F0",
-  "display": "standalone"
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/icons/splash-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/icons/splash-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
 }

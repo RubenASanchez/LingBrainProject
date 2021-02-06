@@ -44,6 +44,8 @@
 
 [x] meta data
 
+[x] start url
+
 [ ] icons
 
 # HTML Metadata

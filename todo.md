@@ -50,7 +50,7 @@
 
 [x] themes
 
-[x] icons
+[x] icons apple-touch
 
 # Assets
 

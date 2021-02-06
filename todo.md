@@ -54,10 +54,12 @@
 
 [x] icons apple-touch
 
-# Assets
+# Images
 
 [x] splash 512,192
 
-[ ] images
+[x] splash 512,192 maskable
+
+# Icons
 
 [ ] icons

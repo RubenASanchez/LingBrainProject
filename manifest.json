@@ -1,7 +1,7 @@
 {
   "name": "LingBrain",
   "short_name": "LingBrain",
-  "start_url": "https://researchscientist.github.io/LingBrainProject",
+  "start_url": "https://researchscientist.github.io/LingBrainProject/index.html",
   "theme_color": "#6495F0",
   "background_color": "#6495F0",
   "display": "standalone",

@@ -36,9 +36,9 @@
 
 # SW
 
-[x] 1
+[x] register
 
-[ ] 2
+[x] cache
 
 # Manifest JSON
 

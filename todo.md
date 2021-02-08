@@ -75,6 +75,12 @@
 
 [ ] icons
 
+# Accessibility
+
+[ ] aria labels
+
+[ ] button navigation
+
 # Social Media
 
 [ ] twitter cards meta data

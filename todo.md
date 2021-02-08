@@ -26,8 +26,8 @@
 
 # App Dynamic Content
 
-[ ] main container
-[ ] main container styles
+[x] main container
+[x] main container styles
 
 # Modules
 

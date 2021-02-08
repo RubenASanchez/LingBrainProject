@@ -3,10 +3,10 @@ import { brainRegionsObject } from '../data/dataset.js';
 if('serviceWorker' in navigator) {
   console.log('browser can use sw');
   navigator.serviceWorker.register('sw.js').then(registration => {
-    console.log('registered sw',registration);
+    console.log('sw register successful',registration);
   })
   .catch(error => {
-    console.log('boo error',error);
+    console.log('sw register error',error);
   });
 }
 

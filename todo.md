@@ -63,3 +63,7 @@
 # Icons
 
 [ ] icons
+
+# Social Media
+
+[ ] twitter cards meta data

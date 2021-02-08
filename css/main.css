@@ -1,4 +1,4 @@
-html,main,body,header,footer,section,div {
+html,main,body,header,footer,section,div,nav {
   margin: 0;
   padding: 0;
 }
@@ -11,4 +11,9 @@ html {
 
 h1 {
   text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
 }

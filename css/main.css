@@ -31,7 +31,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: orange;
+  color: #000000;
   text-align: center;
-  background-color: #FAFAFAFA;
+  background-color: #FAFAFA;
 }

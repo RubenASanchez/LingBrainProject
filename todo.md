@@ -51,6 +51,8 @@
 
 [x] cache
 
+[ ] fetch data
+
 # Manifest JSON
 
 [x] meta data

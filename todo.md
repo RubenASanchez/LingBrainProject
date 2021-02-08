@@ -21,6 +21,7 @@
 # App Shell
 
 [x] navigation container
+[ ] navigation buttons
 
 # App Dynamic Content
 

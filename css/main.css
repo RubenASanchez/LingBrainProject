@@ -35,7 +35,7 @@ nav {
 
 #main-window {
   width: 98vw;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 150px);
   margin: 0 auto;
   background-color: #FAFAFA;
 }

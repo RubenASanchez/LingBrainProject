@@ -18,6 +18,14 @@
 
 [x] js
 
+# App Shell
+
+[x] navigation container
+
+# App Dynamic Content
+
+[ ] main container
+
 # Modules
 
 [ ] components

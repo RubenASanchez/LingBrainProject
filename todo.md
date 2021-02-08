@@ -21,11 +21,13 @@
 # App Shell
 
 [x] navigation container
-[ ] navigation buttons
+[x] navigation buttons
+[x] navigation button styles
 
 # App Dynamic Content
 
 [ ] main container
+[ ] main container styles
 
 # Modules
 

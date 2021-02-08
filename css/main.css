@@ -13,10 +13,6 @@ html {
   background-color: rgb(100,150,240);
 }
 
-h1 {
-  text-align: center;
-}
-
 nav {
   width: 90vw;
   margin: 0 auto;
@@ -33,5 +29,12 @@ nav {
   align-items: center;
   color: #000000;
   text-align: center;
+  background-color: #FAFAFA;
+}
+
+#main-window {
+  width: 98vw;
+  height: calc(100vh - 100px);
+  margin: 0 auto;
   background-color: #FAFAFA;
 }

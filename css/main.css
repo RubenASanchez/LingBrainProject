@@ -12,7 +12,13 @@ a {
 /* CUSTOM PROPERTIES*/
 
 :root {
-  --icon-colour-idle: #FAFAFA;
+  --neomorphic-light: #FFFFFF;
+  --neomorphic-mid: #F0F0F0;
+  --neomorphic-mid-dark: #EBEBEB;
+  --neomorphic-dark: #B4B4B4;
+  --neomorphic-light-shadow: rgba(255,255,255,.6);
+  --neomorphic-dark-shadow: rgba(180,180,180,.5);
+  --icon-colour: #505050;
 }
 
 /* SHELL */
@@ -20,7 +26,7 @@ a {
 html {
   width: 100vw;
   height: 100vh;
-  background-color: #F0F0F0;
+  background-color: var(--neomorphic-mid);
 }
 
 nav {
@@ -41,8 +47,8 @@ nav {
   align-items: center;
   color: #000000;
   text-align: center;
-  background-color: #F0F0F0;
-  box-shadow: 0 -5px 5px rgba(255,255,255,.6), 0 5px 5px rgba(180,180,180,.5);
+  background-color: var(--neomorphic-mid);
+  box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
 }
 
 #main-window {
@@ -50,10 +56,10 @@ nav {
   height: calc(100vh - 150px);
   margin: 0 auto;
   border-radius: 5vw;
-  box-shadow: inset 0 5px 5px rgba(180,180,180,.5), inset 0 -5px 5px rgba(255,255,255,.6);
-  background-color: #EBEBEB;
+  box-shadow: inset 0 5px 5px var(--neomorphic-dark-shadow), inset 0 -5px 5px var(--neomorphic-light-shadow);
+  background-color: var(--neomorphic-mid-dark);
 }
 
 #settings-icon {
-  fill: rgb(200,100,100);
+  fill: var(--icon-colour);
 }

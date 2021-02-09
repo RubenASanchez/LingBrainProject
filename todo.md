@@ -30,6 +30,10 @@
 [x] main container
 [x] main container styles
 
+# CSS
+
+[x] custom variables
+
 # Modules
 
 [ ] components

@@ -11,7 +11,9 @@ a {
 
 /* CUSTOM PROPERTIES*/
 
---icon-colour-idle: #FAFAFA;
+:root {
+  --icon-colour-idle: #FAFAFA;
+}
 
 /* SHELL */
 

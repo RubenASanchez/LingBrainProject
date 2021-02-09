@@ -70,6 +70,8 @@
 
 # Images
 
+[x] favicon
+
 [x] splash 512,192
 
 [x] splash 512,192 maskable

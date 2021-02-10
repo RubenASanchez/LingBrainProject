@@ -59,6 +59,16 @@ nav {
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
 }
 
+.app-button:hover {
+  transform: rotate(15deg);
+  transition: transform .5s;
+}
+
+.spin {
+  transform: rotate(360deg);
+  transition: transform 1s;
+}
+
 #main-window {
   width: 98vw;
   height: calc(100vh - 150px);

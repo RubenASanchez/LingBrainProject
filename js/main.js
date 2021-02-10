@@ -1,4 +1,5 @@
 import { brainRegionsObject } from '../data/dataset.js';
+import { spin } from './animation.js';
 
 if('serviceWorker' in navigator) {
   console.log('browser can use sw');

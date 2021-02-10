@@ -33,6 +33,7 @@
 
 # CSS
 
+[x] headings
 [x] custom variables
 
 # Modules

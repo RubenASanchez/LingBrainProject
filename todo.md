@@ -24,6 +24,7 @@
 [x] navigation buttons
 [x] navigation button styles
 [ ] state info styles
+[ ] display state info
 
 # App Dynamic Content
 

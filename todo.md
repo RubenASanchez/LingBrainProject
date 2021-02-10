@@ -23,7 +23,7 @@
 [x] navigation container
 [x] navigation buttons
 [x] navigation button styles
-[ ] navigation info styles
+[ ] state info styles
 
 # App Dynamic Content
 

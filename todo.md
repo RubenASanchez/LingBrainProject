@@ -91,6 +91,7 @@
 
 [x] button hover
 [ ] button click
+[ ] add animation: none class as no animation option
 
 # Accessibility
 

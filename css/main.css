@@ -67,13 +67,15 @@ nav {
 
 #settings-icon {
   fill: var(--icon-colour);
+  transition: all 2s;
 }
 
 #settings-icon:hover {
-  transform: rotate(360deg);
-  transition: transform 1s;
+  transform: rotate(190deg);
+  transition: all 2s;
 }
 
+/* spin not in use */
 .spin {
   transform: rotate(-360deg);
   transition: transform 1s;

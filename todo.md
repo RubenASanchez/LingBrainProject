@@ -82,7 +82,13 @@
 
 # Icons
 
-[ ] icons
+[x] settings - gear
+[ ] display - eye
+
+# Animation
+
+[x] button hover
+[ ] button click
 
 # Accessibility
 

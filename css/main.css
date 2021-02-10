@@ -19,6 +19,7 @@ a {
   --neomorphic-light-shadow: rgba(255,255,255,.6);
   --neomorphic-dark-shadow: rgba(180,180,180,.5);
   --icon-colour: #505050;
+  --text-colour: #404040;
 }
 
 /* SHELL */
@@ -36,6 +37,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#current-state {
+  width: 100px;
+  margin-left: calc(45vw - 50px);
+  text-align: center;
+  color: var(--text-colour);
 }
 
 .app-button {

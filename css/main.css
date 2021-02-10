@@ -39,12 +39,16 @@ nav {
   align-items: center;
 }
 
+/* STATE INFO */
+
 #current-state {
   width: 100px;
   margin-left: calc(45vw - 50px);
   text-align: center;
   color: var(--text-colour);
 }
+
+/* MAIN BUTTONS */
 
 .app-button {
   width: 48px;
@@ -53,10 +57,16 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000000;
   text-align: center;
+  color: var(--text-colour);
   background-color: var(--neomorphic-mid);
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
+}
+
+/* SETTINGS */
+
+#settings-icon {
+  fill: var(--icon-colour);
 }
 
 #settings-icon:hover {
@@ -69,6 +79,8 @@ nav {
   transition: transform 1s;
 }
 
+/* MAIN DISPLAY */
+
 #main-window {
   width: 98vw;
   height: calc(100vh - 150px);
@@ -76,8 +88,4 @@ nav {
   border-radius: 5vw;
   box-shadow: inset 0 5px 5px var(--neomorphic-dark-shadow), inset 0 -5px 5px var(--neomorphic-light-shadow);
   background-color: var(--neomorphic-mid-dark);
-}
-
-#settings-icon {
-  fill: var(--icon-colour);
 }

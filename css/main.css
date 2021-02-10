@@ -52,8 +52,7 @@ nav {
 
 #current-state {
   width: 100px;
-  /*margin-left: calc(45vw - 50px);*/
-  flex: 1;
+  margin-left: calc(45vw - 50px);
   text-align: center;
   color: var(--text-colour);
 }
@@ -95,7 +94,8 @@ nav {
 
 #main-window {
   width: 98vw;
-  height: calc(100% - 150px);
+  /*height: calc(100% - 150px);*/
+  flex-basis: 1;
   margin: 0 auto;
   border-radius: 5vw;
   box-shadow: inset 0 5px 5px var(--neomorphic-dark-shadow), inset 0 -5px 5px var(--neomorphic-light-shadow);

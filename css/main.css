@@ -9,10 +9,6 @@ a {
   text-decoration: none;
 }
 
-html,body {
-  height: 100%;
-}
-
 /* CUSTOM PROPERTIES*/
 
 :root {
@@ -28,14 +24,24 @@ html,body {
 
 /* SHELL */
 
+html,body {
+  height: 100%;
+}
+
 html {
   width: 100vw;
   background-color: var(--neomorphic-mid);
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 nav {
   width: 90vw;
   height: 75px;
+  flex-basis: 75px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -46,7 +52,8 @@ nav {
 
 #current-state {
   width: 100px;
-  margin-left: calc(45vw - 50px);
+  /*margin-left: calc(45vw - 50px);*/
+  flex: 1;
   text-align: center;
   color: var(--text-colour);
 }

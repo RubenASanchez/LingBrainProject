@@ -52,6 +52,10 @@
 
 [ ] components
 
+# Components
+
+[ ] fetchdata js
+
 # State Machine
 
 [x] local js

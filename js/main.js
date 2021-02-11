@@ -23,9 +23,9 @@ const location = brainRegionsObject.brainRegions[0].location;
 const locationcard = document.getElementById('location');
 locationcard.textContent = location;
 
-const function = brainRegionsObject.brainRegions[0].function;
+const functions = brainRegionsObject.brainRegions[0].function;
 const functioncard = document.getElementById('function');
-functioncard.textContent = function;
+functioncard.textContent = functions;
 
 // file to import all js files into
 //let requestURL = 'https://researchscientist.github.io/LingBrainProject/data/dataset.json'

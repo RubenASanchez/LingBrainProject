@@ -21,19 +21,31 @@
 # App Shell
 
 [x] navigation container
+
 [x] navigation buttons
+
 [x] navigation button styles
+
 [ ] state info styles
+
 [ ] display state info
 
 # App Dynamic Content
 
 [x] main container
+
 [x] main container styles
+
+# Template
+
+[x] html
+
+[ ] js
 
 # CSS
 
 [x] headings
+
 [x] custom variables
 
 # Modules
@@ -89,12 +101,15 @@
 # Icons
 
 [x] settings - gear
+
 [ ] display - eye
 
 # Animation
 
 [x] button hover
+
 [ ] button click
+
 [ ] add animation: none class as no animation option
 
 # Accessibility

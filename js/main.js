@@ -13,10 +13,10 @@ if('serviceWorker' in navigator) {
 }
 
 
-const info = brainRegionsObject.brainRegions[1].name;
+const info = brainRegionsObject.brainRegions[1].function;
 const regionInfoCard = document.getElementById('region-info-card');
 regionInfoCard.textContent = info;
-console.log('region info card index brainRegions 2 name');
+console.log('region info card index brainRegions 2 function');
 
 
 // file to import all js files into

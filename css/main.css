@@ -95,7 +95,13 @@ nav {
   background-color: var(--neomorphic-mid-dark);
 }
 
+/* CARDS */
+
+#region-info-cards {
+  background-color: red;
+}
+
 .card {
   height: 33%;
-  background: gray;
+  background-color: gray;
 }

@@ -17,7 +17,7 @@ const info = brainRegionsObject.brainRegions.name;
 
 const regionInfoCard = document.getElementById('region-info-card');
 regionInfoCard.textContent = info;
-console.log('region info card index brainRegions 0');
+console.log('region info card index brainRegions name');
 
 
 // file to import all js files into

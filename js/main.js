@@ -21,7 +21,7 @@ if('serviceWorker' in navigator) {
 console.log('region info card index brainRegions 2 function');
 
 const name = brainRegionsObject.brainRegions[0].name;
-const namecard = document.getElementsByClassName('name');
+const namecard = document.getElementById('name');
 namecard.textContent = name;
 
 

@@ -1,5 +1,8 @@
 import { brainRegionsObject } from '../data/dataset.js';
 
-let showInfo = document.getElementById('region-info-card').innerHTML = 'hi';
+const info = "hi";
+
+const regionInfoCard = document.getElementById('region-info-card');
+regionInfoCard.textContent = info;
 
 export { showInfo };

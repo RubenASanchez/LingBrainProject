@@ -38,6 +38,8 @@
 
 # Template
 
+[x] name
+
 [x] html
 
 [ ] js

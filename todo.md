@@ -40,9 +40,13 @@
 
 [ ] components
 
-# Logic
+# State Machine
 
-[ ] state machine
+[x] local js
+
+[ ] library js
+
+[ ] logic
 
 # Database
 

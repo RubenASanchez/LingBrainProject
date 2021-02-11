@@ -13,17 +13,19 @@ if('serviceWorker' in navigator) {
 }
 
 
-//const info = brainRegionsObject.brainRegions[1].function;
-
-//const regionInfoCard = document.getElementById('region-info-card');
-//regionInfoCard.textContent = info;
-
-console.log('region info card index brainRegions 2 function');
+console.log('region info card index brainRegions 0 name');
 
 const name = brainRegionsObject.brainRegions[0].name;
 const namecard = document.getElementById('name');
 namecard.textContent = name;
 
+const location = brainRegionsObject.brainRegions[0].location;
+const locationcard = document.getElementById('location');
+locationcard.textContent = location;
+
+const function = brainRegionsObject.brainRegions[0].function;
+const functioncard = document.getElementById('function');
+functioncard.textContent = function;
 
 // file to import all js files into
 //let requestURL = 'https://researchscientist.github.io/LingBrainProject/data/dataset.json'

@@ -13,7 +13,8 @@ if('serviceWorker' in navigator) {
 }
 
 
-const info = brainRegionsObject.brainRegions[0];
+// const info = brainRegionsObject.brainRegions[0].name;
+const info = brainRegionsObject.brainRegions[0].name;
 
 const regionInfoCard = document.getElementById('region-info-card');
 regionInfoCard.textContent = info;

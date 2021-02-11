@@ -2,16 +2,18 @@ const brainRegionsObject = {
   "brainRegions": 
   [
     {
-      "id": "001",
-      "name": "articulus fascilus",
-      "location": "singulate gyrus",
-      "function": "comprehension"
+      "af-001": {
+        "name": "articulus fascilus",
+        "location": "singulate gyrus",
+        "function": "comprehension"
+      }
     },
     {
-      "id": "002",
-      "name": "visual form area",
-      "location": "left lateral",
-      "function": "reading"
+      "vfa-002": {
+        "name": "visual form area",
+        "location": "left lateral",
+        "function": "reading"
+      }
     }
   ]
 }

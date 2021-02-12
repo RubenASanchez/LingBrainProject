@@ -103,5 +103,5 @@ nav {
 
 .card {
   height: 33%;
-  background-color: gray;
+  border: 1px solid gray;
 }

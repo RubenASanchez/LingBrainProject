@@ -112,7 +112,7 @@ nav {
   align-items: center;
   border-radius: 5vw;
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
-  background-color: var(--neomorphic-mid-dark);
+  background-color: var(--neomorphic-mid);
   text-align: center;
 }
 

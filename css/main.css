@@ -89,19 +89,31 @@ nav {
 #main-window {
   width: 98vw;
   height: calc(100% - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   border-radius: 5vw;
   box-shadow: inset 0 5px 5px var(--neomorphic-dark-shadow), inset 0 -5px 5px var(--neomorphic-light-shadow);
   background-color: var(--neomorphic-mid-dark);
 }
 
+/* BRAIN */
+
+/* position in center large */
+/* then move upwards and shrink */
+/* to make room for expanding cards */
+
 /* CARDS */
 
 #region-info-cards {
+  /* initial height 0 to make room for brain*/
   background-color: rgba(200,100,100,.5);
+
 }
 
 .card {
-  height: 33%;
-  background-color: gray;
+  width: 90vw;
+  background-color: rgba(200,100,100,.5);
 }

@@ -104,16 +104,31 @@ nav {
 /* position in center large */
 /* then move upwards and shrink */
 /* to make room for expanding cards */
+#brain {
+  width: 90vw;
+  height: 50vw;
+  border-radius: 5vw;
+  box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
+  background-color: var(--neomorphic-mid-dark);
+  text-align: center;
+}
 
 /* CARDS */
 
 #region-info-cards {
   /* initial height 0 to make room for brain*/
   background-color: rgba(200,100,100,.5);
-
+  display: none;
 }
 
 .card {
   width: 90vw;
   background-color: rgba(200,100,100,.5);
+}
+
+@media (orientation: landscape) {
+  #brain {
+    width: calc(150vh - 150px);
+    height: calc(90vh - 150px);
+  }
 }

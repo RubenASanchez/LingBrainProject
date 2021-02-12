@@ -36,6 +36,10 @@
 
 [x] main container styles
 
+[x] brain section
+
+[ ] card sections
+
 # Template
 
 [x] name

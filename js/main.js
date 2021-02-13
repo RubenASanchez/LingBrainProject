@@ -1,5 +1,5 @@
 import { brainRegionsObject } from '../data/dataset.js';
-import { spin } from './animation.js';
+import { activateSettings } from '../components/settings.js';
 //import { showInfo } from '../components/fetchdata.js';
 
 if('serviceWorker' in navigator) {
@@ -11,7 +11,6 @@ if('serviceWorker' in navigator) {
     console.log('sw register error',error);
   });
 }
-
 
 console.log('region info card index brainRegions 0 name');
 

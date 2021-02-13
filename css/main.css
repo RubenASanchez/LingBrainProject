@@ -49,6 +49,12 @@ nav {
   margin-left: calc(45vw - 50px);
   text-align: center;
   color: var(--text-colour);
+  animation: state-display 1s linear forwards; /* this does not seem to work */
+}
+
+@keyframes state-display {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 /* MAIN BUTTONS */
@@ -68,21 +74,27 @@ nav {
 
 /* SETTINGS */
 
-#settings-icon {
+.settings-icon {
   fill: var(--icon-colour);
   transition: all 1s;
 }
 
-#settings-icon:hover {
+.settings-icon:hover {
   transform: rotate(95deg);
   transition: all 1s;
 }
 
-/* spin not in use */
-.spin {
-  transform: rotate(-360deg);
-  transition: transform 1s;
+.settings-active {
+  animation: settings-activate 1s ease-in-out forwards;
 }
+
+@keyframes settings-activate {
+  0% {transform: rotate(0deg);}
+  100% {fill: orange; transform: rotate(360deg);}
+}
+
+
+
 
 /* MAIN DISPLAY */
 

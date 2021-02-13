@@ -79,9 +79,10 @@ nav {
 }
 
 /* spin not in use */
-.spin {
-  transform: rotate(-360deg);
-  transition: transform 1s;
+.settings-active {
+  fill: orange;
+  /*transform: rotate(-360deg);
+  transition: transform 1s;*/
 }
 
 /* MAIN DISPLAY */

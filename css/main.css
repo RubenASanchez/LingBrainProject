@@ -78,20 +78,17 @@ nav {
   transition: all 1s;
 }
 
-/* spin not in use */
 .settings-active {
-  transform: rotate(360deg);
-  transition: all 2s;
-  animation: settings-activate 2s ease-in-out;
-  /*transform: rotate(-360deg);
-  transition: transform 1s;*/
+  animation: settings-activate 1s ease-in-out forwards;
 }
 
 @keyframes settings-activate {
-  0% {fill: var(--icon-colour);}
-  50% {fill: orange;}
-  100% {fill: var(--icon-colour);}
+  0% {transform: rotate(0deg);}
+  100% {fill: orange; transform: rotate(360deg);}
 }
+
+
+
 
 /* MAIN DISPLAY */
 

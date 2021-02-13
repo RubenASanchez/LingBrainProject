@@ -28,7 +28,7 @@
 
 [ ] state info styles
 
-[ ] display state info
+[x] display state info
 
 # App Dynamic Content
 
@@ -61,6 +61,16 @@
 # Components
 
 [ ] fetchdata js
+
+# Settings
+
+[x] icon
+
+[x] icon animation
+
+[x] display state
+
+[ ] display settings
 
 # State Machine
 

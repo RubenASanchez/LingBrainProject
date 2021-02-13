@@ -81,6 +81,7 @@ nav {
 /* spin not in use */
 .settings-active {
   transform: rotate(360deg);
+  transition: all 2s;
   fill: orange;
 
   /*transform: rotate(-360deg);

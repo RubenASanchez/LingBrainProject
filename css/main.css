@@ -82,9 +82,15 @@ nav {
 .settings-active {
   transform: rotate(360deg);
   transition: all 2s;
-  fill: orange;
+  animation: settings-activate 2s ease-in-out forwards;
   /*transform: rotate(-360deg);
   transition: transform 1s;*/
+}
+
+@keyframes settings-activate {
+  to {
+    fill: orange;
+  }
 }
 
 /* MAIN DISPLAY */

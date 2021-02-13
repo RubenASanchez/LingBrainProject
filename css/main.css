@@ -68,18 +68,18 @@ nav {
 
 /* SETTINGS */
 
-#settings-icon {
+.settings-icon {
   fill: var(--icon-colour);
   transition: all 1s;
 }
 
-#settings-icon:hover {
+.settings-icon:hover {
   transform: rotate(95deg);
   transition: all 1s;
 }
 
 /* spin not in use */
-#settings-icon .settings-active {
+.settings-active {
   fill: orange;
   /*transform: rotate(-360deg);
   transition: transform 1s;*/

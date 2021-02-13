@@ -49,7 +49,12 @@ nav {
   margin-left: calc(45vw - 50px);
   text-align: center;
   color: var(--text-colour);
-  transition: all 1s;
+  animation: state-display 1s ease-in-out forwards;
+}
+
+@keyframes state-display {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 /* MAIN BUTTONS */

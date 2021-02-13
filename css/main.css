@@ -88,9 +88,9 @@ nav {
 }
 
 @keyframes settings-activate {
-  50% {
-    fill: orange;
-  }
+  0% {fill: var(--icon-colour);}
+  50% {fill: orange;}
+  100% {fill: var(--icon-colour);}
 }
 
 /* MAIN DISPLAY */

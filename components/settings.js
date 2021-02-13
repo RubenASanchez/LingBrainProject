@@ -7,3 +7,4 @@ let activateSettings = document.getElementById('settings-button').addEventListen
 })
 
 export { activateSettings };
+ 

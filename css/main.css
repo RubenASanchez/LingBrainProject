@@ -49,6 +49,7 @@ nav {
   margin-left: calc(45vw - 50px);
   text-align: center;
   color: var(--text-colour);
+  transition: all 1s;
 }
 
 /* MAIN BUTTONS */

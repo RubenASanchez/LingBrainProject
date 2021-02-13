@@ -12,7 +12,6 @@ if('serviceWorker' in navigator) {
   });
 }
 
-
 console.log('region info card index brainRegions 0 name');
 
 const name = brainRegionsObject.brainRegions[0].name;

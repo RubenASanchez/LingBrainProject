@@ -1,5 +1,5 @@
 import { brainRegionsObject } from '../data/dataset.js';
-import { spin } from './animation.js';
+import { spin } from '../components/settings.js';
 //import { showInfo } from '../components/fetchdata.js';
 
 if('serviceWorker' in navigator) {

@@ -16,3 +16,4 @@ App detailing information about the brain as it relates to language.
 |2|0.8s|0.9s|30ms|1.1s|
 |3|0.9s|1.3s|170ms|0.9s|
 |4|0.8s|0.9s|40ms|0.8s|
+|5|1.0s|1.1s|10ms|1.8s|

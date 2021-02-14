@@ -146,7 +146,8 @@ nav {
 }
 
 @keyframes section-move {
-  to {transform: translateY(-25vw) scale(.5);}
+  50% {transform: scale(.5);}
+  100% {transform: scale(.5) translateY(-25vw)}
 }
 
 /* CARDS */

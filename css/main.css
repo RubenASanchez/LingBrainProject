@@ -175,7 +175,7 @@ nav {
 
 @media (orientation: landscape) {
   .brain {
-    width: calc(150vh - 150px);
+    width: calc(130vh - 150px);
     height: calc(90vh - 150px);
   }
 }

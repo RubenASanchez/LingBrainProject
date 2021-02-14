@@ -70,6 +70,10 @@
 
 [x] display state
 
+[x] remove main section
+
+[ ] remove cards
+
 [ ] display settings
 
 # State Machine

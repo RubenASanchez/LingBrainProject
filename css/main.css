@@ -146,7 +146,7 @@ nav {
 }
 
 @keyframes section-move {
-  to {transform: scale(.5);}
+  to {transform: scale(.5); align-self: flex-start;}
 }
 
 /* CARDS */

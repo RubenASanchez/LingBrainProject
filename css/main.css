@@ -129,6 +129,10 @@ nav {
   animation: section-hide .6s linear forwards;
 }
 
+.brain-section-move {
+  animation: section-move 1s linear forwards;
+}
+
 @keyframes section-hide {
   80% {
     background-color: var(--neomorphic-mid);
@@ -139,6 +143,10 @@ nav {
     box-shadow: 0 0px 0px var(--neomorphic-light-shadow), 0 0px 0px var(--neomorphic-dark-shadow);
     color: var(--neomorphic-mid-dark);
   }
+}
+
+@keyframes section-move {
+  to {transform: scale(.5);}
 }
 
 /* CARDS */

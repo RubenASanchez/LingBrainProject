@@ -4,8 +4,8 @@ let activateSettings = document.getElementById('settings-button').addEventListen
   console.log('added settings active');
   document.getElementById('current-state').textContent = "settings";
   console.log('added settings state');
-  document.getElementsByClassName('brain')[0].classList.add('brain-section-move');
-  console.log('scale top brain section');
+  document.getElementsByClassName('brain')[0].classList.add('brain-section-top');
+  console.log('top brain section');
 })
 
 export { activateSettings };

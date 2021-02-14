@@ -5,7 +5,7 @@ let activateSettings = document.getElementById('settings-button').addEventListen
   document.getElementById('current-state').textContent = "settings";
   console.log('added settings state');
   document.getElementsByClassName('brain')[0].classList.add('brain-section-move');
-  console.log('hide brain section');
+  console.log('move brain section');
 })
 
 export { activateSettings };

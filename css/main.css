@@ -93,9 +93,6 @@ nav {
   100% {fill: orange; transform: rotate(360deg);}
 }
 
-
-
-
 /* MAIN DISPLAY */
 
 #main-window {
@@ -116,7 +113,7 @@ nav {
 /* position in center large */
 /* then move upwards and shrink */
 /* to make room for expanding cards */
-#brain {
+.brain {
   width: 90vw;
   height: 50vw;
   display: flex;
@@ -126,6 +123,22 @@ nav {
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
   background-color: var(--neomorphic-mid);
   text-align: center;
+}
+
+.brain-section-hide {
+  animation: section-hide .6s linear forwards;
+}
+
+@keyframes section-hide {
+  80% {
+    background-color: var(--neomorphic-mid);
+    color: var(--neomorphic-mid-dark);
+  }
+  100% {
+    background-color: var(--neomorphic-mid-dark);
+    box-shadow: 0 0px 0px var(--neomorphic-light-shadow), 0 0px 0px var(--neomorphic-dark-shadow);
+    color: var(--neomorphic-mid-dark);
+  }
 }
 
 /* CARDS */
@@ -142,7 +155,7 @@ nav {
 }
 
 @media (orientation: landscape) {
-  #brain {
+  .brain {
     width: calc(150vh - 150px);
     height: calc(90vh - 150px);
   }

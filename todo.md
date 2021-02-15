@@ -74,6 +74,8 @@
 
 [ ] remove cards
 
+[ ] template
+
 [ ] display settings
 
 # State Machine

@@ -134,7 +134,9 @@
 
 [x] button hover
 
-[ ] button click
+[x] button click
+
+[ ] state transitions
 
 [ ] add animation: none class as no animation option
 

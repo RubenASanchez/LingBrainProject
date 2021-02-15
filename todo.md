@@ -18,6 +18,12 @@
 
 [x] js
 
+# CSS
+
+[x] reset styles
+
+[x] custom variables
+
 # App Shell
 
 [x] navigation container
@@ -26,9 +32,9 @@
 
 [x] navigation button styles
 
-[ ] state info styles
-
 [x] display state info
+
+[ ] state info styles
 
 # App Dynamic Content
 
@@ -40,28 +46,6 @@
 
 [ ] card sections
 
-# Template
-
-[x] name
-
-[x] html
-
-[ ] js
-
-# CSS
-
-[x] headings
-
-[x] custom variables
-
-# Modules
-
-[ ] components
-
-# Components
-
-[ ] fetchdata js
-
 # Settings
 
 [x] icon
@@ -72,11 +56,29 @@
 
 [x] remove main section
 
+[ ] content
+
 [ ] remove cards
 
 [ ] template
 
 [ ] display settings
+
+# Template
+
+[x] name
+
+[x] html
+
+[ ] js
+
+# Modules
+
+[ ] components
+
+# Components
+
+[ ] fetchdata js
 
 # State Machine
 

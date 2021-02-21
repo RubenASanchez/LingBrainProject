@@ -6,10 +6,9 @@ let activateSettings = settingsButton.addEventListener('click',function() {
   if (currentState.textContent === "settings") {
     settingsIcon.classList.add('settings-inactive');
     settingsIcon.classList.remove('settings-active');
-    //settingsIcon.addEventListener('animationend',() => {
-      //remove settingsIcon.classList.remove('settings-active');
-      //settingsIcon.classList.remove('settings-inactive');
-    //});
+    settingsIcon.addEventListener('animationend',() => {
+      settingsIcon.classList.remove('settings-inactive');
+    });
     currentState.textContent = "back to ready";
     console.log('settings inactive');
   }

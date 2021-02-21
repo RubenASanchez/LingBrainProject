@@ -50,7 +50,11 @@
 
 [x] icon
 
-[x] icon animation
+[x] icon animation ready
+
+[x] icon animation activate
+
+[x] icon animation deactivate
 
 [x] display state
 

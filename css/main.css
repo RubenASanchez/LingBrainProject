@@ -88,9 +88,18 @@ nav {
   animation: settings-activate 1s ease-in-out forwards;
 }
 
+.settings-inactive {
+  animation: settings-deactivate 1s ease-in-out forwards;
+}
+
 @keyframes settings-activate {
   0% {transform: rotate(0deg);}
   100% {fill: orange; transform: rotate(360deg);}
+}
+
+@keyframes settings-deactivate {
+  0% {fill: orange; transform: rotate(360deg);}
+  100% {transform: rotate(0deg);}
 }
 
 /* MAIN DISPLAY */
@@ -125,7 +134,7 @@ nav {
   text-align: center;
 }
 
-.brain-section-hide {
+.section-hide {
   animation: section-hide .6s linear forwards;
 }
 

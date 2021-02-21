@@ -3,7 +3,7 @@ let settingsButton = document.getElementById('settings-button')
 
 let activateSettings = settingsButton.addEventListener('click',function() {
   if (currentState.textContent === "settings") {
-    console.log('im already active');
+    console.log('settings already active');
   }
   else {
     console.log('clicked settings');
@@ -11,8 +11,13 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     currentState.textContent = "settings";
     console.log('settings active');
     document.getElementsByClassName('brain')[0].classList.add('brain-section-hide');
-    console.log('brain section hide');
+    //console.log('brain section hide');
+    moveBrain();
   }
 });
+
+function moveBrain() {
+  console.log('move brain');
+}
 
 export { activateSettings };

@@ -8,7 +8,7 @@ let activateSettings = settingsButton.addEventListener('click',function() {
   console.log('settings active');
   document.getElementsByClassName('brain')[0].classList.add('brain-section-hide');
   console.log('brain section hide');
-  if (currentState === 'settings-active') {
+  if (currentState.textContent === "settings") {
     console.log('im already active');
   };
 });

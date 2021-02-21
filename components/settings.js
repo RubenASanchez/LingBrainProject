@@ -4,10 +4,9 @@ let settingsIcon = document.getElementsByClassName('settings-icon')[0];
 
 let activateSettings = settingsButton.addEventListener('click',function() {
   if (currentState.textContent === "settings") {
-    settingsIcon.playbackRate = -1;
-    settingsIcon.play;
+    settingsIcon.classList.add('settings-inactive');
     //settingsIcon.classList.remove('settings-active');
-    console.log('settings already active');
+    console.log('settings inactivating');
   }
   else {
     //console.log('clicked settings');

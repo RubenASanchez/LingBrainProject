@@ -88,6 +88,10 @@ nav {
   animation: settings-activate 1s ease-in-out forwards;
 }
 
+.settings-inactive {
+  animation: settings-activate 1s ease-in-out reverse;
+}
+
 @keyframes settings-activate {
   0% {transform: rotate(0deg);}
   100% {fill: orange; transform: rotate(360deg);}

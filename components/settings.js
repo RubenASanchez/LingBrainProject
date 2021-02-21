@@ -9,7 +9,7 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     //settingsIcon.addEventListener('animationend',() => {
       //remove settingsIcon.classList.remove('settings-active');
       //settingsIcon.classList.remove('settings-inactive');
-    });
+    //});
     currentState.textContent = "back to ready";
     console.log('settings inactive');
   }

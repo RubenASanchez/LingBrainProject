@@ -10,13 +10,16 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     document.getElementsByClassName('settings-icon')[0].classList.add('settings-active');
     currentState.textContent = "settings";
     console.log('settings active');
-    hideBrain();
+    hideAllElements();
   }
 });
 
-function hideBrain() {
-  document.getElementsByClassName('brain')[0].classList.add('brain-section-hide');
-  console.log('hide brain');
+// change function to add class hide-element to all elements that are not settings
+// so far it only targets the given element
+
+function hideAllElements() {
+  document.getElementsByClassName('brain')[0].classList.add('section-hide');
+  console.log('hide all non settings elements');
 }
 
 export { activateSettings };

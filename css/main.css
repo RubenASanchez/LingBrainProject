@@ -125,7 +125,7 @@ nav {
   text-align: center;
 }
 
-.brain-section-hide {
+.section-hide {
   animation: section-hide .6s linear forwards;
 }
 

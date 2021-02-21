@@ -5,7 +5,7 @@ let settingsIcon = document.getElementsByClassName('settings-icon')[0];
 let activateSettings = settingsButton.addEventListener('click',function() {
   if (currentState.textContent === "settings") {
     settingsIcon.classList.add('settings-inactive');
-    settingsIcon.classList.remove('settings-active');
+    //settingsIcon.classList.remove('settings-active');
     console.log('settings inactive');
   }
   else {

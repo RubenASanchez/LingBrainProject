@@ -3,6 +3,9 @@ let settingsButton = document.getElementById('settings-button');
 let settingsIcon = document.getElementsByClassName('settings-icon')[0];
 let previousState = currentState;
 
+console.log("current state is ", currentState);
+console.log("previous state is ", previousState);
+
 let activateSettings = settingsButton.addEventListener('click',function() {
   if (currentState.textContent === "settings") {
     settingsIcon.classList.add('settings-inactive');

@@ -3,9 +3,6 @@ let settingsButton = document.getElementById('settings-button');
 let settingsIcon = document.getElementsByClassName('settings-icon')[0];
 let previousState = currentState;
 
-console.log("current state is ", currentState);
-console.log("previous state is ", previousState);
-
 let activateSettings = settingsButton.addEventListener('click',function() {
   if (currentState.textContent === "settings") {
     settingsIcon.classList.add('settings-inactive');
@@ -33,6 +30,7 @@ function hideAllElements() {
   console.log('hide all non settings elements');
 }
 
-console.log(`previous state is ${previousState}`);
+console.log("current state is ", currentState.textContent);
+console.log("previous state is ", previousState.textContent);
 
 export { activateSettings };

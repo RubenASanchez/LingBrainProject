@@ -58,7 +58,7 @@
 
 [x] display state
 
-[x] remove main section
+[ ] remove main section
 
 [ ] content
 

@@ -12,8 +12,6 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     });
     currentState.textContent = previousStateText;
     console.log('settings inactive');
-    console.log('current state', currentState.textContent);
-    console.log('previous state displayed ', previousStateText);
   }
   else {
     //console.log('clicked settings');
@@ -29,10 +27,7 @@ let activateSettings = settingsButton.addEventListener('click',function() {
 
 function hideAllElements() {
   document.getElementsByClassName('brain')[0].classList.add('section-hide');
-  console.log('hide all non settings elements');
+  //console.log('hide all non settings elements');
 }
-
-console.log("current state is ", currentState.textContent);
-console.log("previous state is ", previousStateText);
 
 export { activateSettings };

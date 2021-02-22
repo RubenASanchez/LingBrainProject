@@ -1,7 +1,7 @@
 let currentState = document.getElementById('current-state');
 let settingsButton = document.getElementById('settings-button');
 let settingsIcon = document.getElementsByClassName('settings-icon')[0];
-let previousState = currentState;
+let previousStateText = currentState.textContent;
 
 let activateSettings = settingsButton.addEventListener('click',function() {
   if (currentState.textContent === "settings") {
@@ -10,8 +10,10 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     settingsIcon.addEventListener('animationend',() => {
       settingsIcon.classList.remove('settings-inactive');
     });
-    currentState.textContent = "back to ready";
+    currentState.textContent = previousStateText;
     console.log('settings inactive');
+    console.log('current state', currentState.textContent);
+    console.log('previous state displayed ', previousStateText);
   }
   else {
     //console.log('clicked settings');
@@ -31,6 +33,6 @@ function hideAllElements() {
 }
 
 console.log("current state is ", currentState.textContent);
-console.log("previous state is ", previousState.textContent);
+console.log("previous state is ", previousStateText);
 
 export { activateSettings };

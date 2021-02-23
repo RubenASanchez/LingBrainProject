@@ -104,7 +104,7 @@ nav {
 
 .settings-section {
   width: 90vw;
-  height: 50vw;
+  height: calc(90% - 150px);;
   display: flex;
   flex-direction: column;
   justify-content: start;

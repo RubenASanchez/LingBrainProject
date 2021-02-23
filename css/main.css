@@ -106,7 +106,8 @@ nav {
   width: 90vw;
   height: 50vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
   border-radius: 5vw;
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);

@@ -148,6 +148,7 @@ nav {
 
 .section-hide {
   animation: section-hide .6s linear forwards;
+  display: none; /* added for testing purposes */
 }
 
 @keyframes section-hide {

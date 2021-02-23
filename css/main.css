@@ -174,7 +174,7 @@ nav {
 #region-info-cards {
   /* initial height 0 to make room for brain*/
   background-color: rgba(200,100,100,.5);
-  /*display: none;*/
+  display: none;
 }
 
 .card {

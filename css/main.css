@@ -57,6 +57,21 @@ nav {
   to {opacity: 1;}
 }
 
+/* MAIN DISPLAY */
+
+#main-window {
+  width: 98vw;
+  height: calc(100% - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 5vw;
+  box-shadow: inset 0 5px 5px var(--neomorphic-dark-shadow), inset 0 -5px 5px var(--neomorphic-light-shadow);
+  background-color: var(--neomorphic-mid-dark);
+}
+
 /* MAIN BUTTONS */
 
 .app-button {
@@ -72,7 +87,7 @@ nav {
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
 }
 
-/* SETTINGS */
+/* SETTINGS BUTTON */
 
 .settings-icon {
   fill: var(--icon-colour);
@@ -102,9 +117,11 @@ nav {
   100% {transform: rotate(0deg);}
 }
 
+/* SETTINGS SECTION */
+
 .settings-section {
-  width: 90vw;
-  height: 50vw;
+  width: 80%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -116,19 +133,17 @@ nav {
   transition: all 1s;  /* not sure if needed */
 }
 
-/* MAIN DISPLAY */
-
-#main-window {
-  width: 98vw;
-  height: calc(100% - 150px);
+.settings-section section {
+  width: 80%;
+  /*background-color: gray;*/
   display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#about {
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  border-radius: 5vw;
-  box-shadow: inset 0 5px 5px var(--neomorphic-dark-shadow), inset 0 -5px 5px var(--neomorphic-light-shadow);
-  background-color: var(--neomorphic-mid-dark);
+  align-items: flex-start;
 }
 
 /* BRAIN */
@@ -202,5 +217,8 @@ nav {
   .brain {
     width: calc(130vh - 150px);
     height: calc(90vh - 150px);
+  }
+  .settings-section {
+    width: 50%;
   }
 }

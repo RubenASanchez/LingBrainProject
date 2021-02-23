@@ -46,6 +46,8 @@
 
 [ ] card sections
 
+[ ] settings section
+
 # Settings
 
 [x] icon
@@ -58,7 +60,7 @@
 
 [x] display state
 
-[ ] content
+[x] content
 
 [ ] style
 

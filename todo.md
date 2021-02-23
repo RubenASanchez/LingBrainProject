@@ -58,9 +58,9 @@
 
 [x] display state
 
-[ ] remove main section
-
 [ ] content
+
+[ ] style
 
 [ ] remove cards
 

@@ -102,6 +102,18 @@ nav {
   100% {transform: rotate(0deg);}
 }
 
+.settings-section {
+  width: 90vw;
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5vw;
+  box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
+  background-color: var(--neomorphic-mid);
+  text-align: center;
+}
+
 /* MAIN DISPLAY */
 
 #main-window {

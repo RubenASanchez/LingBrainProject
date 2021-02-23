@@ -11,6 +11,7 @@ let activateSettings = settingsButton.addEventListener('click',function() {
       settingsIcon.classList.remove('settings-inactive');
     });
     currentState.textContent = previousStateText;
+    showPreviousElement();
     console.log('settings inactive');
   }
   else {
@@ -24,10 +25,15 @@ let activateSettings = settingsButton.addEventListener('click',function() {
 
 // change function to add class hide-element to all elements that are not settings
 // so far it only targets the given element
+// may want to make one function to handle both hide and show elements
 
 function hideAllElements() {
   document.getElementsByClassName('brain')[0].classList.add('section-hide');
   //console.log('hide all non settings elements');
+}
+
+function showPreviousElement() {
+  document.getElementsByClassName('brain')[0].classList.remove('section-hide');
 }
 
 export { activateSettings };

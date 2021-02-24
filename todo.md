@@ -62,7 +62,9 @@
 
 [x] content
 
-[ ] style
+[x] toggle style
+
+[ ] about style
 
 [ ] remove cards
 

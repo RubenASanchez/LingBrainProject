@@ -121,7 +121,8 @@ nav {
 
 .settings-section {
   width: 80%;
-  height: 80%;
+  height: 75%;
+  padding: 5% 0 0;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -129,16 +130,59 @@ nav {
   border-radius: 5vw;
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
   background-color: var(--neomorphic-mid);
-  text-align: center;
   transition: all 1s;  /* not sure if needed */
 }
 
-.settings-section section {
+#animations , #theme {
   width: 80%;
-  /*background-color: gray;*/
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  align-items: center;
+}
+
+#theme {
+  margin: 2vh 0 0;
+}
+
+.toggle-section {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-section p {
+  width: 30px;
+}
+
+.toggle-section p:nth-of-type(1) {
+  text-align: right;
+}
+
+.toggle {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 5px 0;
+  border-radius: 5vw;
+  box-shadow: inset 0 5px 5px var(--neomorphic-dark-shadow), inset 0 -5px 5px var(--neomorphic-light-shadow);
+  background-color: var(--neomorphic-mid-dark);
+}
+
+.toggle-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-colour);
+  background-color: var(--neomorphic-mid);
+  box-shadow: 0 -2px 2px var(--neomorphic-light-shadow), 0 2px 2px var(--neomorphic-dark-shadow);
+  border: 2px solid orange;
 }
 
 #about {
@@ -220,5 +264,7 @@ nav {
   }
   .settings-section {
     width: 50%;
+    height: 78%;
+    padding: 2% 0 0;
   }
 }

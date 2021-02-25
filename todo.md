@@ -64,6 +64,8 @@
 
 [x] toggle style
 
+[ ] toggle active / inactive
+
 [ ] about style
 
 [ ] remove cards

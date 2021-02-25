@@ -10,6 +10,7 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     settingsIcon.classList.remove('settings-active');
     settingsIcon.addEventListener('animationend',() => {
       settingsIcon.classList.remove('settings-inactive');
+      settingsSection.classList.remove('section-hide');
     });
     currentState.textContent = previousStateText;
     showPreviousElement();

@@ -60,11 +60,15 @@
 
 [x] display state
 
+[x] display settings section
+
+[x] hide settings section
+
 [x] content
 
 [x] toggle style
 
-[ ] toggle active / inactive
+[x] toggle active / inactive styles
 
 [ ] about style
 
@@ -73,6 +77,14 @@
 [ ] template
 
 [ ] display settings
+
+# Toggle Animations
+
+[ ] logic
+
+# Toggle Theme
+
+[ ] logic
 
 # Template
 

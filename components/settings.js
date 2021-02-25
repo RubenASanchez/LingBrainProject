@@ -23,6 +23,22 @@ let activateSettings = settingsButton.addEventListener('click',function() {
   }
 });
 
+// toggle functions
+
+let toggleAnimation = document.getElementById('toggle-animation');
+let toggleButtonAnimation = document.getElementById('toggle-button-animation');
+let toggleTheme = document.getElementById('toggle-theme');
+let toggleButtonTheme = document.getElementById('toggle-button-theme')
+
+let activateAnimation = toggleAnimation.addEventListener('click',function() {
+  if (toggleButtonAnimation.classList.contains('toggle-active')) {
+    console.log('toggle already active');
+  }
+  else {
+    toggleButtonAnimation.classList.add('toggle-active');
+  }
+});
+
 // change function to add class hide-element to all elements that are not settings
 // so far it only targets the given element
 // may want to make one function to handle both hide and show elements

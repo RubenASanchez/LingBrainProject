@@ -33,6 +33,7 @@ let toggleButtonTheme = document.getElementById('toggle-button-theme')
 let activateAnimation = toggleAnimation.addEventListener('click',function() {
   if (toggleButtonAnimation.classList.contains('toggle-active')) {
     console.log('toggle already active');
+    toggleButtonAnimation.classList.remove('toggle-active');
   }
   else {
     toggleButtonAnimation.classList.add('toggle-active');

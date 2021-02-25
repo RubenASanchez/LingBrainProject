@@ -6,6 +6,7 @@ let previousStateText = currentState.textContent;
 
 let activateSettings = settingsButton.addEventListener('click',function() {
   if (currentState.textContent === "settings") {
+    settingsSection.classList.add('section-hide');
     settingsIcon.classList.add('settings-inactive');
     settingsIcon.classList.remove('settings-active');
     settingsIcon.addEventListener('animationend',() => {

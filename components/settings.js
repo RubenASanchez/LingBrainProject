@@ -1,6 +1,7 @@
 let currentState = document.getElementById('current-state');
 let settingsButton = document.getElementById('settings-button');
 let settingsIcon = document.getElementsByClassName('settings-icon')[0];
+let settingsSection = document.getElementsByClassName('settings-section')[0];
 let previousStateText = currentState.textContent;
 
 let activateSettings = settingsButton.addEventListener('click',function() {
@@ -61,6 +62,7 @@ function hideAllElements() {
 
 function showPreviousElement() {
   document.getElementsByClassName('brain')[0].classList.remove('section-hide');
+  settingsSection.classList.add('section-hide');
 }
 
 export { activateSettings };

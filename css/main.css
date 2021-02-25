@@ -20,6 +20,7 @@ a {
   --neomorphic-dark-shadow: rgba(180,180,180,.5);
   --icon-colour: #505050;
   --text-colour: #404040;
+  --active-colour: orange;
 }
 
 /* SHELL */
@@ -109,11 +110,11 @@ nav {
 
 @keyframes settings-activate {
   0% {transform: rotate(0deg);}
-  100% {fill: orange; transform: rotate(360deg);}
+  100% {fill: var(--active-colour); transform: rotate(360deg);}
 }
 
 @keyframes settings-deactivate {
-  0% {fill: orange; transform: rotate(360deg);}
+  0% {fill: var(--active-colour); transform: rotate(360deg);}
   100% {transform: rotate(0deg);}
 }
 
@@ -134,7 +135,7 @@ nav {
 }
 
 #animations , #theme {
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -150,7 +151,7 @@ nav {
 }
 
 .toggle-section p {
-  width: 30px;
+  width: 20px;
 }
 
 .toggle-section p:nth-of-type(1) {
@@ -175,14 +176,16 @@ nav {
   height: 25px;
   border-radius: 50%;
   margin: 0 5px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: var(--text-colour);
   background-color: var(--neomorphic-mid);
-  box-shadow: 0 -2px 2px var(--neomorphic-light-shadow), 0 2px 2px var(--neomorphic-dark-shadow);
-  border: 2px solid orange;
+  background-color: var(--icon-colour);
+  box-shadow: 0 -1px 2px var(--neomorphic-light-shadow), 0 1px 2px var(--neomorphic-dark-shadow);
+}
+
+.toggle-active {
+  justify-self: start;
+  margin: 0 auto 0 5px;
+  background-color: var(--active-colour);
+  transition: all 1s;
 }
 
 #about {
@@ -206,6 +209,7 @@ nav {
   background-color: var(--neomorphic-mid);
   text-align: center;
   transition: all 1s;  /* not sure if needed */
+  /*display: none;*/
 }
 
 .section-hide {

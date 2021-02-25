@@ -70,6 +70,8 @@
 
 [x] toggle active / inactive styles
 
+[ ] toggle display content after delay
+
 [ ] about style
 
 [ ] remove cards

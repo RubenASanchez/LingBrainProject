@@ -1,6 +1,7 @@
 let currentState = document.getElementById('current-state');
 let settingsButton = document.getElementById('settings-button');
 let settingsIcon = document.getElementsByClassName('settings-icon')[0];
+let settingsSection = document.getElementsByClassName('settings-section')[0];
 let previousStateText = currentState.textContent;
 
 let activateSettings = settingsButton.addEventListener('click',function() {
@@ -20,6 +21,34 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     currentState.textContent = "settings";
     console.log('settings active');
     hideAllElements();
+    settingsSection.classList.remove('section-hide');
+  }
+});
+
+// toggle functions
+
+let toggleAnimation = document.getElementById('toggle-animation');
+let toggleButtonAnimation = document.getElementById('toggle-button-animation');
+let toggleTheme = document.getElementById('toggle-theme');
+let toggleButtonTheme = document.getElementById('toggle-button-theme')
+
+let activateAnimation = toggleAnimation.addEventListener('click',function() {
+  if (toggleButtonAnimation.classList.contains('toggle-active')) {
+    console.log('toggle already active');
+    toggleButtonAnimation.classList.remove('toggle-active');
+  }
+  else {
+    toggleButtonAnimation.classList.add('toggle-active');
+  }
+});
+
+let activateTheme = toggleTheme.addEventListener('click',function() {
+  if (toggleButtonTheme.classList.contains('toggle-active')) {
+    console.log('toggle already active');
+    toggleButtonTheme.classList.remove('toggle-active');
+  }
+  else {
+    toggleButtonTheme.classList.add('toggle-active');
   }
 });
 
@@ -34,6 +63,7 @@ function hideAllElements() {
 
 function showPreviousElement() {
   document.getElementsByClassName('brain')[0].classList.remove('section-hide');
+  settingsSection.classList.add('section-hide');
 }
 
 export { activateSettings };

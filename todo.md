@@ -72,7 +72,9 @@
 
 [ ] toggle display content after delay
 
-[ ] about style
+[x] about style
+
+[ ] about link
 
 [ ] remove cards
 

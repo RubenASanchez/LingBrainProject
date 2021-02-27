@@ -22,7 +22,7 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     hideAllElements();
     settingsSection.classList.remove('section-hide');
     let updatedState = currentState.textContent; // this too
-    return  updatedState;// may need to remove after test
+    return updatedState;// may need to remove after test
   }
 });
 

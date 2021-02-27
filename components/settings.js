@@ -53,7 +53,7 @@ let activateTheme = toggleTheme.addEventListener('click',function() {
 
 // state management
 
-stateManagement(currentState) {
+function stateManagement(currentState) {
   if (currentState.textContent === "settings") {
     console.log(`settings active ${currentState}`);
   }
@@ -62,7 +62,7 @@ stateManagement(currentState) {
   }
 }
 
-
+stateManagement(currentState);
 
 
 

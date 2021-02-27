@@ -54,6 +54,7 @@ let activateTheme = toggleTheme.addEventListener('click',function() {
 });
 
 // state management
+var updatedState;
 console.log("returned ",updatedState);
 
 function stateManagement(updatedState) {

@@ -44,9 +44,9 @@
 
 [x] brain section
 
-[ ] card sections
+[x] settings section
 
-[ ] settings section
+[ ] card sections
 
 # Settings
 

@@ -51,6 +51,17 @@ let activateTheme = toggleTheme.addEventListener('click',function() {
   }
 });
 
+// state management
+
+if (currentState.textContent === "settings") {
+  console.log(`settings active ${currentState}`);
+}
+else {
+  console.log(`settings not active ${currentState}`);
+}
+
+
+
 // change function to add class hide-element to all elements that are not settings
 // so far it only targets the given element
 // may want to make one function to handle both hide and show elements

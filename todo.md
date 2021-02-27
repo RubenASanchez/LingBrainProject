@@ -72,6 +72,8 @@
 
 [ ] toggle display content after delay
 
+[ ] about content
+
 [x] about style
 
 [ ] about link

@@ -54,6 +54,7 @@ let activateTheme = toggleTheme.addEventListener('click',function() {
 // state management
 
 if (currentState.textContent === "settings") {
+  console.log(currentState);
   console.log(`settings active ${currentState}`);
 }
 else {

@@ -54,6 +54,7 @@ let activateTheme = toggleTheme.addEventListener('click',function() {
 });
 
 // state management
+let updatedState;
 
 function stateManagement(updatedState) {
   if (updatedState === "settings") {

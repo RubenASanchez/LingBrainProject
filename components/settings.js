@@ -54,7 +54,7 @@ let activateTheme = toggleTheme.addEventListener('click',function() {
 });
 
 // state management
-let updatedState;
+console.log("returned ",updatedState);
 
 function stateManagement(updatedState) {
   if (updatedState === "settings") {
@@ -63,7 +63,7 @@ function stateManagement(updatedState) {
   else {
     console.log(`settings not active ${updatedState}`);
   }
-}
+};
 
 stateManagement(updatedState);
 

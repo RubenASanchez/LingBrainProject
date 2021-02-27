@@ -13,7 +13,7 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     });
     currentState.textContent = previousStateText;
     showPreviousElement();
-    console.log('settings inactive');
+    //console.log('settings inactive');
   }
   else {
     //console.log('clicked settings');
@@ -33,7 +33,7 @@ let toggleButtonTheme = document.getElementById('toggle-button-theme')
 
 let activateAnimation = toggleAnimation.addEventListener('click',function() {
   if (toggleButtonAnimation.classList.contains('toggle-active')) {
-    console.log('toggle already active');
+    // console.log('toggle already active');
     toggleButtonAnimation.classList.remove('toggle-active');
   }
   else {
@@ -43,7 +43,7 @@ let activateAnimation = toggleAnimation.addEventListener('click',function() {
 
 let activateTheme = toggleTheme.addEventListener('click',function() {
   if (toggleButtonTheme.classList.contains('toggle-active')) {
-    console.log('toggle already active');
+    //console.log('toggle already active');
     toggleButtonTheme.classList.remove('toggle-active');
   }
   else {

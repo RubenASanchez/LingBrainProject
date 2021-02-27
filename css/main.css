@@ -216,8 +216,10 @@ hr {
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
   background-color: var(--neomorphic-mid);
   text-align: center;
-  transition: all 1s;  /* not sure if needed */
   /*display: none;*/
+  height: 0.5vh;
+  overflow: hidden;
+  transition: all 1s;  /* not sure if needed */
 }
 
 .section-hide {

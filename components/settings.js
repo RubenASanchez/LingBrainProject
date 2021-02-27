@@ -21,7 +21,8 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     currentState.textContent = "settings";
     hideAllElements();
     settingsSection.classList.remove('section-hide');
-    return currentState.textContent; // may need to remove after test
+    let updatedState = currentState.textContent; // this too
+    return  updatedState;// may need to remove after test
   }
 });
 
@@ -54,16 +55,16 @@ let activateTheme = toggleTheme.addEventListener('click',function() {
 
 // state management
 
-function stateManagement(currentState) {
-  if (currentState.textContent === "settings") {
-    console.log(`settings active ${currentState.textContent}`);
+function stateManagement(updatedState) {
+  if (updatedState === "settings") {
+    console.log(`settings active ${updatedState}`);
   }
   else {
-    console.log(`settings not active ${currentState.textContent}`);
+    console.log(`settings not active ${updatedState}`);
   }
 }
 
-stateManagement(currentState);
+stateManagement(updatedState);
 
 
 

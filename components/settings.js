@@ -20,15 +20,18 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     //console.log('clicked settings');
     settingsIcon.classList.add('settings-active');
     currentState.textContent = "settings";
-    updatedState = "something here";
-    return updatedState;
+    updatedText = "something here";
+    updateStateInfo(updatedText);
     hideAllElements();
     settingsSection.classList.remove('section-hide');
   }
 });
 
+// UPDATE STATE INFO
 
-console.log(`the updated state is currently ${updatedState}`);
+function updateStateInfo(updatedtext) {
+  console.log(`the updated state is currently ${updatedtext}`);
+}
 
 // toggle functions
 

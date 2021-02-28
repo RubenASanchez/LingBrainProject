@@ -3,7 +3,7 @@ let settingsButton = document.getElementById('settings-button');
 let settingsIcon = document.getElementsByClassName('settings-icon')[0];
 let settingsSection = document.getElementsByClassName('settings-section')[0];
 let previousStateText = currentState.textContent;
-var updatedText = "default state";
+var updatedStateText = "default ready state";
 
 let activateSettings = settingsButton.addEventListener('click',function() {
   if (currentState.textContent === "settings") {
@@ -15,13 +15,14 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     currentState.textContent = previousStateText;
     showPreviousElement();
     //console.log('settings inactive');
+    updateStateInfo(currentState.textContent);
   }
   else {
     //console.log('clicked settings');
     settingsIcon.classList.add('settings-active');
     currentState.textContent = "settings";
-    updatedText = "something here";
-    updateStateInfo(updatedText);
+    updatedStateText = currentState.textContent;
+    updateStateInfo(updatedStateText);
     hideAllElements();
     settingsSection.classList.remove('section-hide');
   }
@@ -29,8 +30,8 @@ let activateSettings = settingsButton.addEventListener('click',function() {
 
 // UPDATE STATE INFO
 
-function updateStateInfo(updatedtext) {
-  console.log(`the updated state is currently ${updatedtext}`);
+function updateStateInfo(stateText) {
+  console.log(`the updated state is currently ${stateText}`);
 }
 
 // toggle functions

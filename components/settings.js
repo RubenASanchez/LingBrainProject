@@ -3,7 +3,7 @@ let settingsButton = document.getElementById('settings-button');
 let settingsIcon = document.getElementsByClassName('settings-icon')[0];
 let settingsSection = document.getElementsByClassName('settings-section')[0];
 let previousStateText = currentState.textContent;
-var updatedState = "default state";
+var updatedText = "default state";
 
 let activateSettings = settingsButton.addEventListener('click',function() {
   if (currentState.textContent === "settings") {

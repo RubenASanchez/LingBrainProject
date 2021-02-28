@@ -3,6 +3,7 @@ let settingsButton = document.getElementById('settings-button');
 let settingsIcon = document.getElementsByClassName('settings-icon')[0];
 let settingsSection = document.getElementsByClassName('settings-section')[0];
 let previousStateText = currentState.textContent;
+var updatedStateText = "default ready state";
 
 let activateSettings = settingsButton.addEventListener('click',function() {
   if (currentState.textContent === "settings") {
@@ -14,15 +15,23 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     currentState.textContent = previousStateText;
     showPreviousElement();
     //console.log('settings inactive');
+    updateStateInfo(currentState.textContent);
   }
   else {
     //console.log('clicked settings');
     settingsIcon.classList.add('settings-active');
     currentState.textContent = "settings";
+    updateStateInfo(currentState.textContent);
     hideAllElements();
     settingsSection.classList.remove('section-hide');
   }
 });
+
+// UPDATE STATE INFO
+
+function updateStateInfo(stateText) {
+  console.log(`the updated state is currently ${stateText}`);
+}
 
 // toggle functions
 
@@ -64,5 +73,7 @@ function showPreviousElement() {
   document.getElementsByClassName('brain')[0].classList.remove('section-hide');
   settingsSection.classList.add('section-hide');
 }
+
+
 
 export { activateSettings };

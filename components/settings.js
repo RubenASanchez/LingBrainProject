@@ -19,7 +19,7 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     //console.log('clicked settings');
     settingsIcon.classList.add('settings-active');
     currentState.textContent = "settings";
-    updatedState = currentState.textContent;
+    updatedState = "something here";
     return updatedState;
     hideAllElements();
     settingsSection.classList.remove('section-hide');

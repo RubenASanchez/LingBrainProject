@@ -26,7 +26,7 @@ let activateSettings = settingsButton.addEventListener('click',function() {
   }
 });
 
-console.log(`updated state is ${updatedState}`)
+console.log(updatedState);
 
 // toggle functions
 

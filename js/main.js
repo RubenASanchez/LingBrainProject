@@ -59,4 +59,3 @@ function populateHeader(obj) {
   header.appendChild(myPara);
 }
 */
-console.log(updatedState);

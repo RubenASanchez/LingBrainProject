@@ -69,6 +69,6 @@ function showPreviousElement() {
   settingsSection.classList.add('section-hide');
 }
 
-console.log(updatedState);
+
 
 export { activateSettings };

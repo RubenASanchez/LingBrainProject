@@ -70,17 +70,11 @@
 
 [x] toggle active / inactive styles
 
-[ ] toggle display content after delay
+[x] about style
 
 [ ] about content
 
-[x] about style
-
 [ ] about link
-
-[ ] remove cards
-
-[ ] template
 
 # Toggle Animations
 
@@ -113,6 +107,8 @@
 [ ] library js
 
 [ ] logic
+
+[x] components emit state change
 
 # Database
 

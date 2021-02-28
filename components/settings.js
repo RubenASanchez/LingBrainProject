@@ -26,7 +26,7 @@ let activateSettings = settingsButton.addEventListener('click',function() {
   }
 });
 
-console.log(updatedState);
+
 
 // toggle functions
 
@@ -68,5 +68,7 @@ function showPreviousElement() {
   document.getElementsByClassName('brain')[0].classList.remove('section-hide');
   settingsSection.classList.add('section-hide');
 }
+
+console.log(updatedState);
 
 export { activateSettings };

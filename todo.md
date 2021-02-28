@@ -82,8 +82,6 @@
 
 [ ] template
 
-[ ] display settings
-
 # Toggle Animations
 
 [ ] logic

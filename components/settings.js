@@ -1,9 +1,10 @@
-let currentState = document.getElementById('current-state');
 let settingsButton = document.getElementById('settings-button');
 let settingsIcon = document.getElementsByClassName('settings-icon')[0];
 let settingsSection = document.getElementsByClassName('settings-section')[0];
-let previousStateText = currentState.textContent;
+
 var updatedStateText = "default ready state";
+
+import { currentState , previousStateText , updateStateInfo } from '../js/statemachine.js';
 
 let activateSettings = settingsButton.addEventListener('click',function() {
   if (currentState.textContent === "settings") {
@@ -13,25 +14,25 @@ let activateSettings = settingsButton.addEventListener('click',function() {
       settingsIcon.classList.remove('settings-inactive');
     });
     currentState.textContent = previousStateText;
-    showPreviousElement();
-    //console.log('settings inactive');
     updateStateInfo(currentState.textContent);
+    showPreviousElement();
   }
   else {
     //console.log('clicked settings');
     settingsIcon.classList.add('settings-active');
     currentState.textContent = "settings";
     updateStateInfo(currentState.textContent);
-    hideAllElements();
     settingsSection.classList.remove('section-hide');
+    hideAllElements();
   }
 });
 
 // UPDATE STATE INFO
 
-function updateStateInfo(stateText) {
-  console.log(`the updated state is currently ${stateText}`);
-}
+// move to statmachine.js //
+// function updateStateInfo(stateText) {
+//   console.log(`the updated state is currently ${stateText}`);
+// }
 
 // toggle functions
 
@@ -60,8 +61,6 @@ let activateTheme = toggleTheme.addEventListener('click',function() {
   }
 });
 
-// change function to add class hide-element to all elements that are not settings
-// so far it only targets the given element
 // may want to make one function to handle both hide and show elements
 
 function hideAllElements() {

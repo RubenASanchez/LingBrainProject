@@ -1,11 +1,10 @@
-let currentState = document.getElementById('current-state');
 let settingsButton = document.getElementById('settings-button');
 let settingsIcon = document.getElementsByClassName('settings-icon')[0];
 let settingsSection = document.getElementsByClassName('settings-section')[0];
-let previousStateText = currentState.textContent;
+
 var updatedStateText = "default ready state";
 
-import { updateStateInfo } from '../js/statemachine.js';
+import { currentState , previousStateText , updateStateInfo } from '../js/statemachine.js';
 
 let activateSettings = settingsButton.addEventListener('click',function() {
   if (currentState.textContent === "settings") {

@@ -136,15 +136,21 @@ nav {
   transition: all 1s;  /* not sure if needed */
 }
 
-#animations , #theme {
+#animations , #theme , #about , #contact {
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#theme , #about {
+#theme , #about , #contact {
   margin: 2vh 0 0;
+}
+
+hr {
+  width: 90%;
+  margin: 4vh 0 2vh;
+  color: var(--neomorphic-light-shadow);
 }
 
 .toggle-section {
@@ -191,21 +197,8 @@ nav {
   transition: background-color .5s;
 }
 
-hr {
-  width: 90%;
-  margin: 4vh 0 2vh;
-  color: var(--neomorphic-light-shadow);
-}
-
-#about {
-  width: 90%;
-}
-
 /* BRAIN */
 
-/* position in center large */
-/* then move upwards and shrink */
-/* to make room for expanding cards */
 .brain {
   width: 90vw;
   height: 50vw;
@@ -217,14 +210,14 @@ hr {
   background-color: var(--neomorphic-mid);
   text-align: center;
   /*display: none;*/
-  height: 0.5vh;
+  /*height: 0.5vh;*/
   overflow: hidden;
   transition: all 1s;  /* not sure if needed */
 }
 
 .section-hide {
-  animation: section-hide .6s linear forwards;
-  display: none; /* added for testing purposes */
+  animation: section-hide .6s linear forwards; /* need to test this */
+  display: none;
 }
 
 @keyframes section-hide {

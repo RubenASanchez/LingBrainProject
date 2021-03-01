@@ -136,21 +136,22 @@ nav {
   transition: all 1s;  /* not sure if needed */
 }
 
-#animations , #theme, #about, #contact {
+#animations , #theme , #about , #contact {
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#theme , #about {
+#theme , #about , #contact {
   margin: 2vh 0 0;
 }
 
-#about {
+hr {
   width: 90%;
+  margin: 4vh 0 2vh;
+  color: var(--neomorphic-light-shadow);
 }
-
 
 
 .toggle-section {
@@ -195,12 +196,6 @@ nav {
   margin: 0 auto 0 5px;
   background-color: var(--active-colour);
   transition: background-color .5s;
-}
-
-hr {
-  width: 90%;
-  margin: 4vh 0 2vh;
-  color: var(--neomorphic-light-shadow);
 }
 
 /* BRAIN */

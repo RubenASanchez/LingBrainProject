@@ -119,6 +119,14 @@ nav {
   100% {transform: rotate(0deg);}
 }
 
+/* FILTER BUTTON */
+
+#app-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* SETTINGS SECTION */
 
 .settings-section {

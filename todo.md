@@ -80,6 +80,10 @@
 
 [x] styles
 
+[ ] svg icons
+
+[ ] sub buttons
+
 # Toggle Animations
 
 [ ] logic

@@ -136,7 +136,7 @@ nav {
   transition: all 1s;  /* not sure if needed */
 }
 
-#animations , #theme {
+#animations , #theme, #about, #contact {
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -146,6 +146,12 @@ nav {
 #theme , #about {
   margin: 2vh 0 0;
 }
+
+#about {
+  width: 90%;
+}
+
+
 
 .toggle-section {
   display: flex;
@@ -195,10 +201,6 @@ hr {
   width: 90%;
   margin: 4vh 0 2vh;
   color: var(--neomorphic-light-shadow);
-}
-
-#about {
-  width: 90%;
 }
 
 /* BRAIN */

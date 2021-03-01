@@ -28,9 +28,10 @@ let activateSettings = settingsButton.addEventListener('click',function() {
 
 // UPDATE STATE INFO
 
-function updateStateInfo(stateText) {
-  console.log(`the updated state is currently ${stateText}`);
-}
+// move to statmachine.js //
+// function updateStateInfo(stateText) {
+//   console.log(`the updated state is currently ${stateText}`);
+// }
 
 // toggle functions
 

@@ -134,6 +134,7 @@ nav {
 .filter-active {
   width: 98vw;
   border-radius: 5vw;
+  box-shadow: inset 0 5px 5px var(--neomorphic-dark-shadow), inset 0 -5px 5px var(--neomorphic-light-shadow);
 }
 
 /* SETTINGS SECTION */

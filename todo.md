@@ -72,7 +72,7 @@
 
 [x] about style
 
-[ ] about content
+[x] about content
 
 [ ] about link
 

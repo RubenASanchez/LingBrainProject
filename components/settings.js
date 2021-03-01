@@ -18,7 +18,6 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     showPreviousElement();
   }
   else {
-    //console.log('clicked settings');
     settingsIcon.classList.add('settings-active');
     currentState.textContent = "settings";
     updateStateInfo(currentState.textContent);
@@ -26,13 +25,6 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     hideAllElements();
   }
 });
-
-// UPDATE STATE INFO
-
-// move to statmachine.js //
-// function updateStateInfo(stateText) {
-//   console.log(`the updated state is currently ${stateText}`);
-// }
 
 // toggle functions
 
@@ -72,7 +64,6 @@ function showPreviousElement() {
   document.getElementsByClassName('brain')[0].classList.remove('section-hide');
   settingsSection.classList.add('section-hide');
 }
-
 
 
 export { activateSettings };

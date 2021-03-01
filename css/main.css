@@ -127,6 +127,15 @@ nav {
   justify-content: center;
 }
 
+#filter-button {
+  transition: width 1s;
+}
+
+.filter-active {
+  width: 98vw;
+
+}
+
 /* SETTINGS SECTION */
 
 .settings-section {

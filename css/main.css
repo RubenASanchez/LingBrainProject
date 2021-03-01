@@ -133,7 +133,7 @@ nav {
 
 .filter-active {
   width: 98vw;
-
+  border-radius: 5vw;
 }
 
 /* SETTINGS SECTION */

@@ -153,7 +153,6 @@ hr {
   color: var(--neomorphic-light-shadow);
 }
 
-
 .toggle-section {
   display: flex;
   align-items: center;
@@ -200,9 +199,6 @@ hr {
 
 /* BRAIN */
 
-/* position in center large */
-/* then move upwards and shrink */
-/* to make room for expanding cards */
 .brain {
   width: 90vw;
   height: 50vw;
@@ -214,14 +210,14 @@ hr {
   background-color: var(--neomorphic-mid);
   text-align: center;
   /*display: none;*/
-  height: 0.5vh;
+  /*height: 0.5vh;*/
   overflow: hidden;
   transition: all 1s;  /* not sure if needed */
 }
 
 .section-hide {
   animation: section-hide .6s linear forwards;
-  display: none; /* added for testing purposes */
+  /*display: none;*/ /* added for testing purposes */
 }
 
 @keyframes section-hide {

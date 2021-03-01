@@ -76,6 +76,10 @@
 
 [ ] about link
 
+# Filter
+
+[x] styles
+
 # Toggle Animations
 
 [ ] logic

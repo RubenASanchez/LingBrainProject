@@ -13,17 +13,16 @@ let activateSettings = settingsButton.addEventListener('click',function() {
       settingsIcon.classList.remove('settings-inactive');
     });
     currentState.textContent = previousStateText;
-    showPreviousElement();
-    //console.log('settings inactive');
     updateStateInfo(currentState.textContent);
+    showPreviousElement();
   }
   else {
     //console.log('clicked settings');
     settingsIcon.classList.add('settings-active');
     currentState.textContent = "settings";
     updateStateInfo(currentState.textContent);
-    hideAllElements();
     settingsSection.classList.remove('section-hide');
+    hideAllElements();
   }
 });
 
@@ -60,8 +59,6 @@ let activateTheme = toggleTheme.addEventListener('click',function() {
   }
 });
 
-// change function to add class hide-element to all elements that are not settings
-// so far it only targets the given element
 // may want to make one function to handle both hide and show elements
 
 function hideAllElements() {

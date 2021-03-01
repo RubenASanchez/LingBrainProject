@@ -1,4 +1,4 @@
-import { activateSettings } from '../components/settings.js';
+//import { activateSettings } from '../components/settings.js';
 
 
 function updateStateInfo(stateText) {

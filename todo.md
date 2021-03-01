@@ -92,23 +92,21 @@
 
 [ ] js
 
-# Modules
-
-[ ] components
-
 # Components
+
+[x] settings
+
+[ ] filter
 
 [ ] fetchdata js
 
 # State Machine
 
-[x] local js
-
-[ ] library js
-
-[ ] logic
-
 [x] components emit state change
+
+[x] sm listens to emited changes
+
+[ ] sm updates content
 
 # Database
 

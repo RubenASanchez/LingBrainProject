@@ -1,5 +1,6 @@
 import { brainRegionsObject } from '../data/dataset.js';
 import { activateSettings } from '../components/settings.js';
+import { activateFilter } from '../components/settings.js';
 
 if('serviceWorker' in navigator) {
   console.log('browser can use sw');

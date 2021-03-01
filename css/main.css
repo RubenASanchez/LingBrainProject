@@ -216,8 +216,8 @@ hr {
 }
 
 .section-hide {
-  animation: section-hide .6s linear forwards;
-  /*display: none;*/ /* added for testing purposes */
+  animation: section-hide .6s linear forwards; /* need to test this */
+  display: none;
 }
 
 @keyframes section-hide {

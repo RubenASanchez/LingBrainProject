@@ -4,7 +4,7 @@ let filterButton = document.getElementById('filter-button');
 
 let activateFilter = filterButton.addEventListener('click',function() {
   console.log('clicked filter');
-  filterButton.classList.add('filter-active');
+  filterButton.classList.toggle('filter-active');
   currentState.textContent = "filter";
   updateStateInfo(currentState.textContent);
 });

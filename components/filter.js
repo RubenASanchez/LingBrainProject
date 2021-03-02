@@ -5,8 +5,14 @@ let filterButton = document.getElementById('filter-button');
 let activateFilter = filterButton.addEventListener('click',function() {
   console.log('clicked filter');
   filterButton.classList.toggle('filter-active');
-  currentState.textContent = "filter";
-  updateStateInfo(currentState.textContent);
+  if (filterButton.classList.contains('filter-active')) {
+    currentState.textContent = "filter";
+    updateStateInfo(currentState.textContent);
+  }
+  else {
+    currentState.textContent = previousStateText;
+    updateStateInfo(currentState.textContent);
+  }
 });
 
 export { activateFilter };

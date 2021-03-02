@@ -2,7 +2,7 @@ let settingsButton = document.getElementById('settings-button');
 let settingsIcon = document.getElementsByClassName('settings-icon')[0];
 let settingsSection = document.getElementsByClassName('settings-section')[0];
 
-var updatedStateText = "default ready state";
+//var updatedStateText = "default ready state";
 
 import { currentState , previousStateText , updateStateInfo } from '../js/statemachine.js';
 

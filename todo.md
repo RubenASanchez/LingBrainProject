@@ -80,9 +80,11 @@
 
 [x] styles
 
-[ ] svg icons
+[x] sub buttons
 
-[ ] sub buttons
+[ ] sub button styles
+
+[ ] svg icons
 
 # Toggle Animations
 

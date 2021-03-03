@@ -1,4 +1,4 @@
-import { currentState , previousStateText , updateStateInfo } from '../js/statemachine.js';
+import { currentState , previousStateText , updateStateInfo , updateState } from '../js/statemachine.js';
 
 let filterButton = document.getElementById('filter-button');
 

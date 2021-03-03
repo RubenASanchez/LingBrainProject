@@ -2,7 +2,7 @@ let settingsButton = document.getElementById('settings-button');
 let settingsIcon = document.getElementsByClassName('settings-icon')[0];
 let settingsSection = document.getElementsByClassName('settings-section')[0];
 
-import { currentState , previousStateText , updateStateInfo } from '../js/statemachine.js';
+import { currentState , previousStateText , updateStateInfo , updateState} from '../js/statemachine.js';
 
 let activateSettings = settingsButton.addEventListener('click',function() {
   if (currentState.textContent === "settings") {
@@ -13,12 +13,14 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     });
     currentState.textContent = previousStateText;
     updateStateInfo(currentState.textContent);
+    updateState(currentState.textContent); // for array
     showPreviousElement();
   }
   else {
     settingsIcon.classList.add('settings-active');
     currentState.textContent = "settings";
     updateStateInfo(currentState.textContent);
+    updateState(currentState.textContent); // for array
     settingsSection.classList.remove('section-hide');
     hideAllElements();
   }

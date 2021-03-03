@@ -27,4 +27,4 @@ function updateStateInfo(stateText) {
   console.log(`the updated state is currently ${stateText}`);
 }
 
-export { currentState , previousStateText , updateStateInfo };
+export { currentState , previousStateText , updateStateInfo , updateState};

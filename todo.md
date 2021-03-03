@@ -116,6 +116,8 @@
 
 [x] sm listens to emited changes
 
+[x] array for holding previous and current state
+
 [ ] sm updates content
 
 # Database

@@ -34,7 +34,7 @@
 
 [x] display state info
 
-[ ] state info styles
+[x] state info styles
 
 # App Dynamic Content
 

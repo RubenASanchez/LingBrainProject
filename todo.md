@@ -82,7 +82,7 @@
 
 [x] sub buttons
 
-[ ] sub button styles
+[x] sub button styles
 
 [ ] svg icons
 

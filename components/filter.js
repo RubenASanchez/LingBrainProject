@@ -7,10 +7,12 @@ let activateFilter = filterButton.addEventListener('click',function() {
   if (filterButton.classList.contains('filter-active')) {
     currentState.textContent = "filter";
     updateStateInfo(currentState.textContent);
+    updateState(currentState.textContent); // for array
   }
   else {
     currentState.textContent = previousStateText;
     updateStateInfo(currentState.textContent);
+    updateState(currentState.textContent); // for array
   }
 });
 

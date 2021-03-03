@@ -13,12 +13,14 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     });
     currentState.textContent = previousStateText;
     updateStateInfo(currentState.textContent);
+    updateState(currentState.textContent); // for array
     showPreviousElement();
   }
   else {
     settingsIcon.classList.add('settings-active');
     currentState.textContent = "settings";
     updateStateInfo(currentState.textContent);
+    updateState(currentState.textContent); // for array
     settingsSection.classList.remove('section-hide');
     hideAllElements();
   }

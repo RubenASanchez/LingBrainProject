@@ -4,10 +4,10 @@ let currentState = document.getElementById('current-state');
 let previousStateText = currentState.textContent;
 
 const stateLog = [];
-let oldState = stateLog[0];
-let newState = stateLog[1];
 
 function updateState(emittedState) {
+  let oldState = stateLog[0];
+  let newState = stateLog[1];
   stateLog.push(emittedState);
   console.log(`old state is ${oldState}`);
   console.log(`new state is ${newState}`);

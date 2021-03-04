@@ -118,7 +118,13 @@
 
 [x] array for holding previous and current state
 
+[ ] test array
+
 [ ] sm updates content
+
+# Test
+
+[ ] finite state machine
 
 # Database
 

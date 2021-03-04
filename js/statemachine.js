@@ -3,7 +3,7 @@
 let currentState = document.getElementById('current-state');
 let previousStateText = currentState.textContent;
 
-const stateLog = ['none','ready'];
+const stateLog = ['ready'];
 
 function updateState(emittedState) {
   let oldState = stateLog[0];
@@ -11,7 +11,7 @@ function updateState(emittedState) {
   stateLog.push(emittedState);
   console.log(`old state is ${oldState}`);
   console.log(`new state is ${newState}`);
-  if (stateLog.length > 2) {
+  if (stateLog.length > 1) {
     stateLog.shift();
   }
 }

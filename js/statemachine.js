@@ -3,17 +3,20 @@
 let currentState = document.getElementById('current-state');
 let previousStateText = currentState.textContent;
 
-const stateLog = ['ready',currentState];
+const stateLog = ['ready',currentState.textContent];
 
 function updateState(emittedState) {
-  let oldState = stateLog[0];
-  let newState = stateLog[1];
+  console.log(`initial log is ${stateLog}`)
   stateLog.push(emittedState);
-  console.log(`old state is ${oldState}`);
-  console.log(`new state is ${newState}`);
-  if (stateLog.length > 2) {
+  console.log(`after push log is ${stateLog}`)
+  while (stateLog.length > 2) {
     stateLog.shift();
   }
+  let oldState = stateLog[0];
+  let newState = stateLog[1];
+  console.log(`after shift log is ${stateLog}`)
+  console.log(`old state is ${oldState}`);
+  console.log(`new state is ${newState}`);
 }
 
 

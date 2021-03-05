@@ -76,6 +76,8 @@
 
 [ ] about link
 
+[ ] show/hide filter button
+
 # Filter
 
 [x] styles

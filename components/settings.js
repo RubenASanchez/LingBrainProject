@@ -57,11 +57,12 @@ let activateTheme = toggleTheme.addEventListener('click',function() {
 
 function hideAllElements() {
   document.getElementsByClassName('brain')[0].classList.add('section-hide');
-  //console.log('hide all non settings elements');
+  document.getElementById('filter-button').classList.add('filter-inactive');
 }
 
 function showPreviousElement() {
   document.getElementsByClassName('brain')[0].classList.remove('section-hide');
+  document.getElementById('filter-button').classList.remove('filter-inactive');
   settingsSection.classList.add('section-hide');
 }
 

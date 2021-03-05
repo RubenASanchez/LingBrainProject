@@ -9,11 +9,11 @@ function updateState(emittedState) {
   let oldState = stateLog[0];
   let newState = stateLog[1];
   stateLog.push(emittedState);
-  console.log(`old state is ${oldState}`);
-  console.log(`new state is ${newState}`);
-  if (stateLog.length > 2) {
+  while (stateLog.length > 2) {
     stateLog.shift();
   }
+  console.log(`old state is ${oldState}`);
+  console.log(`new state is ${newState}`);
 }
 
 

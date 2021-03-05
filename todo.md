@@ -122,7 +122,9 @@
 
 [x] adjust array
 
-[ ] test array
+[x] test array
+
+[ ] try as object instead of array
 
 [ ] sm updates content
 

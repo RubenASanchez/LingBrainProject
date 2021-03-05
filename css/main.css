@@ -128,7 +128,7 @@ nav {
   justify-content: center;
 }
 
-#filter-button {
+.filter-button {
   display: flex;
   justify-content: center;
   align-items: center;

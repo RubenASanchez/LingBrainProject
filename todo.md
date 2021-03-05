@@ -120,9 +120,9 @@
 
 [x] array for holding previous and current state
 
-[ ] test array
+[x] adjust array
 
-[ ] adjust array
+[ ] test array
 
 [ ] sm updates content
 

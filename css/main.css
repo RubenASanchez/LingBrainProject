@@ -140,7 +140,7 @@ nav {
   height: 40px;
 }
 
-#filter-button .filter-active {
+.filter-active {
   width: 98vw;
   border-radius: 5vw;
   justify-content: space-around;

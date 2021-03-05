@@ -1,4 +1,4 @@
-import { currentState , previousStateText , updateStateInfo , updateState } from '../js/statemachine.js';
+import { currentState , previousStateText , updateStateInfo , updateState , oldState , newState} from '../js/statemachine.js';
 
 let filterButton = document.getElementById('filter-button');
 
@@ -10,7 +10,8 @@ let activateFilter = filterButton.addEventListener('click',function() {
     updateState(currentState.textContent); // for array
   }
   else {
-    currentState.textContent = previousStateText;
+    //currentState.textContent = previousStateText;
+    currentState.textContent = oldState;
     updateStateInfo(currentState.textContent);
     updateState(currentState.textContent); // for array
   }

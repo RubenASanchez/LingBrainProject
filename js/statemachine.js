@@ -3,7 +3,7 @@
 let currentState = document.getElementById('current-state');
 let previousStateText = currentState.textContent;
 
-const stateLog = ['ready',currentState];
+const stateLog = ['ready',stateText];
 
 function updateState(emittedState) {
   let oldState = stateLog[0];

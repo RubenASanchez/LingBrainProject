@@ -58,7 +58,7 @@ let activateTheme = toggleTheme.addEventListener('click',function() {
 function hideAllElements() {
   document.getElementsByClassName('brain')[0].classList.add('section-hide');
   //console.log('hide all non settings elements');
-  filterButton.classList.add('settings-inactive');
+  filterButton.classList.add('filter-inactive')
 }
 
 function showPreviousElement() {

@@ -5,6 +5,9 @@ let previousStateText = currentState.textContent;
 
 const stateLog = ['ready',currentState.textContent];
 
+let oldState;
+let newState;
+
 function updateState(emittedState) {
   console.log(`initial log is ${stateLog}`)
   stateLog.push(emittedState);
@@ -12,8 +15,8 @@ function updateState(emittedState) {
   while (stateLog.length > 2) {
     stateLog.shift();
   }
-  let oldState = stateLog[0];
-  let newState = stateLog[1];
+  oldState = stateLog[0];
+  newState = stateLog[1];
   console.log(`after shift log is ${stateLog}`)
   console.log(`old state is ${oldState}`);
   console.log(`new state is ${newState}`);

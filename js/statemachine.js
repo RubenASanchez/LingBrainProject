@@ -17,7 +17,10 @@ function updateState(emittedState) {
   console.log(`after shift log is ${stateLog}`)
   console.log(`old state is ${oldState}`);
   console.log(`new state is ${newState}`);
+  return oldState,newState;
 }
+
+console.log(`pulled out old is ${oldState} and new is ${newState}`);
 
 
 

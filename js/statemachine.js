@@ -5,8 +5,8 @@ let previousStateText = currentState.textContent;
 
 const stateLog = ['ready',currentState.textContent];
 
-let oldState;
-let newState;
+var oldState;
+var newState;
 
 function updateState(emittedState) {
   console.log(`initial log is ${stateLog}`)

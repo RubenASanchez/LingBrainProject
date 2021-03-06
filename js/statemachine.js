@@ -23,12 +23,13 @@ function updateState(emittedState) {
   return oldState,newState;
 }
 
+// this does not return the updated values
 console.log(`pulled out old is ${oldState} and new is ${newState}`);
-
+// need to make a function to handle delivering old and new states
 
 
 function updateStateInfo(stateText) {
   console.log(`the updated state is currently ${stateText}`);
 }
 
-export { currentState , previousStateText , updateStateInfo , updateState};
+export { currentState , previousStateText , updateStateInfo , updateState, oldState , newState};

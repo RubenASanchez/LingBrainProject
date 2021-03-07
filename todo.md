@@ -14,7 +14,7 @@
 
 [x] feature branches
 
-[ ] commit template
+[x] commit template
 
 [ ] version tags
 

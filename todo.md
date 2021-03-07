@@ -4,11 +4,29 @@
 
 [x] local environment
 
+[ ] host
+
+# Versioning
+
+[x] main branch
+
+[x] development branch
+
+[x] feature branches
+
+[ ] commit template
+
+[ ] version tags
+
 # Documentation
 
 [x] readme
 
 [x] to do
+
+[x] change log
+
+[ ] release notes
 
 # Basic File Structure
 

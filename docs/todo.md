@@ -138,8 +138,6 @@
 
 [x] array for holding previous and current state
 
-[] emit previous and current state
-
 [ ] sm updates content
 
 # Test

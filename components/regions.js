@@ -1,6 +1,10 @@
 // brain regions component logic goes here
-import { currentState , previousStateText , updateStateInfo , updateState} from '../js/statemachine.js';
+import { currentState , previousStateText , updateStateInfo , updateState , newState} from '../js/statemachine.js';
 
-if (currentState.textContent === "ready") {
-  console.log('regions component says "Im Ready"');
+// if (currentState.textContent === "ready") {
+//   console.log('regions component currentState says "Im Ready"');
+// }
+
+if (newState === "ready") {
+  console.log('regions component newState says "Im Ready"');
 }

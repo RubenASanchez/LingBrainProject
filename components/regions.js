@@ -5,6 +5,10 @@ import { currentState , previousStateText , updateStateInfo , updateState , newS
 //   console.log('regions component currentState says "Im Ready"');
 // }
 
-if (newState === "ready") {
-  console.log('regions component newState says "Im Ready"');
-}
+const activateReady() {
+  if (newState === "ready") {
+    console.log('regions component newState says "Im Ready"');
+  }
+};
+
+activateReady();

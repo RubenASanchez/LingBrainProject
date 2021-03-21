@@ -126,7 +126,9 @@
 
 [x] settings
 
-[ ] filter
+[x] filter
+
+[x] regions
 
 [ ] fetchdata js
 

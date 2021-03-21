@@ -6,7 +6,7 @@ import { currentState , previousStateText , updateStateInfo , updateState , newS
 // }
 
 function activateReady() {
-  if (newState === "ready") {
+  if (currentState === "ready") {
     console.log('regions component newState says "Im Ready"');
   }
 };

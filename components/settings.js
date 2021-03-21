@@ -14,7 +14,7 @@ let activateSettings = settingsButton.addEventListener('click',function() {
     currentState.textContent = previousStateText;
     updateStateInfo(currentState.textContent);
     //updateState(currentState.textContent); // for array
-    //showPreviousElement();
+    showPreviousElement();
   }
   else {
     settingsIcon.classList.add('settings-active');

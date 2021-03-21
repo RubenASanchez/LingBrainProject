@@ -7,23 +7,23 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "img/splash-512.png",
+      "src": "assets/img/splash-512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "img/splash-192.png",
+      "src": "assets/img/splash-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "img/splash-512-maskable.png",
+      "src": "assets/img/splash-512-maskable.png",
       "type": "image/png",
       "purpose": "maskable",
       "sizes": "512x512"
     },
     {
-      "src": "img/splash-192-maskable.png",
+      "src": "assets/img/splash-192-maskable.png",
       "type": "image/png",
       "purpose": "maskable",
       "sizes": "192x192"

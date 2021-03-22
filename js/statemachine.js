@@ -5,6 +5,10 @@ let previousStateText = currentState.textContent;
 
 const stateLog = ['ready',currentState.textContent];
 
+// state machine should give state
+
+
+
 var oldState;
 var newState;
 
@@ -24,7 +28,7 @@ function updateState(emittedState) {
 }
 
 // this does not return the updated values
-console.log(`pulled out old is ${oldState} and new is ${newState}`);
+//console.log(`pulled out old is ${oldState} and new is ${newState}`);
 // need to make a function to handle delivering old and new states
 
 

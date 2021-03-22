@@ -136,6 +136,16 @@ nav {
   transition: width 1s;
 }
 
+.filter-button-ready {
+  animation: filter-button-ready 2.5s ease-in infinite;
+}
+
+@keyframes filter-button-ready {
+  0% {color: var(--text-colour);}
+  10% {color: var(--active-colour);}
+  100% {color: var(--text-colour);}
+}
+
 .filter-sub-button {
   width: 40px;
   height: 40px;

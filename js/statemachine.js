@@ -16,76 +16,76 @@ const stateLog = ['ready',currentState.textContent];
 
 // NEW STATE MACHINE BEGIN
 
-let stateDisplay = document.getElementById('state-display');
-let currentTextContent = stateDisplay.textContent;
-const myArray = ['brain'];
+// let stateDisplay = document.getElementById('state-display');
+// let currentTextContent = stateDisplay.textContent;
+// const myArray = ['brain'];
 
-// settings
+// // settings
 
-const settingsButton = document.getElementById('settings-button');
-let settingsEmmit = settingsButton.addEventListener('click',function() {
-  sm('settings');
-});
+// const settingsButton = document.getElementById('settings-button');
+// let settingsEmmit = settingsButton.addEventListener('click',function() {
+//   sm('settings');
+// });
 
-// filter
+// // filter
 
-const filterButton = document.getElementById('filter-button');
-let filterEmmit = filterButton.addEventListener('click',function() {
-  sm('filter');
-});
+// const filterButton = document.getElementById('filter-button');
+// let filterEmmit = filterButton.addEventListener('click',function() {
+//   sm('filter');
+// });
 
-// state machine
+// // state machine
 
-function sm(emitted) {
-  // console.log(`someone emitted ${emitted}`);
-  if (myArray[myArray.length-1] == emitted) {
-    myArray.pop();
-    console.log(myArray);
-  }
-  else {
-    myArray.push(emitted);
-    console.log(myArray);
-  }
-  stateDisplay.textContent = myArray[myArray.length-1];
-  return myArray, activateState();
-};
+// function sm(emitted) {
+//   // console.log(`someone emitted ${emitted}`);
+//   if (myArray[myArray.length-1] == emitted) {
+//     myArray.pop();
+//     console.log(myArray);
+//   }
+//   else {
+//     myArray.push(emitted);
+//     console.log(myArray);
+//   }
+//   stateDisplay.textContent = myArray[myArray.length-1];
+//   return myArray, activateState();
+// };
 
-function activateState() {
-  console.log(`activate state for ${stateDisplay.textContent}`);
-  activeComponent = stateDisplay.textContent;
-  inactiveComponents = document.querySelectorAll(".component");
-  inactiveComponents.forEach(element => {
-    element.dataset.state = "inactive";
-  });
-  document.getElementById(activeComponent).dataset.state = "active";
-  if (activeComponent == 'filter') {
-    activateFilters();
-  }
-  else {
-    deactivateFilters();
-  }
-};
+// function activateState() {
+//   console.log(`activate state for ${stateDisplay.textContent}`);
+//   activeComponent = stateDisplay.textContent;
+//   inactiveComponents = document.querySelectorAll(".component");
+//   inactiveComponents.forEach(element => {
+//     element.dataset.state = "inactive";
+//   });
+//   document.getElementById(activeComponent).dataset.state = "active";
+//   if (activeComponent == 'filter') {
+//     activateFilters();
+//   }
+//   else {
+//     deactivateFilters();
+//   }
+// };
 
-function subFilterEmitt(e) {
-  let filteredRegions = e.target.id;
-  activateRegions(filteredRegions);
-  const filterNav = document.getElementById('filter-nav');
-  filterNav.removeEventListener('click',subFilterEmitt);
-}
+// function subFilterEmitt(e) {
+//   let filteredRegions = e.target.id;
+//   activateRegions(filteredRegions);
+//   const filterNav = document.getElementById('filter-nav');
+//   filterNav.removeEventListener('click',subFilterEmitt);
+// }
 
-function activateFilters() {
-  const filterNav = document.getElementById('filter-nav');
-  filterNav.dataset.state = "active";
-  filterNav.addEventListener('click',subFilterEmitt);
-};
+// function activateFilters() {
+//   const filterNav = document.getElementById('filter-nav');
+//   filterNav.dataset.state = "active";
+//   filterNav.addEventListener('click',subFilterEmitt);
+// };
 
-function deactivateFilters() {
-  document.getElementById('filter-nav').dataset.state = "inactive";
-}
+// function deactivateFilters() {
+//   document.getElementById('filter-nav').dataset.state = "inactive";
+// }
 
-function activateRegions(filteredregions) {
-  sm(filteredregions);
-};
+// function activateRegions(filteredregions) {
+//   sm(filteredregions);
+// };
 
 // NEW STATE MACHINE END
 

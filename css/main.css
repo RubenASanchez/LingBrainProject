@@ -137,13 +137,13 @@ nav {
 }
 
 .filter-button-ready {
-  animation: filter-button-ready 2.5s ease-in infinite;
+  animation: filter-button-ready 3s ease-in infinite;
 }
 
 @keyframes filter-button-ready {
   0% {color: var(--text-colour);}
-  10% {color: var(--active-colour);}
-  100% {color: var(--text-colour);}
+  5% {color: var(--active-colour);}
+  50% {color: var(--text-colour);}
 }
 
 .filter-sub-button {

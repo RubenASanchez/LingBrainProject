@@ -16,25 +16,53 @@ const stateLog = ['ready',currentState.textContent];
 
 // NEW STATE MACHINE BEGIN
 
+
+// let regionData = [{
+//   region1: {
+//     "name":"region 1",
+//     "location":"top",
+//     "function":"eat"
+//   },
+//   region2: {
+//     "name":"region 2",
+//     "location":"side",
+//     "function":"laugh"
+//   },
+//   region3: {
+//     "name":"region 3",
+//     "location":"back",
+//     "function":"sleep"
+//   }
+// }];
+
+// region2 will be a variable that gets passed in
+// console.log(regionData);
+// console.log(regionData[0].region2);
+// console.log(regionData[0].region2.name);
+// console.log(regionData[0].region2.location);
+// console.log(regionData[0].region2.function);
+
+// display text
+
 // let stateDisplay = document.getElementById('state-display');
 // let currentTextContent = stateDisplay.textContent;
 // const myArray = ['brain'];
 
-// // settings
+// settings
 
 // const settingsButton = document.getElementById('settings-button');
 // let settingsEmmit = settingsButton.addEventListener('click',function() {
 //   sm('settings');
 // });
 
-// // filter
+// filter
 
 // const filterButton = document.getElementById('filter-button');
 // let filterEmmit = filterButton.addEventListener('click',function() {
 //   sm('filter');
 // });
 
-// // state machine
+// state machine
 
 // function sm(emitted) {
 //   // console.log(`someone emitted ${emitted}`);
@@ -54,8 +82,8 @@ const stateLog = ['ready',currentState.textContent];
 //   console.log(`activate state for ${stateDisplay.textContent}`);
 //   activeComponent = stateDisplay.textContent;
 //   inactiveComponents = document.querySelectorAll(".component");
-//   inactiveComponents.forEach(element => {
-//     element.dataset.state = "inactive";
+//   inactiveComponents.forEach((item,i) => { // this one can be written as forEach( element => {element.dataset.state = "inactive"});
+//     item.dataset.state = "inactive";
 //   });
 //   document.getElementById(activeComponent).dataset.state = "active";
 //   if (activeComponent == 'filter') {
@@ -84,8 +112,25 @@ const stateLog = ['ready',currentState.textContent];
 // }
 
 // function activateRegions(filteredregions) {
+//   filteredregions = filteredregions.replace('filter-','');
 //   sm(filteredregions);
+//   activateRegionInfo(filteredregions);
 // };
+
+// region , this section is in progress
+
+// function regionEmitt(e) {
+//   let filteredRegions = e.target.id;
+//   const regions = document.getElementById(filteredRegions);
+//   activateRegions(filteredRegions);
+//   regions.removeEventListener('click',regionEmitt);
+// };
+
+// function activateRegionInfo(filteredregions) {
+//   const regions = document.getElementById(filteredregions);
+//   regions.addEventListener('click',regionEmitt);
+// };
+
 
 // NEW STATE MACHINE END
 

@@ -140,7 +140,9 @@
 
 [x] array for holding previous and current state
 
-[ ] sm updates content
+[x] sm updates content
+
+[ ] display region info
 
 # Test
 

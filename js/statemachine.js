@@ -18,13 +18,13 @@ const stateLog = ['ready',currentState.textContent];
 
 
 // let regionData = [{
-//   region1: {
-//     "name":"region 1",
+//   ba{
+//     "name":"ba",
 //     "location":"top",
 //     "function":"eat"
 //   },
-//   region2: {
-//     "name":"region 2",
+//   wa: {
+//     "name":"wa",
 //     "location":"side",
 //     "function":"laugh"
 //   },
@@ -34,13 +34,6 @@ const stateLog = ['ready',currentState.textContent];
 //     "function":"sleep"
 //   }
 // }];
-
-// region2 will be a variable that gets passed in
-// console.log(regionData);
-// console.log(regionData[0].region2);
-// console.log(regionData[0].region2.name);
-// console.log(regionData[0].region2.location);
-// console.log(regionData[0].region2.function);
 
 // display text
 
@@ -114,21 +107,49 @@ const stateLog = ['ready',currentState.textContent];
 // function activateRegions(filteredregions) {
 //   filteredregions = filteredregions.replace('filter-','');
 //   sm(filteredregions);
-//   activateRegionInfo(filteredregions);
+//   activateRegion(filteredregions);
 // };
 
-// region , this section is in progress
+// let filteredRegions;
 
 // function regionEmitt(e) {
-//   let filteredRegions = e.target.id;
+//   filteredRegions = e.target.id;
 //   const regions = document.getElementById(filteredRegions);
-//   activateRegions(filteredRegions);
+//   sm(filteredRegions);
+//   activateRegionInfo(filteredRegions);
 //   regions.removeEventListener('click',regionEmitt);
+//   return filteredRegions;
+// };
+
+// function activateRegion(filteredregions) {
+//   const regions = document.getElementById(filteredregions);
+//   regions.addEventListener('click',regionEmitt);
 // };
 
 // function activateRegionInfo(filteredregions) {
-//   const regions = document.getElementById(filteredregions);
-//   regions.addEventListener('click',regionEmitt);
+  // document.getElementById('region-info').dataset.state = "active";
+  // displayRegionInfo();
+  // let closeRegionInfo = document.getElementById('close-region-info');
+  // closeRegionInfo.addEventListener('click',deactivateRegionInfo);
+// };
+
+// function deactivateRegionInfo() {
+//   sm(filteredRegions);
+//   let closeRegionInfo = document.getElementById('close-region-info');
+//   document.getElementById('settings-button').dataset.button = "enabled";
+//   document.getElementById('filter-button').dataset.button = "enabled";
+//   closeRegionInfo.removeEventListener('click',deactivateRegionInfo);
+// };
+
+// function displayRegionInfo() {
+//   let regionName = document.getElementById('region-name');
+//   let regionLocation = document.getElementById('region-location');
+//   let regionFunction = document.getElementById('region-function');
+//   regionName.textContent = regionData[0][filteredRegions]['name'];
+//   regionLocation.textContent = regionData[0][filteredRegions]['location'];
+//   regionFunction.textContent = regionData[0][filteredRegions]['function'];
+//   document.getElementById('settings-button').dataset.button = "disabled";
+//   document.getElementById('filter-button').dataset.button = "disabled";
 // };
 
 

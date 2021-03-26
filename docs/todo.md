@@ -138,9 +138,13 @@
 
 [x] array for holding previous and current state
 
-[] emit previous and current state
+[x] emit previous and current state
 
-[ ] sm updates content
+[x] sm updates content
+
+[x] sm fetch db content
+
+[x] sm display fetched db content
 
 # Test
 

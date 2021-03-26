@@ -67,21 +67,22 @@ function sm(emitted) {
   return stateLog, activateState();
 };
 
-// function activateState() {
-//   console.log(`activate state for ${stateDisplay.textContent}`);
-//   activeComponent = stateDisplay.textContent;
-//   inactiveComponents = document.querySelectorAll(".component");
-//   inactiveComponents.forEach((item,i) => { // this one can be written as forEach( element => {element.dataset.state = "inactive"});
-//     item.dataset.state = "inactive";
-//   });
-//   document.getElementById(activeComponent).dataset.state = "active";
-//   if (activeComponent == 'filter') {
-//     activateFilters();
-//   }
-//   else {
-//     deactivateFilters();
-//   }
-// };
+function activateState() {
+  console.log(`activate state for ${stateDisplay.textContent}`);
+  let activeComponent = stateDisplay.textContent;
+  console.log(activeComponent);
+  let inactiveComponents = document.querySelectorAll(".component");
+  inactiveComponents.forEach((item,i) => { // this one can be written as forEach( element => {element.dataset.state = "inactive"});
+    item.dataset.state = "inactive";
+  });
+  document.getElementById(activeComponent).dataset.state = "active";
+  if (activeComponent == 'filter') {
+    activateFilters();
+  }
+  else {
+    deactivateFilters();
+  }
+};
 
 // function subFilterEmitt(e) {
 //   let filteredRegions = e.target.id;

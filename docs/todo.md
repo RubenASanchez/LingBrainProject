@@ -118,9 +118,7 @@
 
 [x] name
 
-[x] html
-
-[ ] js
+[x] htmlS
 
 # Components
 

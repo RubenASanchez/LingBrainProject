@@ -1,6 +1,7 @@
 import { brainRegionsObject } from '../data/dataset.js';
-import { activateSettings } from '../components/settings.js';
+import { activateReady } from '../components/regions.js';
 import { activateFilter } from '../components/filter.js';
+import { activateSettings } from '../components/settings.js';
 
 if('serviceWorker' in navigator) {
   console.log('browser can use sw');
@@ -12,7 +13,7 @@ if('serviceWorker' in navigator) {
   });
 }
 
-console.log('region info card index brainRegions 0 name');
+// console.log('region info card index brainRegions 0 name');
 
 const name = brainRegionsObject.brainRegions[0].name;
 const namecard = document.getElementById('name');

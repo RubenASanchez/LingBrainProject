@@ -126,7 +126,9 @@
 
 [x] settings
 
-[ ] filter
+[x] filter
+
+[x] regions
 
 [ ] fetchdata js
 
@@ -145,6 +147,8 @@
 [x] sm fetch db content
 
 [x] sm display fetched db content
+
+[x] sm updates content
 
 # Test
 

@@ -1,5 +1,7 @@
 //import { activateSettings } from '../components/settings.js';
 
+// DISPLAY CURRENT STATE
+
 let stateDisplay = document.getElementById('current-state');
 let currentTextContent = stateDisplay.textContent;
 
@@ -38,31 +40,32 @@ const stateLog = ['ready'];
 const settingsButton = document.getElementById('settings-button');
 let settingsEmmit = settingsButton.addEventListener('click',function() {
   console.log('settings clicked')
-//   sm('settings');
+  sm('settings');
 });
 
 // filter
 
-// const filterButton = document.getElementById('filter-button');
-// let filterEmmit = filterButton.addEventListener('click',function() {
-//   sm('filter');
-// });
+const filterButton = document.getElementById('filter-button');
+let filterEmmit = filterButton.addEventListener('click',function() {
+  console.log('filter clicked')
+  sm('filter');
+});
 
-// state machine
+// STATE MACHINE
 
-// function sm(emitted) {
-//   // console.log(`someone emitted ${emitted}`);
-//   if (myArray[myArray.length-1] == emitted) {
-//     myArray.pop();
-//     console.log(myArray);
-//   }
-//   else {
-//     myArray.push(emitted);
-//     console.log(myArray);
-//   }
-//   stateDisplay.textContent = myArray[myArray.length-1];
-//   return myArray, activateState();
-// };
+function sm(emitted) {
+  //console.log(`someone emitted ${emitted}`);
+  if (stateLog[stateLog.length-1] == emitted) {
+    stateLog.pop();
+    console.log(stateLog);
+  }
+  else {
+    stateLog.push(emitted);
+    console.log(stateLog);
+  }
+  stateDisplay.textContent = stateLog[stateLog.length-1];
+  return stateLog, activateState();
+};
 
 // function activateState() {
 //   console.log(`activate state for ${stateDisplay.textContent}`);
@@ -192,3 +195,4 @@ let settingsEmmit = settingsButton.addEventListener('click',function() {
 // }
 
 //export { stateDisplay , updateStateInfo , updateState, oldState , newState , stateMachine };
+export { settingsButton };

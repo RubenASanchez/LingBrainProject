@@ -132,13 +132,13 @@
 
 # State Machine
 
-[x] components emit state change
-
-[x] sm listens to emited changes
-
 [x] array for holding previous and current state
 
 [x] emit previous and current state
+
+[x] components emit state change
+
+[x] sm listens to emited changes
 
 [x] sm updates content
 

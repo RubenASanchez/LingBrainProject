@@ -76,7 +76,7 @@ function activateState() {
   }
 };
 
-// FILTERS ACTIVATED & DEACTIVATED
+// ACTIVATE & DEACTIVATE FILTERS
 
 function subFilterEmitt(e) {
   let filteredRegions = e.target.id;
@@ -95,7 +95,7 @@ function deactivateFilters() {
   document.getElementById('filter-nav').dataset.state = "inactive";
 }
 
-// REGIONS ACTIVATED & DEACTIVATED
+// ACTIVATE & DEACTIVATE REGIONS
 
 function activateRegions(filteredregions) {
   filteredregions = filteredregions.replace('filter-','');
@@ -119,6 +119,8 @@ function activateRegion(filteredregions) {
   regions.addEventListener('click',regionEmitt);
 };
 
+// DISPLAY REGION INFO
+
 function activateRegionInfo(filteredregions) {
   document.getElementById('region-info').dataset.state = "active";
   displayRegionInfo();
@@ -126,24 +128,24 @@ function activateRegionInfo(filteredregions) {
   closeRegionInfo.addEventListener('click',deactivateRegionInfo);
 };
 
-// function deactivateRegionInfo() {
-//   sm(filteredRegions);
-//   let closeRegionInfo = document.getElementById('close-region-info');
-//   document.getElementById('settings-button').dataset.button = "enabled";
-//   document.getElementById('filter-button').dataset.button = "enabled";
-//   closeRegionInfo.removeEventListener('click',deactivateRegionInfo);
-// };
+function deactivateRegionInfo() {
+  sm(filteredRegions);
+  let closeRegionInfo = document.getElementById('close-region-info');
+  document.getElementById('settings-button').dataset.button = "enabled";
+  document.getElementById('filter-button').dataset.button = "enabled";
+  closeRegionInfo.removeEventListener('click',deactivateRegionInfo);
+};
 
-// function displayRegionInfo() {
-//   let regionName = document.getElementById('region-name');
-//   let regionLocation = document.getElementById('region-location');
-//   let regionFunction = document.getElementById('region-function');
-//   regionName.textContent = regionData[0][filteredRegions]['name'];
-//   regionLocation.textContent = regionData[0][filteredRegions]['location'];
-//   regionFunction.textContent = regionData[0][filteredRegions]['function'];
-//   document.getElementById('settings-button').dataset.button = "disabled";
-//   document.getElementById('filter-button').dataset.button = "disabled";
-// };
+function displayRegionInfo() {
+  let regionName = document.getElementById('region-name');
+  let regionLocation = document.getElementById('region-location');
+  let regionFunction = document.getElementById('region-function');
+  regionName.textContent = regionData[0][filteredRegions]['name'];
+  regionLocation.textContent = regionData[0][filteredRegions]['location'];
+  regionFunction.textContent = regionData[0][filteredRegions]['function'];
+  document.getElementById('settings-button').dataset.button = "disabled";
+  document.getElementById('filter-button').dataset.button = "disabled";
+};
 
 
 // NEW STATE MACHINE END

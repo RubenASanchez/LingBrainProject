@@ -206,6 +206,8 @@
 
 [ ] add animation: none class as no animation option
 
+[ ] toggle logic
+
 # Accessibility
 
 [ ] aria labels

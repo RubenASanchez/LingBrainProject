@@ -146,6 +146,10 @@
 
 [x] sm listens to emited changes
 
+[x] components emit state change
+
+[x] sm listens to emited changes
+
 [x] sm updates content
 
 [x] sm fetch db content

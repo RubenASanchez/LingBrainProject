@@ -41,6 +41,16 @@
 
   <main id="main-window">
     
+    <!-- SETTINGS -->
+
+    <section class="component settings-section" id="settings" data-state="inactive">
+      <section id="animations"><p class="toggle-title">Animations</p><section class=toggle-section><p>on</p><div class="toggle" id="toggle-animation"><div class="toggle-button" id="toggle-button-animation"></div></div><p>off</p></section></section>
+      <section id="theme"><p class="toggle-title">Light Theme</p><section class=toggle-section><p>on</p><div class="toggle" id="toggle-theme"><div class="toggle-button" id="toggle-button-theme"></div></div><p>off</p></section></section>
+      <hr>
+      <section id="about"><p>About</p><a href="#">LingBrain Project</a></section>
+      <section id="contact"><p>Contact</p><a href="#">twitter</a></section>
+    </section>
+
     <!-- BRAIN -->
 
     <section class="component" id="brain" data-state="active">
@@ -52,33 +62,41 @@
     <section class="component" id="filter" data-state="inactive">
       filter descriptions here
     </section>
-    
-    <!-- REGION INFO -->
 
-    <section  id="region-info-cards">
-      <section class="card">
-        <h2 id="name">Name</h2>
-      </section>
-      <section class="card">
-        <h2 id="location">Location</h2>
-        <p id="location-details">here are some location details</p>
-      </section>
-      <section class="card">
-        <h2 id="function">Function</h2>
-        <p id="function-details">here are the function details</p>
-      </section>
+    <!-- REGIONS TO TAP -->
+
+    <section class="component regions" id="regions-1" data-state="inactive">
+      <div class="region" id="ba">ba</div>
+      <div class="region" id="wa">wa</div>
     </section>
 
-    <!-- SETTINGS -->
-
-    <section class="component settings-section" id="settings" data-state="inactive">
-      <section id="animations"><p class="toggle-title">Animations</p><section class=toggle-section><p>on</p><div class="toggle" id="toggle-animation"><div class="toggle-button" id="toggle-button-animation"></div></div><p>off</p></section></section>
-      <section id="theme"><p class="toggle-title">Light Theme</p><section class=toggle-section><p>on</p><div class="toggle" id="toggle-theme"><div class="toggle-button" id="toggle-button-theme"></div></div><p>off</p></section></section>
-      <hr>
-      <section id="about"><p>About</p><a href="#">LingBrain Project</a></section>
-      <section id="contact"><p>Contact</p><a href="#">twitter</a></section>
+    <section class="component regions" id="regions-2" data-state="inactive">
+      <div class="region" id="be">be</div>
+      <div class="region" id="we">we</div>
     </section>
 
+    <section class="component regions" id="regions-3" data-state="inactive">
+      <div class="region" id="bi">bi</div>
+      <div class="region" id="wi">wi</div>
+    </section>
+
+    <!-- Region Info -->
+
+    <section class="component region-info" id="region-info" data-state="inactive">
+      <div id="close-region-info">close</div> <!-- close icon to go here -->
+      <section class="card">
+        <h2>Name</h2>
+        <p id="region-name">name goes here</p>
+      </section>
+      <section class="card">
+        <h2>Location</h2>
+        <p id="region-location">location details go here</p>
+      </section>
+      <section class="card">
+        <h2>Function</h2>
+        <p id="region-function">function details go here</p>
+      </section>
+    </section>
   </main>
 
   <!-- FILTER BUTTON -->

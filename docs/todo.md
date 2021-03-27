@@ -16,7 +16,7 @@
 
 [x] commit template
 
-[ ] version tags
+[x] version tags
 
 # Documentation
 

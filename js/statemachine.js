@@ -43,7 +43,7 @@ let filterEmmit = filterButton.addEventListener('click',function() {
 // STATE MACHINE RECEIVES EMITTED SIGNAL & UPDATES CURRENT STATE
 
 function sm(emitted) {
-  //console.log(`someone emitted ${emitted}`); 
+  //console.log(`someone emitted ${emitted}`);
   if (stateLog[stateLog.length-1] == emitted) {
     stateLog.pop();
     console.log(stateLog);
@@ -125,6 +125,7 @@ function activateRegionInfo(filteredregions) {
   let closeRegionInfo = document.getElementById('close-region-info');
   closeRegionInfo.addEventListener('click',deactivateRegionInfo);
 };
+
 
 // function deactivateRegionInfo() {
 //   sm(filteredRegions);

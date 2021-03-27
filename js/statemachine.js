@@ -1,156 +1,151 @@
 //import { activateSettings } from '../components/settings.js';
 
-let currentState = document.getElementById('current-state');
-let previousStateText = currentState.textContent;
+// DISPLAY CURRENT STATE
 
-const stateLog = ['ready',currentState.textContent];
+let stateDisplay = document.getElementById('current-state');
 
+// HOLD CURRENT STATE
 
-
-
-
-
-
-
-
+const stateLog = ['brain'];
 
 // NEW STATE MACHINE BEGIN
 
+let regionData = [{
+  ba:{
+    "name":"ba",
+    "location":"top",
+    "function":"eat"
+  },
+  wa: {
+    "name":"wa",
+    "location":"side",
+    "function":"laugh"
+  },
+  region3: {
+    "name":"region 3",
+    "location":"back",
+    "function":"sleep"
+  }
+}];
 
-// let regionData = [{
-//   ba{
-//     "name":"ba",
-//     "location":"top",
-//     "function":"eat"
-//   },
-//   wa: {
-//     "name":"wa",
-//     "location":"side",
-//     "function":"laugh"
-//   },
-//   region3: {
-//     "name":"region 3",
-//     "location":"back",
-//     "function":"sleep"
-//   }
-// }];
+// SETTINGS BUTTON & FILTER BUTTON EMITT SIGNAL
 
-// display text
+const settingsButton = document.getElementById('settings-button');
+let settingsEmmit = settingsButton.addEventListener('click',function() {
+  sm('settings');
+});
 
-// let stateDisplay = document.getElementById('state-display');
-// let currentTextContent = stateDisplay.textContent;
-// const myArray = ['brain'];
+const filterButton = document.getElementById('filter-button');
+let filterEmmit = filterButton.addEventListener('click',function() {
+  sm('filter');
+});
 
-// settings
+// STATE MACHINE RECEIVES EMITTED SIGNAL & UPDATES CURRENT STATE
 
-// const settingsButton = document.getElementById('settings-button');
-// let settingsEmmit = settingsButton.addEventListener('click',function() {
-//   sm('settings');
-// });
+function sm(emitted) {
+  //console.log(`someone emitted ${emitted}`);
+  if (stateLog[stateLog.length-1] == emitted) {
+    stateLog.pop();
+    console.log(stateLog);
+  }
+  else {
+    stateLog.push(emitted);
+    console.log(stateLog);
+  }
+  stateDisplay.textContent = stateLog[stateLog.length-1];
+  activateState();
+  return stateLog;
+};
 
-// filter
+// STATE MACHINE ACTIVATES & DEACTIVATES COMPONENTS
 
-// const filterButton = document.getElementById('filter-button');
-// let filterEmmit = filterButton.addEventListener('click',function() {
-//   sm('filter');
-// });
+function activateState() {
+  console.log(`activate state for ${stateDisplay.textContent}`);
+  let activeComponent = stateDisplay.textContent;
+  let inactiveComponents = document.querySelectorAll(".component");
+  inactiveComponents.forEach((item,i) => {
+    item.dataset.state = "inactive";
+  });
+  inactiveComponents.forEach( element => {element.dataset.state = "inactive"});
+  document.getElementById(activeComponent).dataset.state = "active";
+  if (activeComponent == 'filter') {
+    activateFilters();
+  }
+  else {
+    deactivateFilters();
+  }
+};
 
-// state machine
+// ACTIVATE & DEACTIVATE FILTERS
 
-// function sm(emitted) {
-//   // console.log(`someone emitted ${emitted}`);
-//   if (myArray[myArray.length-1] == emitted) {
-//     myArray.pop();
-//     console.log(myArray);
-//   }
-//   else {
-//     myArray.push(emitted);
-//     console.log(myArray);
-//   }
-//   stateDisplay.textContent = myArray[myArray.length-1];
-//   return myArray, activateState();
-// };
+function subFilterEmitt(e) {
+  let filteredRegions = e.target.id;
+  activateRegions(filteredRegions);
+  const filterNav = document.getElementById('filter-nav');
+  filterNav.removeEventListener('click',subFilterEmitt);
+}
 
-// function activateState() {
-//   console.log(`activate state for ${stateDisplay.textContent}`);
-//   activeComponent = stateDisplay.textContent;
-//   inactiveComponents = document.querySelectorAll(".component");
-//   inactiveComponents.forEach((item,i) => { // this one can be written as forEach( element => {element.dataset.state = "inactive"});
-//     item.dataset.state = "inactive";
-//   });
-//   document.getElementById(activeComponent).dataset.state = "active";
-//   if (activeComponent == 'filter') {
-//     activateFilters();
-//   }
-//   else {
-//     deactivateFilters();
-//   }
-// };
+function activateFilters() {
+  const filterNav = document.getElementById('filter-nav');
+  filterNav.dataset.state = "active";
+  filterNav.addEventListener('click',subFilterEmitt);
+};
 
-// function subFilterEmitt(e) {
-//   let filteredRegions = e.target.id;
-//   activateRegions(filteredRegions);
-//   const filterNav = document.getElementById('filter-nav');
-//   filterNav.removeEventListener('click',subFilterEmitt);
-// }
+function deactivateFilters() {
+  document.getElementById('filter-nav').dataset.state = "inactive";
+}
 
-// function activateFilters() {
-//   const filterNav = document.getElementById('filter-nav');
-//   filterNav.dataset.state = "active";
-//   filterNav.addEventListener('click',subFilterEmitt);
-// };
+// ACTIVATE & DEACTIVATE REGIONS
 
-// function deactivateFilters() {
-//   document.getElementById('filter-nav').dataset.state = "inactive";
-// }
+function activateRegions(filteredregions) {
+  filteredregions = filteredregions.replace('filter-','');
+  sm(filteredregions);
+  activateRegion(filteredregions);
+};
 
-// function activateRegions(filteredregions) {
-//   filteredregions = filteredregions.replace('filter-','');
-//   sm(filteredregions);
-//   activateRegion(filteredregions);
-// };
+let filteredRegions;
 
-// let filteredRegions;
+function regionEmitt(e) {
+  filteredRegions = e.target.id;
+  const regions = document.getElementById(filteredRegions);
+  sm(filteredRegions);
+  activateRegionInfo(filteredRegions);
+  regions.removeEventListener('click',regionEmitt);
+  return filteredRegions;
+};
 
-// function regionEmitt(e) {
-//   filteredRegions = e.target.id;
-//   const regions = document.getElementById(filteredRegions);
-//   sm(filteredRegions);
-//   activateRegionInfo(filteredRegions);
-//   regions.removeEventListener('click',regionEmitt);
-//   return filteredRegions;
-// };
+function activateRegion(filteredregions) {
+  const regions = document.getElementById(filteredregions);
+  regions.addEventListener('click',regionEmitt);
+};
 
-// function activateRegion(filteredregions) {
-//   const regions = document.getElementById(filteredregions);
-//   regions.addEventListener('click',regionEmitt);
-// };
+// DISPLAY REGION INFO
 
-// function activateRegionInfo(filteredregions) {
-  // document.getElementById('region-info').dataset.state = "active";
-  // displayRegionInfo();
-  // let closeRegionInfo = document.getElementById('close-region-info');
-  // closeRegionInfo.addEventListener('click',deactivateRegionInfo);
-// };
+function activateRegionInfo(filteredregions) {
+  document.getElementById('region-info').dataset.state = "active";
+  displayRegionInfo();
+  let closeRegionInfo = document.getElementById('close-region-info');
+  closeRegionInfo.addEventListener('click',deactivateRegionInfo);
+};
 
-// function deactivateRegionInfo() {
-//   sm(filteredRegions);
-//   let closeRegionInfo = document.getElementById('close-region-info');
-//   document.getElementById('settings-button').dataset.button = "enabled";
-//   document.getElementById('filter-button').dataset.button = "enabled";
-//   closeRegionInfo.removeEventListener('click',deactivateRegionInfo);
-// };
+function deactivateRegionInfo() {
+  sm(filteredRegions);
+  let closeRegionInfo = document.getElementById('close-region-info');
+  document.getElementById('settings-button').dataset.button = "enabled";
+  document.getElementById('filter-button').dataset.button = "enabled";
+  closeRegionInfo.removeEventListener('click',deactivateRegionInfo);
+};
 
-// function displayRegionInfo() {
-//   let regionName = document.getElementById('region-name');
-//   let regionLocation = document.getElementById('region-location');
-//   let regionFunction = document.getElementById('region-function');
-//   regionName.textContent = regionData[0][filteredRegions]['name'];
-//   regionLocation.textContent = regionData[0][filteredRegions]['location'];
-//   regionFunction.textContent = regionData[0][filteredRegions]['function'];
-//   document.getElementById('settings-button').dataset.button = "disabled";
-//   document.getElementById('filter-button').dataset.button = "disabled";
-// };
+function displayRegionInfo() {
+  let regionName = document.getElementById('region-name');
+  let regionLocation = document.getElementById('region-location');
+  let regionFunction = document.getElementById('region-function');
+  regionName.textContent = regionData[0][filteredRegions]['name'];
+  regionLocation.textContent = regionData[0][filteredRegions]['location'];
+  regionFunction.textContent = regionData[0][filteredRegions]['function'];
+  document.getElementById('settings-button').dataset.button = "disabled";
+  document.getElementById('filter-button').dataset.button = "disabled";
+};
 
 
 // NEW STATE MACHINE END
@@ -164,43 +159,39 @@ const stateLog = ['ready',currentState.textContent];
 
 
 
-var SMcurrentState = currentState.textContent;
-var SMpreviousState;
+// var SMcurrentState = currentState.textContent;
+// var SMpreviousState;
 
-function stateMachine(newEmmitedState) {
-  //SMcurrentState = currentState.textContent;
-  SMpreviousState = SMcurrentState;
-  SMcurrentState = newEmmitedState;
-  console.log(`sm previous state ${SMpreviousState}`);
-  console.log(`sm current state ${SMcurrentState}`);
-};
-
-
-var oldState;
-var newState;
-
-function updateState(emittedState) {
-  console.log(`initial log is ${stateLog}`)
-  stateLog.push(emittedState);
-  console.log(`after push log is ${stateLog}`)
-  while (stateLog.length > 2) {
-    stateLog.shift();
-  }
-  oldState = stateLog[0];
-  newState = stateLog[1];
-  console.log(`after shift log is ${stateLog}`)
-  console.log(`old state is ${oldState}`);
-  console.log(`new state is ${newState}`);
-  return oldState,newState;
-}
-
-// this does not return the updated values
-//console.log(`pulled out old is ${oldState} and new is ${newState}`);
-// need to make a function to handle delivering old and new states
+// function stateMachine(newEmmitedState) {
+//   //SMcurrentState = currentState.textContent;
+//   SMpreviousState = SMcurrentState;
+//   SMcurrentState = newEmmitedState;
+//   console.log(`sm previous state ${SMpreviousState}`);
+//   console.log(`sm current state ${SMcurrentState}`);
+// };
 
 
-function updateStateInfo(stateText) {
-  console.log(`the updated state is currently ${stateText}`);
-}
+// var oldState;
+// var newState;
 
-export { currentState , previousStateText , updateStateInfo , updateState, oldState , newState , stateMachine };
+// function updateState(emittedState) {
+//   console.log(`initial log is ${stateLog}`)
+//   stateLog.push(emittedState);
+//   console.log(`after push log is ${stateLog}`)
+//   while (stateLog.length > 2) {
+//     stateLog.shift();
+//   }
+//   oldState = stateLog[0];
+//   newState = stateLog[1];
+//   console.log(`after shift log is ${stateLog}`)
+//   console.log(`old state is ${oldState}`);
+//   console.log(`new state is ${newState}`);
+//   return oldState,newState;
+// }
+
+// function updateStateInfo(stateText) {
+//   console.log(`the updated state is currently ${stateText}`);
+// }
+
+//export { stateDisplay , updateStateInfo , updateState, oldState , newState , stateMachine };
+export { settingsButton };

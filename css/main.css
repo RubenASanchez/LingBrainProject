@@ -126,7 +126,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*display: none;*/
 }
 
 .filter-button {
@@ -308,6 +307,18 @@ hr {
   width: 90vw;
   background-color: rgba(200,100,100,.5);
 }
+
+/* DATA STATES */
+
+[data-state="inactive"] {
+  display: none;
+}
+
+[data-state="active"] {
+  display: flex;
+}
+
+/* ANIMATIONS */
 
 @media (orientation: landscape) {
   .brain {

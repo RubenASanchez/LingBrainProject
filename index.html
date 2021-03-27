@@ -15,9 +15,18 @@
   <title>LingBrain</title>
 </head>
 <body>
+
+  <!-- TOP NAVIGATION -->
+
   <nav id="app-navigation">
-    <section id="current-state">ready</section>
-    <div class="app-button" id="settings-button">
+
+    <!-- DISPLAY CURRENT STATE -->
+
+    <section id="current-state">initial</section>
+
+    <!-- SETTINGS BUTTON -->
+
+    <div class="app-button" id="settings-button" data-button="enabled">
       <svg class="settings-icon" width="24" height="24" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M19 34C27.2843 34 34 27.2843 34 19C34 10.7157 27.2843 4 19 4C10.7157 4 4 10.7157 4 19C4 27.2843 10.7157 34 19 34ZM19 28.375C24.1777 28.375 28.375 24.1777 28.375 19C28.375 13.8223 24.1777 9.625 19 9.625C13.8223 9.625 9.625 13.8223 9.625 19C9.625 24.1777 13.8223 28.375 19 28.375Z"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M31.0208 4.15076C30.2398 3.36971 28.9734 3.36971 28.1924 4.15076L24.1737 8.16948C26.6447 9.35201 28.648 11.3553 29.8305 13.8263L33.8492 9.80761C34.6303 9.02656 34.6303 7.76023 33.8492 6.97918L31.0208 4.15076ZM13.8263 29.8305C11.3553 28.648 9.35201 26.6447 8.16949 24.1737L4.15076 28.1924C3.36971 28.9734 3.36971 30.2398 4.15076 31.0208L6.97918 33.8492C7.76023 34.6303 9.02656 34.6303 9.80761 33.8492L13.8263 29.8305Z"/>
@@ -27,32 +36,14 @@
         </svg>
     </div>
   </nav>
+
+  <!-- MAIN WINDOW -->
+
   <main id="main-window">
-    <template id="data-template">
-      <section class="region-info">
-        <h2 class="name"></h2>
-        <p class="location"></p>
-        <p class="function"></p>
-      </section>
-    </template>
+    
+    <!-- SETTINGS -->
 
-    <section class="brain">brain svg here</section>
-
-    <section id="region-info-cards">
-      <section class="card">
-        <h2 id="name">Name</h2>
-      </section>
-      <section class="card">
-        <h2 id="location">Location</h2>
-        <p id="location-details">here are some location details</p>
-      </section>
-      <section class="card">
-        <h2 id="function">Function</h2>
-        <p id="function-details">here are the function details</p>
-      </section>
-    </section>
-
-    <section class="settings-section section-hide">
+    <section class="component settings-section" id="settings" data-state="inactive">
       <section id="animations"><p class="toggle-title">Animations</p><section class=toggle-section><p>on</p><div class="toggle" id="toggle-animation"><div class="toggle-button" id="toggle-button-animation"></div></div><p>off</p></section></section>
       <section id="theme"><p class="toggle-title">Light Theme</p><section class=toggle-section><p>on</p><div class="toggle" id="toggle-theme"><div class="toggle-button" id="toggle-button-theme"></div></div><p>off</p></section></section>
       <hr>
@@ -60,15 +51,66 @@
       <section id="contact"><p>Contact</p><a href="#">twitter</a></section>
     </section>
 
+    <!-- BRAIN -->
+
+    <section class="component" id="brain" data-state="active">
+      brain svg here
+    </section>
+
+    <!-- FILTER -->
+
+    <section class="component" id="filter" data-state="inactive">
+      filter descriptions here
+    </section>
+
+    <!-- REGIONS TO TAP -->
+
+    <section class="component regions" id="regions-1" data-state="inactive">
+      <div class="region" id="ba">ba</div>
+      <div class="region" id="wa">wa</div>
+    </section>
+
+    <section class="component regions" id="regions-2" data-state="inactive">
+      <div class="region" id="be">be</div>
+      <div class="region" id="we">we</div>
+    </section>
+
+    <section class="component regions" id="regions-3" data-state="inactive">
+      <div class="region" id="bi">bi</div>
+      <div class="region" id="wi">wi</div>
+    </section>
+
+    <!-- Region Info -->
+
+    <section class="component region-info" id="region-info" data-state="inactive">
+      <div id="close-region-info">close</div> <!-- close icon to go here -->
+      <section class="card">
+        <h2>Name</h2>
+        <p id="region-name">name goes here</p>
+      </section>
+      <section class="card">
+        <h2>Location</h2>
+        <p id="region-location">location details go here</p>
+      </section>
+      <section class="card">
+        <h2>Function</h2>
+        <p id="region-function">function details go here</p>
+      </section>
+    </section>
   </main>
+
+  <!-- FILTER BUTTON -->
+
   <nav id="app-actions">
-    <div class="app-button filter-button" id="filter-button">
-      <div class="app-button filter-sub-button filter-inactive">1</div>
-      <div class="app-button filter-sub-button filter-inactive">2</div>
-      <p>eye</p>
-      <div class="app-button filter-sub-button filter-inactive">3</div>
-      <div class="app-button filter-sub-button filter-inactive">4</div>
+    <div class="app-button" id="filter-button" data-button="enabled">
+      <p>filter</p> <!-- svg icon to go here -->
     </div>
+    <section class="filter-nav" id="filter-nav" data-state="inactive">
+      <div class="app-button" id="filter-regions-1">1</div> <!-- svg icon to go here -->
+      <div class="app-button" id="filter-regions-2">2</div> <!-- svg icon to go here -->
+      <div class="app-button" id="filter-regions-3">3</div> <!-- svg icon to go here -->
+      <div class="app-button" id="filter-regions-4">4</div> <!-- svg icon to go here -->
+    </section>
   </nav>
 </body>
 </html>

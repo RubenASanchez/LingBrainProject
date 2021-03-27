@@ -118,9 +118,7 @@
 
 [x] name
 
-[x] html
-
-[ ] js
+[x] htmlS
 
 # Components
 
@@ -134,13 +132,15 @@
 
 # State Machine
 
+[x] array for holding previous and current state
+
+[x] update previous and current state
+
+[x] sm updates components
+
 [x] components emit state change
 
 [x] sm listens to emited changes
-
-[x] array for holding previous and current state
-
-[x] emit previous and current state
 
 [x] sm updates content
 
@@ -148,11 +148,9 @@
 
 [x] sm display fetched db content
 
-[x] sm updates content
-
 # Test
 
-[ ] finite state machine
+[x] finite state machine
 
 # Database
 

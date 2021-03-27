@@ -1,17 +1,17 @@
-import { currentState , previousStateText , updateStateInfo , updateState , newState} from '../js/statemachine.js';
+//import { previousStateText , updateStateInfo , updateState , newState} from '../js/statemachine.js';
 
-let filterButton = document.getElementById('filter-button');
+// let filterButton = document.getElementById('filter-button');
 
-function activateReady() {
-  if (currentState.textContent === "ready") {
-    console.log('regions component newState says "Im Ready"');
-    filterButton.classList.add('filter-button-ready');
-  }
-  else {
-    filterButton.classList.remove('filter-button-ready');
-  }
-};
+// function activateReady() {
+//   if (currentState.textContent === "ready") {
+//     console.log('regions component newState says "Im Ready"');
+//     filterButton.classList.add('filter-button-ready');
+//   }
+//   else {
+//     filterButton.classList.remove('filter-button-ready');
+//   }
+// };
 
-activateReady();
+// activateReady();
 
-export { activateReady };
+// export { activateReady };

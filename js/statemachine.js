@@ -3,55 +3,44 @@
 // DISPLAY CURRENT STATE
 
 let stateDisplay = document.getElementById('current-state');
-let currentTextContent = stateDisplay.textContent;
 
-const stateLog = ['ready'];
+// HOLD CURRENT STATE
 
-
-// const myArray = ['brain']; now called stateLog
-
+const stateLog = ['brain'];
 
 // NEW STATE MACHINE BEGIN
 
+let regionData = [{
+  ba:{
+    "name":"ba",
+    "location":"top",
+    "function":"eat"
+  },
+  wa: {
+    "name":"wa",
+    "location":"side",
+    "function":"laugh"
+  },
+  region3: {
+    "name":"region 3",
+    "location":"back",
+    "function":"sleep"
+  }
+}];
 
-// let regionData = [{
-//   ba{
-//     "name":"ba",
-//     "location":"top",
-//     "function":"eat"
-//   },
-//   wa: {
-//     "name":"wa",
-//     "location":"side",
-//     "function":"laugh"
-//   },
-//   region3: {
-//     "name":"region 3",
-//     "location":"back",
-//     "function":"sleep"
-//   }
-// }];
-
-// display text
-
-
-// settings
+// SETTINGS BUTTON & FILTER BUTTON EMITT SIGNAL
 
 const settingsButton = document.getElementById('settings-button');
 let settingsEmmit = settingsButton.addEventListener('click',function() {
-  console.log('settings clicked')
   sm('settings');
 });
 
-// filter
-
 const filterButton = document.getElementById('filter-button');
 let filterEmmit = filterButton.addEventListener('click',function() {
-  console.log('filter clicked')
   sm('filter');
 });
 
-// STATE MACHINE
+// STATE MACHINE RECEIVES EMITTED SIGNAL & UPDATES CURRENT STATE
 
 function sm(emitted) {
   //console.log(`someone emitted ${emitted}`);
@@ -64,17 +53,20 @@ function sm(emitted) {
     console.log(stateLog);
   }
   stateDisplay.textContent = stateLog[stateLog.length-1];
-  return stateLog, activateState();
+  activateState();
+  return stateLog;
 };
+
+// STATE MACHINE ACTIVATES & DEACTIVATES COMPONENTS
 
 function activateState() {
   console.log(`activate state for ${stateDisplay.textContent}`);
   let activeComponent = stateDisplay.textContent;
-  console.log(activeComponent);
   let inactiveComponents = document.querySelectorAll(".component");
-  inactiveComponents.forEach((item,i) => { // this one can be written as forEach( element => {element.dataset.state = "inactive"});
+  inactiveComponents.forEach((item,i) => {
     item.dataset.state = "inactive";
   });
+  inactiveComponents.forEach( element => {element.dataset.state = "inactive"});
   document.getElementById(activeComponent).dataset.state = "active";
   if (activeComponent == 'filter') {
     activateFilters();
@@ -84,51 +76,55 @@ function activateState() {
   }
 };
 
-// function subFilterEmitt(e) {
-//   let filteredRegions = e.target.id;
-//   activateRegions(filteredRegions);
-//   const filterNav = document.getElementById('filter-nav');
-//   filterNav.removeEventListener('click',subFilterEmitt);
-// }
+// FILTERS ACTIVATED & DEACTIVATED
 
-// function activateFilters() {
-//   const filterNav = document.getElementById('filter-nav');
-//   filterNav.dataset.state = "active";
-//   filterNav.addEventListener('click',subFilterEmitt);
-// };
+function subFilterEmitt(e) {
+  let filteredRegions = e.target.id;
+  activateRegions(filteredRegions);
+  const filterNav = document.getElementById('filter-nav');
+  filterNav.removeEventListener('click',subFilterEmitt);
+}
 
-// function deactivateFilters() {
-//   document.getElementById('filter-nav').dataset.state = "inactive";
-// }
+function activateFilters() {
+  const filterNav = document.getElementById('filter-nav');
+  filterNav.dataset.state = "active";
+  filterNav.addEventListener('click',subFilterEmitt);
+};
 
-// function activateRegions(filteredregions) {
-//   filteredregions = filteredregions.replace('filter-','');
-//   sm(filteredregions);
-//   activateRegion(filteredregions);
-// };
+function deactivateFilters() {
+  document.getElementById('filter-nav').dataset.state = "inactive";
+}
 
-// let filteredRegions;
+// REGIONS ACTIVATED & DEACTIVATED
 
-// function regionEmitt(e) {
-//   filteredRegions = e.target.id;
-//   const regions = document.getElementById(filteredRegions);
-//   sm(filteredRegions);
-//   activateRegionInfo(filteredRegions);
-//   regions.removeEventListener('click',regionEmitt);
-//   return filteredRegions;
-// };
+function activateRegions(filteredregions) {
+  filteredregions = filteredregions.replace('filter-','');
+  sm(filteredregions);
+  activateRegion(filteredregions);
+};
 
-// function activateRegion(filteredregions) {
-//   const regions = document.getElementById(filteredregions);
-//   regions.addEventListener('click',regionEmitt);
-// };
+let filteredRegions;
 
-// function activateRegionInfo(filteredregions) {
-  // document.getElementById('region-info').dataset.state = "active";
-  // displayRegionInfo();
-  // let closeRegionInfo = document.getElementById('close-region-info');
-  // closeRegionInfo.addEventListener('click',deactivateRegionInfo);
-// };
+function regionEmitt(e) {
+  filteredRegions = e.target.id;
+  const regions = document.getElementById(filteredRegions);
+  sm(filteredRegions);
+  activateRegionInfo(filteredRegions);
+  regions.removeEventListener('click',regionEmitt);
+  return filteredRegions;
+};
+
+function activateRegion(filteredregions) {
+  const regions = document.getElementById(filteredregions);
+  regions.addEventListener('click',regionEmitt);
+};
+
+function activateRegionInfo(filteredregions) {
+  document.getElementById('region-info').dataset.state = "active";
+  displayRegionInfo();
+  let closeRegionInfo = document.getElementById('close-region-info');
+  closeRegionInfo.addEventListener('click',deactivateRegionInfo);
+};
 
 // function deactivateRegionInfo() {
 //   sm(filteredRegions);

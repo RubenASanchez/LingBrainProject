@@ -138,19 +138,17 @@
 
 [x] array for holding previous and current state
 
-[x] emit previous and current state
+[x] update previous and current state
 
-[x] sm updates content
+[x] sm updates components
 
 [x] sm fetch db content
 
 [x] sm display fetched db content
 
-[x] sm updates content
-
 # Test
 
-[ ] finite state machine
+[x] finite state machine
 
 # Database
 

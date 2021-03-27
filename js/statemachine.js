@@ -126,7 +126,6 @@ function activateRegionInfo(filteredregions) {
   closeRegionInfo.addEventListener('click',deactivateRegionInfo);
 };
 
-
 // function deactivateRegionInfo() {
 //   sm(filteredRegions);
 //   let closeRegionInfo = document.getElementById('close-region-info');

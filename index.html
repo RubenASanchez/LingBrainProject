@@ -43,10 +43,16 @@
     
     <!-- BRAIN -->
 
-    <section class="component" id="brain">
+    <section class="component" id="brain" data-state="active">
       brain svg here
     </section>
 
+    <!-- FILTER -->
+
+    <section class="component" id="filter" data-state="inactive">
+      filter descriptions here
+    </section>
+    
     <!-- REGION INFO -->
 
     <section  id="region-info-cards">
@@ -78,13 +84,15 @@
   <!-- FILTER BUTTON -->
 
   <nav id="app-actions">
-    <div class="app-button filter-button" id="filter-button" data-button="enabled">
-      <div class="app-button filter-sub-button filter-inactive">1</div>
-      <div class="app-button filter-sub-button filter-inactive">2</div>
-      <p>eye</p>
-      <div class="app-button filter-sub-button filter-inactive">3</div>
-      <div class="app-button filter-sub-button filter-inactive">4</div>
+    <div class="app-button" id="filter-button" data-button="enabled">
+      <p>filter</p> <!-- svg icon to go here -->
     </div>
+    <section class="filter-nav" id="filter-nav" data-state="inactive">
+      <div class="app-button" id="filter-regions-1">1</div> <!-- svg icon to go here -->
+      <div class="app-button" id="filter-regions-2">2</div> <!-- svg icon to go here -->
+      <div class="app-button" id="filter-regions-3">3</div> <!-- svg icon to go here -->
+      <div class="app-button" id="filter-regions-4">4</div> <!-- svg icon to go here -->
+    </section>
   </nav>
 </body>
 </html>

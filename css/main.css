@@ -259,7 +259,15 @@ hr {
   transition: all 1s;  /* not sure if needed */
 }
 
+.regions {
+  pointer-events: none;
+  display: grid;
+}
 
+.region {
+  pointer-events: auto;
+  user-select: none;
+}
 
 .section-hide {
   animation: section-hide .6s linear forwards; /* need to test this */
@@ -323,7 +331,7 @@ hr {
 /* ANIMATIONS */
 
 @media (orientation: landscape) {
-  .brain {
+  .brain, .filter , .regions , .region-info {
     width: calc(130vh - 150px);
     height: calc(90vh - 150px);
   }

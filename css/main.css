@@ -51,8 +51,8 @@ nav {
   margin-left: calc(45vw - 50px);
   text-align: center;
   color: var(--text-colour);
-  transition: opacity 1s;
-  /* animation: state-display 1s linear forwards; this does not seem to work */
+  /* transition: all 1s; */
+  /* animation: state-display 1s linear forwards; */
 }
 
 /* @keyframes state-display {
@@ -165,7 +165,7 @@ nav {
 
 /* SETTINGS SECTION */
 
-.settings-section {
+.settings {
   width: 80%;
   height: 75%;
   padding: 5% 0 0;
@@ -177,7 +177,7 @@ nav {
   color: var(--text-colour);
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
   background-color: var(--neomorphic-mid);
-  transition: all 1s;  /* not sure if needed */
+  /* transition: all 1s;  this animates it growing and shrinking when orientation changes */
 }
 
 #animations , #theme , #about , #contact {
@@ -243,7 +243,9 @@ hr {
 
 /* BRAIN */
 
-.brain {
+/* COMPONENTS */
+
+.brain, .filter , .regions , .region-info {
   width: 90vw;
   height: 50vw;
   display: flex;
@@ -253,11 +255,11 @@ hr {
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
   background-color: var(--neomorphic-mid);
   text-align: center;
-  /*display: none;*/
-  /*height: 0.5vh;*/
   overflow: hidden;
   transition: all 1s;  /* not sure if needed */
 }
+
+
 
 .section-hide {
   animation: section-hide .6s linear forwards; /* need to test this */
@@ -325,9 +327,13 @@ hr {
     width: calc(130vh - 150px);
     height: calc(90vh - 150px);
   }
-  .settings-section {
+  .settings {
     width: 50%;
     height: 78%;
     padding: 2% 0 0;
   }
 }
+
+/* NO ANIMATIONS */
+
+/* perhaps add a data attribute animation play state paused */

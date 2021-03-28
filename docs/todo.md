@@ -126,7 +126,11 @@
 
 [x] filter
 
+[x] brain
+
 [x] regions
+
+[x] region info
 
 [ ] fetchdata js
 

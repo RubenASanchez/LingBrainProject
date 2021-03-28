@@ -152,6 +152,10 @@
 
 [x] finite state machine
 
+# Styles
+
+[x] components
+
 # Database
 
 [x] js

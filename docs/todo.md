@@ -160,6 +160,8 @@
 
 [x] components
 
+[x] buttons
+
 # Database
 
 [x] js

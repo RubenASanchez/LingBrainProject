@@ -251,12 +251,18 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border-radius: 5vw;
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
   background-color: var(--neomorphic-mid);
   text-align: center;
   overflow: hidden;
   transition: all 1s;  /* not sure if needed */
+}
+
+.filter p {
+  width: 120px;
+  text-align: left;
 }
 
 .regions {

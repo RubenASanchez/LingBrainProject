@@ -257,7 +257,35 @@ hr {
   background-color: var(--neomorphic-mid);
   text-align: center;
   overflow: hidden;
-  transition: all 1s;  /* not sure if needed */
+  transition: all 1s;  /*this animates it growing and shrinking when orientation changes*/
+}
+
+.settings {
+  width: 80%;
+  height: 75%;
+  padding: 5% 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 5vw;
+  color: var(--text-colour);
+  box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
+  background-color: var(--neomorphic-mid);
+}
+
+.region-info {
+  width: 80%;
+  height: 75%;
+  padding: 5% 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 5vw;
+  color: var(--text-colour);
+  box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
+  background-color: var(--neomorphic-mid);
 }
 
 .filter p {
@@ -273,6 +301,16 @@ hr {
 .region {
   pointer-events: auto;
   user-select: none;
+}
+
+#close-region-info {
+  background-color: tomato;
+  height: 30px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 30px;
 }
 
 .section-hide {
@@ -313,15 +351,22 @@ hr {
 
 /* CARDS */
 
-#region-info-cards {
-  /* initial height 0 to make room for brain*/
+.card-name , .card-location , .card-function {
+  width: 95%;
+  text-align: left;
   background-color: rgba(200,100,100,.5);
-  display: none;
+  border: 1px solid black;
+  flex-grow: 1;
 }
 
-.card {
-  width: 90vw;
-  background-color: rgba(200,100,100,.5);
+.card-name {
+  flex-grow: 1;
+}
+
+.card-location , .card-function {
+  flex-basis: 25px;
+  flex-grow: 0;
+  overflow: hidden;
 }
 
 /* DATA STATES */
@@ -337,7 +382,7 @@ hr {
 /* ANIMATIONS */
 
 @media (orientation: landscape) {
-  .brain, .filter , .regions , .region-info {
+  .brain , .filter , .regions , .region-info {
     width: calc(130vh - 150px);
     height: calc(90vh - 150px);
   }

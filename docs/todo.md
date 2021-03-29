@@ -204,6 +204,10 @@
 
 [ ] display - eye
 
+[ ] close regions
+
+[ ] regions
+
 # Animation
 
 [x] button hover

@@ -251,15 +251,74 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border-radius: 5vw;
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
   background-color: var(--neomorphic-mid);
   text-align: center;
   overflow: hidden;
-  transition: all 1s;  /* not sure if needed */
+  transition: all 1s;  /*this animates it growing and shrinking when orientation changes*/
 }
 
+.settings {
+  width: 80%;
+  height: 75%;
+  padding: 5% 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 5vw;
+  color: var(--text-colour);
+  box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
+  background-color: var(--neomorphic-mid);
+}
 
+.region-info {
+  width: 95%;
+  height: 85%;
+  padding: 2% 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+  column-gap: 15px;
+  border-radius: 5vw;
+  color: var(--text-colour);
+  box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
+  background-color: var(--neomorphic-mid);
+}
+
+.region-info h2 {
+  margin: 0;
+}
+
+.region-info p {
+  margin: 2% 0 0;
+}
+
+.filter p {
+  width: 120px;
+  text-align: left;
+}
+
+.regions {
+  pointer-events: none;
+  display: grid;
+}
+
+.region {
+  pointer-events: auto;
+  user-select: none;
+}
+
+#close-region-info {
+  height: 30px;
+  width: 48px;
+  border-radius: 8px;
+  flex-basis: 30px;
+}
 
 .section-hide {
   animation: section-hide .6s linear forwards; /* need to test this */
@@ -299,15 +358,29 @@ hr {
 
 /* CARDS */
 
-#region-info-cards {
-  /* initial height 0 to make room for brain*/
-  background-color: rgba(200,100,100,.5);
-  display: none;
+.card-name , .card-location , .card-function {
+  width: calc(95% - 20px);
+  flex-basis: 25px;
+  margin: 10px 0 0;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
+  background-color: var(--neomorphic-mid);
 }
 
-.card {
-  width: 90vw;
-  background-color: rgba(200,100,100,.5);
+.card-name {
+  flex-grow: 1;
+}
+
+/* .card-location {
+  flex-grow: 1;
+} */
+
+.card-function {
+  /* flex-grow: 1; */
+  margin-bottom: 15px;
 }
 
 /* DATA STATES */
@@ -323,7 +396,7 @@ hr {
 /* ANIMATIONS */
 
 @media (orientation: landscape) {
-  .brain {
+  .brain , .filter , .regions , .region-info {
     width: calc(130vh - 150px);
     height: calc(90vh - 150px);
   }
@@ -331,6 +404,9 @@ hr {
     width: 50%;
     height: 78%;
     padding: 2% 0 0;
+  }
+  .card-name , .card-location , .card-function {
+    width: calc(90% - 20px);
   }
 }
 

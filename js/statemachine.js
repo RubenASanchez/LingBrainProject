@@ -13,7 +13,7 @@ const stateLog = ['brain'];
 let regionData = [{
   ba:{
     "name":"ba",
-    "location":"top",
+    "location":"top , adding a bunch of stuff here to see if the div will shrink smaller than the text. If not then will need to add dots with some js.",
     "function":"eat"
   },
   wa: {

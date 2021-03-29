@@ -59,8 +59,13 @@
 
     <!-- FILTER -->
 
+    <!-- make a descriptive list OR show all sections and highlight selected regions -->
     <section class="component filter" id="filter" data-state="inactive">
-      filter descriptions here
+      <p>1 - comprehension</p>
+      <p>2 - production</p>
+      <p>3 - lexicon</p>
+      <p>4 - </p>
+      <p>5 - </p>
     </section>
 
     <!-- REGIONS TO TAP -->
@@ -93,16 +98,18 @@
     <!-- Region Info -->
 
     <section class="component region-info" id="region-info" data-state="inactive">
-      <div id="close-region-info">close</div> <!-- close icon to go here -->
-      <section class="card">
+      <div class="app-button" id="close-region-info">
+        <p>close</p> <!-- close icon to go here -->
+      </div>
+      <section class="card-name">
         <h2>Name</h2>
         <p id="region-name">name goes here</p>
       </section>
-      <section class="card">
+      <section class="card-location">
         <h2>Location</h2>
         <p id="region-location">location details go here</p>
       </section>
-      <section class="card">
+      <section class="card-function">
         <h2>Function</h2>
         <p id="region-function">function details go here</p>
       </section>

@@ -162,6 +162,8 @@
 
 [x] buttons
 
+[x] region info cards
+
 # Database
 
 [x] js

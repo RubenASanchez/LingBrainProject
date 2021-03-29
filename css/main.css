@@ -275,8 +275,8 @@ hr {
 }
 
 .region-info {
-  width: 80%;
-  height: 78%;
+  width: 95%;
+  height: 85%;
   padding: 2% 0 0;
   display: flex;
   flex-direction: column;
@@ -288,6 +288,14 @@ hr {
   color: var(--text-colour);
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
   background-color: var(--neomorphic-mid);
+}
+
+.region-info h2 {
+  margin: 0;
+}
+
+.region-info p {
+  margin: 2% 0 0;
 }
 
 .filter p {
@@ -306,12 +314,9 @@ hr {
 }
 
 #close-region-info {
-  background-color: tomato;
   height: 30px;
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 48px;
+  border-radius: 8px;
   flex-basis: 30px;
 }
 
@@ -354,9 +359,11 @@ hr {
 /* CARDS */
 
 .card-name , .card-location , .card-function {
-  width: 95%;
+  width: calc(95% - 20px);
   flex-basis: 25px;
   margin: 10px 0 0;
+  padding: 10px;
+  border-radius: 10px;
   overflow: hidden;
   text-align: left;
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
@@ -368,11 +375,12 @@ hr {
 }
 
 .card-location {
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .card-function {
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  margin-bottom: 15px;
 }
 
 /* DATA STATES */
@@ -396,6 +404,9 @@ hr {
     width: 50%;
     height: 78%;
     padding: 2% 0 0;
+  }
+  .card-name , .card-location , .card-function {
+    width: calc(90% - 20px);
   }
 }
 

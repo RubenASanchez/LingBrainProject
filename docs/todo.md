@@ -164,6 +164,8 @@
 
 [x] region info cards
 
+[x] region info close button
+
 # Database
 
 [x] js

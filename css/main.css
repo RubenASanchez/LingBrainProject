@@ -276,12 +276,14 @@ hr {
 
 .region-info {
   width: 80%;
-  height: 75%;
-  padding: 5% 0 0;
+  height: 78%;
+  padding: 2% 0 0;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  overflow: hidden;
+  column-gap: 15px;
   border-radius: 5vw;
   color: var(--text-colour);
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
@@ -353,20 +355,24 @@ hr {
 
 .card-name , .card-location , .card-function {
   width: 95%;
+  flex-basis: 25px;
+  margin: 10px 0 0;
+  overflow: hidden;
   text-align: left;
-  background-color: rgba(200,100,100,.5);
-  border: 1px solid black;
-  flex-grow: 1;
+  box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
+  background-color: var(--neomorphic-mid);
 }
 
 .card-name {
   flex-grow: 1;
 }
 
-.card-location , .card-function {
-  flex-basis: 25px;
-  flex-grow: 0;
-  overflow: hidden;
+.card-location {
+  flex-grow: 1;
+}
+
+.card-function {
+  flex-grow: 1;
 }
 
 /* DATA STATES */

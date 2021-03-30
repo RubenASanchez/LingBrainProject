@@ -214,6 +214,10 @@
 
 [ ] regions
 
+# Interaction
+
+[ ] region info cards
+
 # Animation
 
 [x] button hover

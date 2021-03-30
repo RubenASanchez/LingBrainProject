@@ -216,7 +216,7 @@
 
 # Interaction
 
-[ ] region info cards
+[x] region info cards
 
 # Animation
 

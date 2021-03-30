@@ -370,16 +370,19 @@ hr {
   background-color: var(--neomorphic-mid);
 }
 
-.card-name {
+.card-expand {
   flex-grow: 1;
 }
+
+/* .card-name {
+  flex-grow: 1;
+} */
 
 /* .card-location {
   flex-grow: 1;
 } */
 
 .card-function {
-  /* flex-grow: 1; */
   margin-bottom: 15px;
 }
 

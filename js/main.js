@@ -1,7 +1,7 @@
 //import { brainRegionsObject } from '../data/dataset.js';
 // import { activateReady } from '../components/regions.js';
 // import { activateFilter } from '../components/filter.js';
-// import { activateSettings } from '../components/settings.js';
+import { activateAnimation , activateTheme } from '../components/settings.js';
 import { settingsButton } from './statemachine.js';
 
 

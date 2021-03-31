@@ -18,6 +18,10 @@
 
 [x] version tags
 
+# Version
+
+- v0.2.3-alpha
+
 # Documentation
 
 [x] readme

@@ -147,5 +147,26 @@ function displayRegionInfo() {
   document.getElementById('filter-button').dataset.button = "disabled";
 };
 
+// REGION INFO CARDS
+
+const cardName = document.getElementById('card-name');
+const cardLocation = document.getElementById('card-location');
+const cardFunction = document.getElementById('card-function');
+
+cardName.addEventListener('click',function() {
+  cardName.classList.toggle('card-expand');
+  console.log('clicked card');
+});
+
+cardLocation.addEventListener('click',function() {
+  cardLocation.classList.toggle('card-expand');
+  console.log('clicked card');
+});
+
+cardFunction.addEventListener('click',function() {
+  cardFunction.classList.toggle('card-expand');
+  console.log('clicked card');
+});
+
 //export { stateDisplay , updateStateInfo , updateState, oldState , newState , stateMachine };
 export { settingsButton };

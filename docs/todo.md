@@ -218,6 +218,10 @@
 
 [ ] regions
 
+# Interaction
+
+[x] region info cards
+
 # Animation
 
 [x] button hover

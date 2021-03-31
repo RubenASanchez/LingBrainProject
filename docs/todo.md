@@ -170,6 +170,8 @@
 
 [x] region info close button
 
+[x] settings
+
 # Database
 
 [x] js

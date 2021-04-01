@@ -337,24 +337,24 @@ hr {
   }
 }
 
-.brain-section-top {
+/* .brain-section-top {
   animation: section-top 1s linear forwards;
 }
 
 @keyframes section-top {
   to {transform: translateY(calc(calc(calc(100% - 150px) - 50vw)) / 2);}
-}
+} */
 
 /* for making room for the cards */
 
-.brain-section-move {
+/* .brain-section-move {
   animation: section-move 1s linear forwards;
 }
 
 @keyframes section-move {
   50% {transform: translateY(0vw) scale(.25);}
   100% {transform: translateY(-50vw) scale(.25);}
-}
+} */
 
 /* CARDS */
 

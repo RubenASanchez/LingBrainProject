@@ -1,15 +1,13 @@
 # Branches
 
 - animation
-- appshell
-- appsource
 - data
 - development
 - filter
 - main
 - manifest
 - metadata
+- regioninfo
 - settings
 - statemachine
 - sw
-- template

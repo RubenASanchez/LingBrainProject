@@ -46,11 +46,11 @@ function sm(emitted) {
   //console.log(`someone emitted ${emitted}`);
   if (stateLog[stateLog.length-1] == emitted) {
     stateLog.pop();
-    console.log(stateLog);
+    // console.log(stateLog);
   }
   else {
     stateLog.push(emitted);
-    console.log(stateLog);
+    // console.log(stateLog);
   }
   stateDisplay.textContent = stateLog[stateLog.length-1];
   activateState();
@@ -157,17 +157,17 @@ const cardFunction = document.getElementById('card-function');
 
 cardName.addEventListener('click',function() {
   cardName.classList.toggle('card-expand');
-  console.log('clicked card');
+  // console.log('clicked card');
 });
 
 cardLocation.addEventListener('click',function() {
   cardLocation.classList.toggle('card-expand');
-  console.log('clicked card');
+  // console.log('clicked card');
 });
 
 cardFunction.addEventListener('click',function() {
   cardFunction.classList.toggle('card-expand');
-  console.log('clicked card');
+  // console.log('clicked card');
 });
 
 //export { stateDisplay , updateStateInfo , updateState, oldState , newState , stateMachine };

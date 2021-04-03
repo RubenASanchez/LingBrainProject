@@ -96,7 +96,7 @@
 
 [x] about content
 
-[ ] about link
+[x] about link
 
 [ ] show/hide filter button
 

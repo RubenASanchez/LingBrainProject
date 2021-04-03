@@ -8,7 +8,7 @@ let stateDisplay = document.getElementById('current-state');
 
 const stateLog = ['brain'];
 
-// NEW STATE MACHINE BEGIN
+// CONTRIVED DATA OBJECT ARRAY
 
 let regionData = [{
   ba:{

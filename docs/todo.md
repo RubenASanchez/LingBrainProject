@@ -108,7 +108,9 @@
 
 [x] sub button styles
 
-[ ] svg icons
+[ ] svg main icon
+
+[ ] svg sub icons
 
 # Toggle Animations
 

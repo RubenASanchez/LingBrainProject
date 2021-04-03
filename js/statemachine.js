@@ -86,12 +86,14 @@ function subFilterEmitt(e) {
 }
 
 function activateFilters() {
+  document.getElementById('filter-button').dataset.state = "inactive";
   const filterNav = document.getElementById('filter-nav');
   filterNav.dataset.state = "active";
   filterNav.addEventListener('click',subFilterEmitt);
 };
 
 function deactivateFilters() {
+  document.getElementById('filter-button').dataset.state = "active";
   document.getElementById('filter-nav').dataset.state = "inactive";
 }
 

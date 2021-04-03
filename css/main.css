@@ -128,40 +128,40 @@ nav {
   justify-content: center;
 }
 
-.filter-button {
+/* .filter-button {
   display: flex;
   justify-content: center;
   align-items: center;
   transition: width 1s;
-}
+} */
 
-.filter-button-ready {
+/* .filter-button-ready {
   animation: filter-button-ready 3s ease-in infinite;
-}
+} */
 
-@keyframes filter-button-ready {
+/* @keyframes filter-button-ready {
   0% {color: var(--text-colour);}
   5% {color: var(--active-colour);}
   50% {color: var(--text-colour);}
-}
+} */
 
 .filter-sub-button {
   width: 40px;
   height: 40px;
 }
 
-.filter-active {
+/* .filter-active {
   width: 98vw;
   border-radius: 5vw;
   justify-content: space-around;
   box-shadow: inset 0 5px 5px var(--neomorphic-dark-shadow), inset 0 -5px 5px var(--neomorphic-light-shadow);
-}
+} */
 
-.filter-inactive {
+/* .filter-inactive {
   width: 0px;
   height: 0px;
   display: none;
-}
+} */
 
 /* SETTINGS SECTION */
 

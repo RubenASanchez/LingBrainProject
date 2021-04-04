@@ -108,7 +108,7 @@
 
 [x] sub button styles
 
-[ ] svg main icon
+[x] svg main icon
 
 [ ] svg sub icons
 

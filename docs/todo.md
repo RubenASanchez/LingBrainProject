@@ -98,7 +98,7 @@
 
 [x] about link
 
-[ ] show/hide filter button
+[x] show/hide filter button
 
 # Filter
 

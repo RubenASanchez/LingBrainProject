@@ -92,7 +92,7 @@ nav {
 
 /* SETTINGS BUTTON */
 
-.settings-icon {
+.settings-icon , .filter-icon {
   fill: var(--icon-colour);
   transition: all 1s;
 }

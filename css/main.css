@@ -95,6 +95,7 @@ nav {
 .settings-icon , .filter-icon {
   fill: var(--icon-colour);
   transition: all 1s;
+  /* background-color: pink; */
 }
 
 .settings-icon:hover {

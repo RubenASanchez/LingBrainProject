@@ -110,7 +110,7 @@
 
 [x] svg main icon
 
-[ ] svg sub icons
+[x] svg sub icons
 
 # Toggle Animations
 

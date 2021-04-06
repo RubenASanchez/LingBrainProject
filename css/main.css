@@ -92,7 +92,7 @@ nav {
 
 /* SETTINGS BUTTON */
 
-.settings-icon , .filter-icon {
+.settings-icon , .filter-icon , .close-icon {
   fill: var(--icon-colour);
   transition: all 1s;
   /* background-color: pink; */
@@ -320,7 +320,7 @@ hr {
 
 #close-region-info {
   height: 30px;
-  width: 48px;
+  width: 30px;
   border-radius: 8px;
   flex-basis: 30px;
 }

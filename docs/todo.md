@@ -216,9 +216,9 @@
 
 [x] settings - gear
 
-[ ] display - eye
+[x] display - eye
 
-[ ] close regions
+[x] close regions
 
 [ ] regions
 

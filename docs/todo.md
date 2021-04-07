@@ -112,6 +112,8 @@
 
 [x] svg sub icons
 
+[x] onboarding animation
+
 # Toggle Animations
 
 [ ] logic

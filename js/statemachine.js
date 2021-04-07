@@ -4,9 +4,19 @@
 
 let stateDisplay = document.getElementById('current-state');
 
+// ONBOARD
+
+(function () {
+  if (stateDisplay.innerText == 'ready') {
+    console.log('im ready');
+    // code to add class list here for filter button animation
+  }
+}());
+
 // HOLD CURRENT STATE
 
 const stateLog = ['brain'];
+console.log(stateLog);
 
 // CONTRIVED DATA OBJECT ARRAY
 
@@ -46,11 +56,11 @@ function sm(emitted) {
   //console.log(`someone emitted ${emitted}`);
   if (stateLog[stateLog.length-1] == emitted) {
     stateLog.pop();
-    // console.log(stateLog);
+    console.log(stateLog);
   }
   else {
     stateLog.push(emitted);
-    // console.log(stateLog);
+    console.log(stateLog);
   }
   stateDisplay.textContent = stateLog[stateLog.length-1];
   activateState();

@@ -133,22 +133,25 @@ nav {
   transform: scaleY(.5);
 }
 
-/* .filter-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: width 1s;
-} */
+.filter-icon path {
+  animation: filter-ready 2s ease-out infinite;
+}
 
-/* .filter-button-ready {
-  animation: filter-button-ready 3s ease-in infinite;
-} */
+.filter-icon path:nth-of-type(2) {
+  animation-delay: .25s;
+}
 
-/* @keyframes filter-button-ready {
-  0% {color: var(--text-colour);}
-  5% {color: var(--active-colour);}
-  50% {color: var(--text-colour);}
-} */
+.filter-icon path:nth-of-type(3) {
+  animation-delay: .5s;
+}
+
+.filter-icon path:nth-of-type(4) {
+  animation-delay: .75s;
+}
+
+@keyframes filter-ready {
+  from {fill: var(--active-colour);}
+}
 
 .filter-sub-button {
   width: 40px;

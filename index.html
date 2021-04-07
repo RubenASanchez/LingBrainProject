@@ -22,12 +22,12 @@
 
     <!-- DISPLAY CURRENT STATE -->
 
-    <section id="current-state">initial</section>
+    <section id="current-state">ready</section>
 
     <!-- SETTINGS BUTTON -->
 
     <div class="app-button" id="settings-button" data-button="enabled">
-      <svg class="settings-icon" width="24" height="24" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+      <svg class="settings-icon" width="24" height="24" viewbox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M19 34C27.2843 34 34 27.2843 34 19C34 10.7157 27.2843 4 19 4C10.7157 4 4 10.7157 4 19C4 27.2843 10.7157 34 19 34ZM19 28.375C24.1777 28.375 28.375 24.1777 28.375 19C28.375 13.8223 24.1777 9.625 19 9.625C13.8223 9.625 9.625 13.8223 9.625 19C9.625 24.1777 13.8223 28.375 19 28.375Z"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M31.0208 4.15076C30.2398 3.36971 28.9734 3.36971 28.1924 4.15076L24.1737 8.16948C26.6447 9.35201 28.648 11.3553 29.8305 13.8263L33.8492 9.80761C34.6303 9.02656 34.6303 7.76023 33.8492 6.97918L31.0208 4.15076ZM13.8263 29.8305C11.3553 28.648 9.35201 26.6447 8.16949 24.1737L4.15076 28.1924C3.36971 28.9734 3.36971 30.2398 4.15076 31.0208L6.97918 33.8492C7.76023 34.6303 9.02656 34.6303 9.80761 33.8492L13.8263 29.8305Z"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M4.15076 6.97918C3.36971 7.76023 3.36971 9.02656 4.15076 9.80761L8.16949 13.8263C9.35201 11.3553 11.3553 9.35201 13.8263 8.16948L9.80761 4.15076C9.02657 3.36971 7.76024 3.36971 6.97919 4.15076L4.15076 6.97918ZM29.8305 24.1737C28.648 26.6447 26.6447 28.648 24.1737 29.8305L28.1924 33.8492C28.9734 34.6303 30.2398 34.6303 31.0208 33.8492L33.8492 31.0208C34.6303 30.2398 34.6303 28.9734 33.8492 28.1924L29.8305 24.1737Z"/>
@@ -99,7 +99,9 @@
 
     <section class="component region-info" id="region-info" data-state="inactive">
       <div class="app-button" id="close-region-info">
-        <p>close</p> <!-- close icon to go here -->
+        <svg class="close-icon" width="20" height="20" viewBox="-18 -18 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.42378 1.2141C5.87275 -0.358985 3.35802 -0.358985 1.80698 1.2141C0.255948 2.78718 0.255948 5.33764 1.80698 6.91072L16.4152 21.7265L1.19747 37.158C-0.353694 38.731 -0.353693 41.2812 1.19747 42.8542C2.74864 44.4271 5.26357 44.4271 6.81474 42.8542L22.032 27.4232L37.2498 42.8573C38.8009 44.4304 41.3156 44.4304 42.8666 42.8573C44.4177 41.2842 44.4177 38.7337 42.8666 37.1607L27.6492 21.727L42.2605 6.91049C43.8117 5.33754 43.8117 2.78728 42.2605 1.21432C40.7093 -0.358629 38.1944 -0.358629 36.6432 1.21432L22.0324 16.0304L7.42378 1.2141Z"/>
+          </svg>
       </div>
       <section class="card-name" id="card-name">
         <h2>Name</h2>
@@ -119,8 +121,12 @@
   <!-- FILTER BUTTON -->
 
   <nav id="app-actions">
-    <div class="app-button" id="filter-button" data-button="enabled">
-      <p>filter</p> <!-- svg icon to go here -->
+    <div class="app-button" id="filter-button" data-button="enabled" data-animation="none">
+      <svg class="filter-icon" width="24" height="24" viewbox="-3 -8 48 48" xmlns="http://www.w3.org/2000/svg">
+        <path class="f1" data-animation="none" d="M0 0H44L42 8H2L0 0Z"/>
+        <path class="f2" data-animation="none" d="M3 12H41L39 20H5L3 12Z"/>
+        <path class="f3" data-animation="none" d="M6 24H38L36 32H8L6 24Z"/>
+        </svg>
     </div>
     <section class="filter-nav" id="filter-nav" data-state="inactive">
       <div class="app-button" id="filter-regions-1">1</div> <!-- svg icon to go here -->

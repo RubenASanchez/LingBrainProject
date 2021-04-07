@@ -92,9 +92,10 @@ nav {
 
 /* SETTINGS BUTTON */
 
-.settings-icon {
+.settings-icon , .filter-icon , .close-icon {
   fill: var(--icon-colour);
   transition: all 1s;
+  /* background-color: pink; */
 }
 
 .settings-icon:hover {
@@ -128,21 +129,24 @@ nav {
   justify-content: center;
 }
 
-.filter-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: width 1s;
+.filter-icon:hover {
+  transform: scaleY(.5);
 }
 
-.filter-button-ready {
-  animation: filter-button-ready 3s ease-in infinite;
+.filter-icon path {
+  animation: filter-ready 2s ease-out infinite;
 }
 
-@keyframes filter-button-ready {
-  0% {color: var(--text-colour);}
-  5% {color: var(--active-colour);}
-  50% {color: var(--text-colour);}
+.filter-icon path:nth-of-type(2) {
+  animation-delay: .25s;
+}
+
+.filter-icon path:nth-of-type(3) {
+  animation-delay: .5s;
+}
+
+@keyframes filter-ready {
+  from {fill: var(--active-colour);}
 }
 
 .filter-sub-button {
@@ -150,18 +154,18 @@ nav {
   height: 40px;
 }
 
-.filter-active {
+/* .filter-active {
   width: 98vw;
   border-radius: 5vw;
   justify-content: space-around;
   box-shadow: inset 0 5px 5px var(--neomorphic-dark-shadow), inset 0 -5px 5px var(--neomorphic-light-shadow);
-}
+} */
 
-.filter-inactive {
+/* .filter-inactive {
   width: 0px;
   height: 0px;
   display: none;
-}
+} */
 
 /* SETTINGS SECTION */
 
@@ -315,7 +319,7 @@ hr {
 
 #close-region-info {
   height: 30px;
-  width: 48px;
+  width: 30px;
   border-radius: 8px;
   flex-basis: 30px;
 }
@@ -396,6 +400,18 @@ hr {
 
 [data-button="disabled"] svg {
   fill: var(--neomorphic-dark);
+}
+
+/* DATA ANIMATIONS */
+
+[data-animation="none"] {
+  animation: none;
+}
+
+/* SVG ANIMATIONS */
+
+#animation-none {
+  animation: none;
 }
 
 /* ANIMATIONS */

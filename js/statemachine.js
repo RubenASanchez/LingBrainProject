@@ -7,6 +7,7 @@ let stateDisplay = document.getElementById('current-state');
 // HOLD CURRENT STATE
 
 const stateLog = ['brain'];
+console.log(stateLog);
 
 // CONTRIVED DATA OBJECT ARRAY
 
@@ -38,6 +39,7 @@ let settingsEmmit = settingsButton.addEventListener('click',function() {
 const filterButton = document.getElementById('filter-button');
 let filterEmmit = filterButton.addEventListener('click',function() {
   sm('filter');
+  removeOnboardingAnimation();
 });
 
 // STATE MACHINE RECEIVES EMITTED SIGNAL & UPDATES CURRENT STATE
@@ -86,12 +88,14 @@ function subFilterEmitt(e) {
 }
 
 function activateFilters() {
+  document.getElementById('filter-button').dataset.state = "inactive";
   const filterNav = document.getElementById('filter-nav');
   filterNav.dataset.state = "active";
   filterNav.addEventListener('click',subFilterEmitt);
 };
 
 function deactivateFilters() {
+  document.getElementById('filter-button').dataset.state = "active";
   document.getElementById('filter-nav').dataset.state = "inactive";
 }
 
@@ -155,18 +159,30 @@ const cardFunction = document.getElementById('card-function');
 
 cardName.addEventListener('click',function() {
   cardName.classList.toggle('card-expand');
-  console.log('clicked card');
+  // console.log('clicked card');
 });
 
 cardLocation.addEventListener('click',function() {
   cardLocation.classList.toggle('card-expand');
-  console.log('clicked card');
+  // console.log('clicked card');
 });
 
 cardFunction.addEventListener('click',function() {
   cardFunction.classList.toggle('card-expand');
-  console.log('clicked card');
+  // console.log('clicked card');
 });
+
+// REMOVE ONBOARDING ANIMATION FROM FILTER BUTTON
+
+function removeOnboardingAnimation() {
+  const f1 = document.getElementsByClassName('f1')[0];
+  const f2 = document.getElementsByClassName('f2')[0];
+  const f3 = document.getElementsByClassName('f3')[0];
+  f1.setAttribute('id','animation-none');
+  f2.setAttribute('id','animation-none');
+  f3.setAttribute('id','animation-none');
+};
+
 
 //export { stateDisplay , updateStateInfo , updateState, oldState , newState , stateMachine };
 export { settingsButton };

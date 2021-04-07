@@ -98,7 +98,7 @@
 
 [x] about link
 
-[ ] show/hide filter button
+[x] show/hide filter button
 
 # Filter
 
@@ -108,7 +108,11 @@
 
 [x] sub button styles
 
-[ ] svg icons
+[x] svg main icon
+
+[x] svg sub icons
+
+[x] onboarding animation
 
 # Toggle Animations
 
@@ -214,9 +218,9 @@
 
 [x] settings - gear
 
-[ ] display - eye
+[x] display - eye
 
-[ ] close regions
+[x] close regions
 
 [ ] regions
 

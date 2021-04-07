@@ -243,3 +243,5 @@
 # Social Media
 
 [ ] twitter cards meta data
+
+[ ] share

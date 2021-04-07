@@ -4,15 +4,6 @@
 
 let stateDisplay = document.getElementById('current-state');
 
-// ONBOARD
-
-(function () {
-  if (stateDisplay.innerText == 'ready') {
-    console.log('im ready');
-    // code to add class list here for filter button animation
-  }
-}());
-
 // HOLD CURRENT STATE
 
 const stateLog = ['brain'];
@@ -48,6 +39,7 @@ let settingsEmmit = settingsButton.addEventListener('click',function() {
 const filterButton = document.getElementById('filter-button');
 let filterEmmit = filterButton.addEventListener('click',function() {
   sm('filter');
+  removeOnboardingAnimation();
 });
 
 // STATE MACHINE RECEIVES EMITTED SIGNAL & UPDATES CURRENT STATE
@@ -179,6 +171,18 @@ cardFunction.addEventListener('click',function() {
   cardFunction.classList.toggle('card-expand');
   // console.log('clicked card');
 });
+
+// REMOVE ONBOARDING ANIMATION FROM FILTER BUTTON
+
+function removeOnboardingAnimation() {
+  const f1 = document.getElementsByClassName('f1')[0];
+  const f2 = document.getElementsByClassName('f2')[0];
+  const f3 = document.getElementsByClassName('f3')[0];
+  f1.setAttribute('id','animation-none');
+  f2.setAttribute('id','animation-none');
+  f3.setAttribute('id','animation-none');
+};
+
 
 //export { stateDisplay , updateStateInfo , updateState, oldState , newState , stateMachine };
 export { settingsButton };

@@ -145,10 +145,6 @@ nav {
   animation-delay: .5s;
 }
 
-.filter-icon path:nth-of-type(4) {
-  animation-delay: .75s;
-}
-
 @keyframes filter-ready {
   from {fill: var(--active-colour);}
 }
@@ -404,6 +400,18 @@ hr {
 
 [data-button="disabled"] svg {
   fill: var(--neomorphic-dark);
+}
+
+/* DATA ANIMATIONS */
+
+[data-animation="none"] {
+  animation: none;
+}
+
+/* SVG ANIMATIONS */
+
+#animation-none {
+  animation: none;
 }
 
 /* ANIMATIONS */

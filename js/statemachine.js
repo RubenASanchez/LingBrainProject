@@ -7,6 +7,7 @@ let stateDisplay = document.getElementById('current-state');
 // HOLD CURRENT STATE
 
 const stateLog = ['brain'];
+console.log(stateLog);
 
 // CONTRIVED DATA OBJECT ARRAY
 
@@ -38,6 +39,7 @@ let settingsEmmit = settingsButton.addEventListener('click',function() {
 const filterButton = document.getElementById('filter-button');
 let filterEmmit = filterButton.addEventListener('click',function() {
   sm('filter');
+  removeOnboardingAnimation();
 });
 
 // STATE MACHINE RECEIVES EMITTED SIGNAL & UPDATES CURRENT STATE
@@ -46,11 +48,11 @@ function sm(emitted) {
   //console.log(`someone emitted ${emitted}`);
   if (stateLog[stateLog.length-1] == emitted) {
     stateLog.pop();
-    // console.log(stateLog);
+    console.log(stateLog);
   }
   else {
     stateLog.push(emitted);
-    // console.log(stateLog);
+    console.log(stateLog);
   }
   stateDisplay.textContent = stateLog[stateLog.length-1];
   activateState();
@@ -169,6 +171,18 @@ cardFunction.addEventListener('click',function() {
   cardFunction.classList.toggle('card-expand');
   // console.log('clicked card');
 });
+
+// REMOVE ONBOARDING ANIMATION FROM FILTER BUTTON
+
+function removeOnboardingAnimation() {
+  const f1 = document.getElementsByClassName('f1')[0];
+  const f2 = document.getElementsByClassName('f2')[0];
+  const f3 = document.getElementsByClassName('f3')[0];
+  f1.setAttribute('id','animation-none');
+  f2.setAttribute('id','animation-none');
+  f3.setAttribute('id','animation-none');
+};
+
 
 //export { stateDisplay , updateStateInfo , updateState, oldState , newState , stateMachine };
 export { settingsButton };

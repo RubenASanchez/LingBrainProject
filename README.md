@@ -4,9 +4,7 @@
 
 App detailing information about the brain as it relates to language.
 
-**Live Site Testing**
-
-> https://researchscientist.github.io/LingBrainProject/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/96c5c5be-a3f8-46f8-8650-cd6a74f14ab6/deploy-status)](https://app.netlify.com/sites/ling-brain-app/deploys)
 
 **Performance**
 

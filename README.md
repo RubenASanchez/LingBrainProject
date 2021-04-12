@@ -8,7 +8,7 @@ App detailing information about the brain as it relates to language.
 
 > https://researchscientist.github.io/LingBrainProject/
 
-**Performance**
+### Performance
 
 |Test|First Paint|Interactive|Total Blocking|Speed To First Visual|
 |--|--|--|--|--|

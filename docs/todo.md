@@ -244,6 +244,8 @@
 
 [ ] button navigation
 
+[ ] button types
+
 # Social Media
 
 [ ] twitter cards meta data

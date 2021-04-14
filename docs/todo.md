@@ -108,11 +108,15 @@
 
 [x] sub button styles
 
+[x] main button hover animation
+
 [x] svg main icon
 
-[x] svg sub icons
+[ ] svg sub icons
 
-[x] onboarding animation
+# Onboarding
+
+[x] filter animation
 
 # Toggle Animations
 

@@ -129,9 +129,21 @@ nav {
   justify-content: center;
 }
 
-.filter-icon:hover {
-  transform: scaleY(.5);
+.filter-icon  .f1 , .f3 {
+  transition: all .3s;
 }
+
+.filter-icon:hover .f1{
+  transform: translateY(2px);
+}
+
+.filter-icon:hover .f3{
+  transform: translateY(-2px);
+}
+
+/* .filter-button:hover {
+  border: 1px solid red;
+} */
 
 .filter-icon path {
   animation: filter-ready 2s ease-out infinite;

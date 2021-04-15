@@ -148,6 +148,8 @@
 
 # Regions
 
+[x] grid
+
 [ ] svg
 
 # State Machine

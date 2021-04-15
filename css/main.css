@@ -51,14 +51,10 @@ nav {
   margin-left: calc(45vw - 50px);
   text-align: center;
   color: var(--text-colour);
+  user-select: none;
   /* transition: all 1s; */
   /* animation: state-display 1s linear forwards; */
 }
-
-/* @keyframes state-display {
-  from {opacity: 0;}
-  to {opacity: 1;}
-} */
 
 /* MAIN DISPLAY */
 
@@ -95,7 +91,6 @@ nav {
 .settings-icon , .filter-icon , .close-icon {
   fill: var(--icon-colour);
   transition: all 1s;
-  /* background-color: pink; */
 }
 
 .settings-icon:hover {
@@ -256,8 +251,6 @@ hr {
   background-color: var(--active-colour);
   transition: background-color .5s;
 }
-
-/* BRAIN */
 
 /* COMPONENTS */
 

@@ -146,6 +146,12 @@
 
 [ ] fetchdata js
 
+# Regions
+
+[x] grid
+
+[ ] svg
+
 # State Machine
 
 [x] array for holding previous and current state

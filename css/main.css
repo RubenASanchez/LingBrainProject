@@ -51,14 +51,10 @@ nav {
   margin-left: calc(45vw - 50px);
   text-align: center;
   color: var(--text-colour);
+  user-select: none;
   /* transition: all 1s; */
   /* animation: state-display 1s linear forwards; */
 }
-
-/* @keyframes state-display {
-  from {opacity: 0;}
-  to {opacity: 1;}
-} */
 
 /* MAIN DISPLAY */
 
@@ -95,7 +91,6 @@ nav {
 .settings-icon , .filter-icon , .close-icon {
   fill: var(--icon-colour);
   transition: all 1s;
-  /* background-color: pink; */
 }
 
 .settings-icon:hover {
@@ -257,8 +252,6 @@ hr {
   transition: background-color .5s;
 }
 
-/* BRAIN */
-
 /* COMPONENTS */
 
 .brain, .filter , .regions , .region-info {
@@ -321,8 +314,9 @@ hr {
 
 .regions {
   pointer-events: none;
-  display: grid;
 }
+
+/* may want to add svg here with pointer events none */
 
 .region {
   pointer-events: auto;
@@ -353,24 +347,32 @@ hr {
   }
 }
 
-/* .brain-section-top {
-  animation: section-top 1s linear forwards;
+/* BRAIN */
+
+.region-grid {
+  width: 98%;
+  height: 98%;
+  display: grid;
+  grid-template-columns: repeat(5,20%);
+  grid-template-rows: repeat(5,20%);
+  pointer-events: none;
+  /* background-color: pink; */
 }
 
-@keyframes section-top {
-  to {transform: translateY(calc(calc(calc(100% - 150px) - 50vw)) / 2);}
-} */
-
-/* for making room for the cards */
-
-/* .brain-section-move {
-  animation: section-move 1s linear forwards;
+.brain-background {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
 }
 
-@keyframes section-move {
-  50% {transform: translateY(0vw) scale(.25);}
-  100% {transform: translateY(-50vw) scale(.25);}
-} */
+#ba {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+#wa {
+  grid-column: 5;
+  grid-row: 3;
+}
 
 /* CARDS */
 
@@ -392,6 +394,10 @@ hr {
 
 .card-function {
   margin-bottom: 15px;
+}
+
+.card-name , .card-location , .card-function {
+  user-select: none;
 }
 
 /* DATA STATES */

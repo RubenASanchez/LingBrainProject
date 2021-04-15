@@ -91,7 +91,6 @@ nav {
 .settings-icon , .filter-icon , .close-icon {
   fill: var(--icon-colour);
   transition: all 1s;
-  /* background-color: pink; */
 }
 
 .settings-icon:hover {
@@ -313,6 +312,12 @@ hr {
   text-align: left;
 }
 
+.regions {
+  pointer-events: none;
+}
+
+/* may want to add svg here with pointer events none */
+
 .region {
   pointer-events: auto;
   user-select: none;
@@ -344,7 +349,7 @@ hr {
 
 /* BRAIN */
 
-.regions {
+.region-grid {
   display: grid;
   grid-template-columns: repeat(4,25%);
   grid-template-rows: repeat(4,25%);
@@ -395,10 +400,6 @@ hr {
 
 [data-state="active"] {
   display: flex;
-}
-
-.regions [data-state="active"] {
-  display: grid;
 }
 
 /* DATA BUTTONS */

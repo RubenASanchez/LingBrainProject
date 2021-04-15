@@ -91,7 +91,6 @@ nav {
 .settings-icon , .filter-icon , .close-icon {
   fill: var(--icon-colour);
   transition: all 1s;
-  /* background-color: pink; */
 }
 
 .settings-icon:hover {
@@ -313,6 +312,12 @@ hr {
   text-align: left;
 }
 
+.regions {
+  pointer-events: none;
+}
+
+/* may want to add svg here with pointer events none */
+
 .region {
   pointer-events: auto;
   user-select: none;
@@ -344,20 +349,28 @@ hr {
 
 /* BRAIN */
 
-.regions {
+.region-grid {
+  width: 98%;
+  height: 98%;
   display: grid;
-  grid-template-columns: repeat(4,25%);
-  grid-template-rows: repeat(4,25%);
+  grid-template-columns: repeat(5,20%);
+  grid-template-rows: repeat(5,20%);
   pointer-events: none;
+  /* background-color: pink; */
 }
 
 .brain-background {
-  grid-column: 1;
-  grid-row: 1;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
 }
 
 #ba {
   grid-column: 3;
+  grid-row: 4;
+}
+
+#wa {
+  grid-column: 5;
   grid-row: 3;
 }
 
@@ -395,10 +408,6 @@ hr {
 
 [data-state="active"] {
   display: flex;
-}
-
-.regions [data-state="active"] {
-  display: grid;
 }
 
 /* DATA BUTTONS */

@@ -253,8 +253,6 @@ hr {
   transition: background-color .5s;
 }
 
-/* BRAIN */
-
 /* COMPONENTS */
 
 .brain, .filter , .regions , .region-info {
@@ -315,11 +313,6 @@ hr {
   text-align: left;
 }
 
-.regions {
-  pointer-events: none;
-  display: grid;
-}
-
 .region {
   pointer-events: auto;
   user-select: none;
@@ -347,6 +340,25 @@ hr {
     box-shadow: 0 0px 0px var(--neomorphic-light-shadow), 0 0px 0px var(--neomorphic-dark-shadow);
     color: var(--neomorphic-mid-dark);
   }
+}
+
+/* BRAIN */
+
+.regions {
+  display: grid;
+  grid-template-columns: repeat(4,25%);
+  grid-template-rows: repeat(4,25%);
+  pointer-events: none;
+}
+
+.brain-background {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#ba {
+  grid-column: 3;
+  grid-row: 3;
 }
 
 /* CARDS */
@@ -383,6 +395,10 @@ hr {
 
 [data-state="active"] {
   display: flex;
+}
+
+.regions [data-state="active"] {
+  display: grid;
 }
 
 /* DATA BUTTONS */

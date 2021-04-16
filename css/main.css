@@ -350,13 +350,14 @@ hr {
 /* BRAIN */
 
 .region-grid {
-  width: 98%;
+  width: 80%;
   height: 98%;
   display: grid;
   grid-template-columns: repeat(5,20%);
   grid-template-rows: repeat(5,20%);
   pointer-events: none;
-  /* background-color: pink; */
+  border-radius: 50%;
+  background-color: pink; 
 }
 
 .brain-background {

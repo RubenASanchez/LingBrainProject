@@ -350,13 +350,16 @@ hr {
 /* BRAIN */
 
 .region-grid {
-  width: 98%;
+  width: 80%;
   height: 98%;
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: repeat(5,20%);
   grid-template-rows: repeat(5,20%);
   pointer-events: none;
-  /* background-color: pink; */
+  border-radius: 50%;
+  background-color: pink; 
 }
 
 .brain-background {
@@ -365,8 +368,15 @@ hr {
 }
 
 #ba {
-  grid-column: 3;
-  grid-row: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(150,150,250);
+  width: 80px;
+  height: 40px;
+  box-shadow: 0 5px 5px rgba(50,50,150,.5);
+  grid-column: 3/5;
+  grid-row: 4/5;
 }
 
 #wa {

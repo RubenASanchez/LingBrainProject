@@ -22,10 +22,15 @@ let regionData = [{
     "location":"side",
     "function":"laugh"
   },
-  region3: {
-    "name":"region 3",
-    "location":"back",
+  be: {
+    "name":"be",
+    "location":"besides the bed",
     "function":"sleep"
+  },
+  we: {
+    "name":"we",
+    "location":"water slide",
+    "function":"weeeee"
   }
 }];
 

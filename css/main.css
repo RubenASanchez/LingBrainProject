@@ -81,6 +81,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
+  user-select: none;
   color: var(--text-colour);
   background-color: var(--neomorphic-mid);
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
@@ -118,13 +119,21 @@ nav {
 
 /* FILTER BUTTON */
 
+.filter-nav {
+  pointer-events: none;
+}
+
+.filter-nav .app-button {
+  pointer-events: auto;
+}
+
 #app-actions {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.filter-icon  .f1 , .f3 {
+.filter-icon .f1 , .f3 {
   transition: all .3s;
 }
 
@@ -135,10 +144,6 @@ nav {
 .filter-icon:hover .f3{
   transform: translateY(-2px);
 }
-
-/* .filter-button:hover {
-  border: 1px solid red;
-} */
 
 .filter-icon path {
   animation: filter-ready 2s ease-out infinite;
@@ -353,13 +358,17 @@ hr {
   width: 80%;
   height: 98%;
   display: grid;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
   grid-template-columns: repeat(5,20%);
   grid-template-rows: repeat(5,20%);
   pointer-events: none;
   border-radius: 50%;
-  background-color: pink; 
+  border: 1px dashed gray;
+}
+
+.region-grid svg {
+  pointer-events: none;
 }
 
 .brain-background {
@@ -380,8 +389,14 @@ hr {
 }
 
 #wa {
+
   grid-column: 5;
   grid-row: 3;
+}
+
+#be {
+  grid-column: 3;
+  grid-row: 2;
 }
 
 /* CARDS */

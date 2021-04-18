@@ -81,6 +81,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
+  user-select: none;
   color: var(--text-colour);
   background-color: var(--neomorphic-mid);
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
@@ -118,13 +119,21 @@ nav {
 
 /* FILTER BUTTON */
 
+.filter-nav {
+  pointer-events: none;
+}
+
+.filter-nav .app-button {
+  pointer-events: auto;
+}
+
 #app-actions {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.filter-icon  .f1 , .f3 {
+.filter-icon .f1 , .f3 {
   transition: all .3s;
 }
 
@@ -135,10 +144,6 @@ nav {
 .filter-icon:hover .f3{
   transform: translateY(-2px);
 }
-
-/* .filter-button:hover {
-  border: 1px solid red;
-} */
 
 .filter-icon path {
   animation: filter-ready 2s ease-out infinite;
@@ -310,13 +315,16 @@ hr {
 .filter p {
   width: 120px;
   text-align: left;
+  grid-column: 3;
 }
+
+/* .filter p:nth-of-type(1) {
+  grid-row: 2;
+} */
 
 .regions {
   pointer-events: none;
 }
-
-/* may want to add svg here with pointer events none */
 
 .region {
   pointer-events: auto;
@@ -353,13 +361,17 @@ hr {
   width: 80%;
   height: 98%;
   display: grid;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
   grid-template-columns: repeat(5,20%);
   grid-template-rows: repeat(5,20%);
   pointer-events: none;
   border-radius: 50%;
-  background-color: pink; 
+  border: 1px dashed gray;
+}
+
+.region-grid svg {
+  pointer-events: none;
 }
 
 .brain-background {
@@ -380,8 +392,38 @@ hr {
 }
 
 #wa {
-  grid-column: 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 5px 3px rgba(200,100,100,.75));
+  grid-column: 4/6;
   grid-row: 3;
+  transition: all .25s;
+}
+
+#wa:before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: salmon;
+  clip-path: polygon(0 50%,15% 100%,85% 100%,100% 50%,85% 0,15% 0);
+  content: "";
+}
+
+#wa:hover {
+  transform: translateY(5px);
+  filter: drop-shadow(0px 0px 0px rgba(200,100,100,.75));
+  transition: all .25s;
+}
+
+#be {
+  grid-column: 3;
+  grid-row: 2;
 }
 
 /* CARDS */

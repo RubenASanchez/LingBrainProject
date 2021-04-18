@@ -31,6 +31,36 @@ let regionData = [{
     "name":"we",
     "location":"water slide",
     "function":"weeeee"
+  },
+  bi: {
+    "name":"bi",
+    "location":"bees nest",
+    "function":"busy bee buzz"
+  },
+  wi: {
+    "name":"wi",
+    "location":"world wide web",
+    "function":"cat memes"
+  },
+  bo: {
+    "name":"bo",
+    "location":"in the closet",
+    "function":"boo jump scare haha"
+  },
+  wo: {
+    "name":"wo",
+    "location":"huh",
+    "function":"woah"
+  },
+  bu: {
+    "name":"bu",
+    "location":"near the blue sea",
+    "function":"dream"
+  },
+  wu: {
+    "name":"wu",
+    "location":"in the trees",
+    "function":"wut"
   }
 }];
 

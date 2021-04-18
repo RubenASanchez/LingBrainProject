@@ -55,9 +55,6 @@
 
     <section class="component brain" id="brain" data-state="active">
       <div class="region-grid">
-        <!-- <svg class="brain-background" width="350" height="240" viewBox="0 0 350 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M350 120C350 186.274 271.65 240 175 240C78.3502 240 0 186.274 0 120C0 53.7258 78.3502 0 175 0C271.65 0 350 53.7258 350 120Z" fill="#D2D2D2"/>
-      </svg> -->
       </div>
     </section>
 
@@ -65,20 +62,19 @@
 
     <!-- make a descriptive list OR show all sections and highlight selected regions -->
     <section class="component filter" id="filter" data-state="inactive">
-      <p>1 - comprehension</p>
-      <p>2 - production</p>
-      <p>3 - lexicon</p>
-      <p>4 - </p>
-      <p>5 - </p>
+      <div class="region-grid">
+       <p>1 - comprehension</p>
+       <p>2 - production</p>
+       <p>3 - lexicon</p>
+       <p>4 - </p>
+       <p>5 - </p>
+      </div>
     </section>
 
     <!-- REGIONS TO TAP -->
 
     <section class="component regions" id="regions-1" data-state="inactive">
       <div class="region-grid">
-        <!-- <svg class="brain-background" width="100%" height="100%" viewBox="0 0 350 240" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M350 120C350 186.274 271.65 240 175 240C78.3502 240 0 186.274 0 120C0 53.7258 78.3502 0 175 0C271.65 0 350 53.7258 350 120Z" fill="#D2D2D2"/>
-        </svg> -->
         <div class="region" id="ba">ba</div>
         <div class="region" id="wa">wa</div>
       </div>
@@ -86,42 +82,30 @@
 
     <section class="component regions" id="regions-2" data-state="inactive">
       <div class="region-grid">
-       <div class="region" id="be">
-        <svg width="50" height="44" viewBox="0 0 50 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g filter="url(#filter0_d)">
-          <path d="M5 0H45L48 20L45 40H5L2 20L5 0Z" fill="#9696FA"/>
-          </g>
-          <path d="M24.1875 20.9004C24.1875 21.8691 23.9648 22.6484 23.5195 23.2383C23.0742 23.8242 22.4766 24.1172 21.7266 24.1172C20.9258 24.1172 20.3066 23.834 19.8691 23.2676L19.8164 24H18.8203V15H19.9043V18.3574C20.3418 17.8145 20.9453 17.543 21.7148 17.543C22.4844 17.543 23.0879 17.834 23.5254 18.416C23.9668 18.998 24.1875 19.7949 24.1875 20.8066V20.9004ZM23.1035 20.7773C23.1035 20.0391 22.9609 19.4688 22.6758 19.0664C22.3906 18.6641 21.9805 18.4629 21.4453 18.4629C20.7305 18.4629 20.2168 18.7949 19.9043 19.459V22.2012C20.2363 22.8652 20.7539 23.1973 21.457 23.1973C21.9766 23.1973 22.3809 22.9961 22.6699 22.5938C22.959 22.1914 23.1035 21.5859 23.1035 20.7773ZM29.4727 24C29.4102 23.875 29.3594 23.6523 29.3203 23.332C28.8164 23.8555 28.2148 24.1172 27.5156 24.1172C26.8906 24.1172 26.377 23.9414 25.9746 23.5898C25.5762 23.2344 25.377 22.7852 25.377 22.2422C25.377 21.582 25.627 21.0703 26.127 20.707C26.6309 20.3398 27.3379 20.1562 28.248 20.1562H29.3027V19.6582C29.3027 19.2793 29.1895 18.9785 28.9629 18.7559C28.7363 18.5293 28.4023 18.416 27.9609 18.416C27.5742 18.416 27.25 18.5137 26.9883 18.709C26.7266 18.9043 26.5957 19.1406 26.5957 19.418H25.5059C25.5059 19.1016 25.6172 18.7969 25.8398 18.5039C26.0664 18.207 26.3711 17.9727 26.7539 17.8008C27.1406 17.6289 27.5645 17.543 28.0254 17.543C28.7559 17.543 29.3281 17.7266 29.7422 18.0938C30.1562 18.457 30.3711 18.959 30.3867 19.5996V22.5176C30.3867 23.0996 30.4609 23.5625 30.6094 23.9062V24H29.4727ZM27.6738 23.1738C28.0137 23.1738 28.3359 23.0859 28.6406 22.9102C28.9453 22.7344 29.166 22.5059 29.3027 22.2246V20.9238H28.4531C27.125 20.9238 26.4609 21.3125 26.4609 22.0898C26.4609 22.4297 26.5742 22.6953 26.8008 22.8867C27.0273 23.0781 27.3184 23.1738 27.6738 23.1738Z" fill="black"/>
-          <defs>
-          <filter id="filter0_d" x="0" y="0" width="50" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-          <feOffset dy="2"/>
-          <feGaussianBlur stdDeviation="1"/>
-          <feColorMatrix type="matrix" values="0 0 0 0 0.12 0 0 0 0 0.12 0 0 0 0 0.2 0 0 0 1 0"/>
-          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-          </filter>
-          </defs>
-          </svg>          
-       </div>
+       <div class="region" id="be">be</div>
        <div class="region" id="we">we</div>
-     </div>
+      </div>
     </section>
 
     <section class="component regions" id="regions-3" data-state="inactive">
-      <div class="region" id="bi">bi</div>
-      <div class="region" id="wi">wi</div>
+      <div class="region-grid">
+        <div class="region" id="bi">bi</div>
+        <div class="region" id="wi">wi</div>
+      </div>
     </section>
 
     <section class="component regions" id="regions-4" data-state="inactive">
-      <div class="region" id="bo">bo</div>
-      <div class="region" id="wo">wo</div>
+      <div class="region-grid">
+        <div class="region" id="bo">bo</div>
+        <div class="region" id="wo">wo</div>
+      </div>
     </section>
 
     <section class="component regions" id="regions-5" data-state="inactive">
-      <div class="region" id="bu">bu</div>
-      <div class="region" id="wu">wu</div>
+      <div class="region-grid">
+        <div class="region" id="bu">bu</div>
+        <div class="region" id="wu">wu</div>
+      </div>
     </section>
 
     <!-- Region Info -->
@@ -155,7 +139,7 @@
         <path class="f1" data-animation="none" d="M0 0H44L42 8H2L0 0Z"/>
         <path class="f2" data-animation="none" d="M3 12H41L39 20H5L3 12Z"/>
         <path class="f3" data-animation="none" d="M6 24H38L36 32H8L6 24Z"/>
-        </svg>
+      </svg>
     </div>
     <section class="filter-nav" id="filter-nav" data-state="inactive">
       <div class="app-button" id="filter-regions-1">1</div> <!-- svg icon to go here -->

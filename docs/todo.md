@@ -268,3 +268,4 @@
 - major region change
 - minor update
 - major update
+- minor update

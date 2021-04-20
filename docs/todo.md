@@ -264,7 +264,7 @@
 
 # Releases
 
-- major
+- major update
 - major region change
 - minor update
 - major update

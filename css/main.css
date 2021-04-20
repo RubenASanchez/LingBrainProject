@@ -19,6 +19,7 @@ a {
   --neomorphic-dark: #B4B4B4;
   --neomorphic-light-shadow: rgba(255,255,255,.6);
   --neomorphic-dark-shadow: rgba(180,180,180,.5);
+  --dark-shadow: rgba(100,100,100,.5);
   --icon-colour: #505050;
   --text-colour: #404040;
   --active-colour: orange;
@@ -52,8 +53,6 @@ nav {
   text-align: center;
   color: var(--text-colour);
   user-select: none;
-  /* transition: all 1s; */
-  /* animation: state-display 1s linear forwards; */
 }
 
 /* MAIN DISPLAY */
@@ -119,18 +118,18 @@ nav {
 
 /* FILTER BUTTON */
 
+#app-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .filter-nav {
   pointer-events: none;
 }
 
 .filter-nav .app-button {
   pointer-events: auto;
-}
-
-#app-actions {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .filter-icon .f1 , .f3 {
@@ -166,19 +165,6 @@ nav {
   height: 40px;
 }
 
-/* .filter-active {
-  width: 98vw;
-  border-radius: 5vw;
-  justify-content: space-around;
-  box-shadow: inset 0 5px 5px var(--neomorphic-dark-shadow), inset 0 -5px 5px var(--neomorphic-light-shadow);
-} */
-
-/* .filter-inactive {
-  width: 0px;
-  height: 0px;
-  display: none;
-} */
-
 /* SETTINGS SECTION */
 
 .settings {
@@ -193,7 +179,7 @@ nav {
   color: var(--text-colour);
   box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
   background-color: var(--neomorphic-mid);
-  /* transition: all 1s;  this animates it growing and shrinking when orientation changes */
+  transition: all 1s;  /* this animates it growing and shrinking when orientation changes */
 }
 
 #animations , #theme , #about , #contact {
@@ -274,19 +260,7 @@ hr {
   transition: all 1s;  /*this animates it growing and shrinking when orientation changes*/
 }
 
-.settings {
-  width: 80%;
-  height: 75%;
-  padding: 5% 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  border-radius: 5vw;
-  color: var(--text-colour);
-  box-shadow: 0 -5px 5px var(--neomorphic-light-shadow), 0 5px 5px var(--neomorphic-dark-shadow);
-  background-color: var(--neomorphic-mid);
-}
+/* REGION INFO */
 
 .region-info {
   width: 95%;
@@ -318,19 +292,6 @@ hr {
   grid-column: 3;
 }
 
-/* .filter p:nth-of-type(1) {
-  grid-row: 2;
-} */
-
-.regions {
-  pointer-events: none;
-}
-
-.region {
-  pointer-events: auto;
-  user-select: none;
-}
-
 #close-region-info {
   height: 30px;
   width: 30px;
@@ -338,12 +299,13 @@ hr {
   flex-basis: 30px;
 }
 
-.section-hide {
-  animation: section-hide .6s linear forwards; /* need to test this */
+/* need to test this */
+/* .section-hide {
+  animation: section-hide .6s linear forwards;
   display: none;
-}
+} */
 
-@keyframes section-hide {
+/* @keyframes section-hide {
   80% {
     background-color: var(--neomorphic-mid);
     color: var(--neomorphic-mid-dark);
@@ -353,9 +315,9 @@ hr {
     box-shadow: 0 0px 0px var(--neomorphic-light-shadow), 0 0px 0px var(--neomorphic-dark-shadow);
     color: var(--neomorphic-mid-dark);
   }
-}
+} */
 
-/* BRAIN */
+/* REGION GRID */
 
 .region-grid {
   width: 80%;
@@ -374,55 +336,89 @@ hr {
   pointer-events: none;
 }
 
-.brain-background {
-  grid-column: 1/-1;
-  grid-row: 1/-1;
+/* REGION */
+
+.regions {
+  pointer-events: none;
 }
 
-#ba {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(150,150,250);
-  width: 80px;
-  height: 40px;
-  box-shadow: 0 5px 5px rgba(50,50,150,.5);
-  grid-column: 3/5;
-  grid-row: 4/5;
-}
-
-#wa {
+.region {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: drop-shadow(0px 5px 3px rgba(200,100,100,.75));
-  grid-column: 4/6;
-  grid-row: 3;
+  pointer-events: auto;
+  user-select: none;
   transition: all .25s;
+  filter: drop-shadow(0px 5px 3px var(--dark-shadow));
 }
 
-#wa:before {
+.region:before {
   position: absolute;
   z-index: -1;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: salmon;
+  background-color: rgb(150,150,250);
   clip-path: polygon(0 50%,15% 100%,85% 100%,100% 50%,85% 0,15% 0);
   content: "";
 }
 
-#wa:hover {
-  transform: translateY(5px);
+.region:hover {
+  transform: translateY(3px);
   filter: drop-shadow(0px 0px 0px rgba(200,100,100,.75));
   transition: all .25s;
 }
 
+#ba {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+#wa {
+  grid-column: 4/4;
+  grid-row: 4/5;
+}
+
 #be {
   grid-column: 3;
+  grid-row: 2;
+}
+
+#we {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+#bi {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#wi {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+#bo {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#wo {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#bu {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#wu {
+  grid-column: 4;
   grid-row: 2;
 }
 

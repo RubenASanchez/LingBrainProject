@@ -12,15 +12,20 @@ console.log(stateLog);
 // CONTRIVED DATA OBJECT ARRAY
 
 let regionData = [{
-  ba:{
-    "name":"ba",
-    "location":"top , adding a bunch of stuff here to see if the div will shrink smaller than the text. If not then will need to add dots with some js.",
-    "function":"eat"
+  Brocas_Area:{
+    "name":"Broca's Area",
+    "location":"Brodmann Area: 44 & 45",
+    "function":"It's role in production, syntax, lexical access as well as articulatory representation is under investigation."
   },
-  wa: {
-    "name":"wa",
-    "location":"side",
-    "function":"laugh"
+  Wernickes_Area: {
+    "name":"Wernicke's Area",
+    "location":"Posterior Temporal Gyrus",
+    "function":"Phonological representation."
+  },
+  Arcuate_Fascicullus: {
+    "name":"Arcuate Fascicullus",
+    "location":"Left Temporal Lobe",
+    "function":"Fascilitates communication between Broca's area and Wernicke's area."
   },
   be: {
     "name":"be",
@@ -91,6 +96,7 @@ function sm(emitted) {
   }
   stateDisplay.textContent = stateLog[stateLog.length-1];
   activateState();
+  stateDisplay.textContent = stateDisplay.textContent.replace('_',' '); /* for displaying name without line */
   return stateLog;
 };
 
@@ -194,17 +200,14 @@ const cardFunction = document.getElementById('card-function');
 
 cardName.addEventListener('click',function() {
   cardName.classList.toggle('card-expand');
-  // console.log('clicked card');
 });
 
 cardLocation.addEventListener('click',function() {
   cardLocation.classList.toggle('card-expand');
-  // console.log('clicked card');
 });
 
 cardFunction.addEventListener('click',function() {
   cardFunction.classList.toggle('card-expand');
-  // console.log('clicked card');
 });
 
 // REMOVE ONBOARDING ANIMATION FROM FILTER BUTTON

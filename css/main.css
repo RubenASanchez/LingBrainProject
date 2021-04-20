@@ -49,8 +49,8 @@ nav {
 /* STATE INFO */
 
 #current-state {
-  width: 150px;
-  margin-left: calc(45vw - 75px);
+  width: 200px;
+  margin-left: calc(45vw - 100px);
   text-align: center;
   color: var(--text-colour);
   user-select: none;
@@ -394,14 +394,14 @@ hr {
   background-color: transparent;
 }
 
-#be {
-  grid-column: 3;
-  grid-row: 2;
+#Primary_Auditory_Cortex {
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
 
-#we {
-  grid-column: 4;
-  grid-row: 4;
+#Auditory_Association_Cortex {
+  grid-column: 3/4;
+  grid-row: 3/4;
 }
 
 #bi {

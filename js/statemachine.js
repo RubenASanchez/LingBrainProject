@@ -27,15 +27,15 @@ let regionData = [{
     "location":"Left Temporal Lobe",
     "function":"Fascilitates communication between Broca's area and Wernicke's area."
   },
-  be: {
-    "name":"be",
-    "location":"besides the bed",
-    "function":"sleep"
+  Primary_Auditory_Cortex: {
+    "name":"Primary Auditory Cortex",
+    "location":"Brodmann Area: 41 & 42",
+    "function":""
   },
-  we: {
-    "name":"we",
-    "location":"water slide",
-    "function":"weeeee"
+  Auditory_Association_Cortex: {
+    "name":"Auditory Association Cortex",
+    "location":"Brodmann Area: 22",
+    "function":""
   },
   bi: {
     "name":"bi",

@@ -267,3 +267,4 @@
 - major
 - major region change
 - minor update
+- major update
